@@ -1,0 +1,10 @@
+C:\Users\DSV_WEB\source\repos\WebNesta_BoletagemNovo\PdfViewer\bin\Debug\PdfViewer.dll
+C:\Users\DSV_WEB\source\repos\WebNesta_BoletagemNovo\PdfViewer\bin\Debug\PdfViewer.pdb
+C:\Users\DSV_WEB\source\repos\WebNesta_BoletagemNovo\PdfViewer\obj\Debug\PdfViewer.csprojAssemblyReference.cache
+C:\Users\DSV_WEB\source\repos\WebNesta_BoletagemNovo\PdfViewer\obj\Debug\PdfViewer.dll
+C:\Users\DSV_WEB\source\repos\WebNesta_BoletagemNovo\PdfViewer\obj\Debug\PdfViewer.pdb
+C:\Users\Jesse\source\repos\WebNesta_AdminContratos_V2.0\PdfViewer\bin\Debug\PdfViewer.dll
+C:\Users\Jesse\source\repos\WebNesta_AdminContratos_V2.0\PdfViewer\bin\Debug\PdfViewer.pdb
+C:\Users\Jesse\source\repos\WebNesta_AdminContratos_V2.0\PdfViewer\obj\Debug\PdfViewer.csproj.CoreCompileInputs.cache
+C:\Users\Jesse\source\repos\WebNesta_AdminContratos_V2.0\PdfViewer\obj\Debug\PdfViewer.dll
+C:\Users\Jesse\source\repos\WebNesta_AdminContratos_V2.0\PdfViewer\obj\Debug\PdfViewer.pdb

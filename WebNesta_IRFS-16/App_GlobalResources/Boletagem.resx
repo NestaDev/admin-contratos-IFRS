@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="boletagem_content_tutorial" xml:space="preserve">
+    <value>https://cloud3.webnesta.com/tutorial/ifrs/boletagem/en-US</value>
+  </data>
+  <data name="boletagem_grid1" xml:space="preserve">
+    <value>DataEntry</value>
+  </data>
+  <data name="boletagem_grid1_btn1" xml:space="preserve">
+    <value>Nova Verba</value>
+  </data>
+  <data name="boletagem_grid1_btn1_guide" xml:space="preserve">
+    <value>Nova Verba</value>
+  </data>
+  <data name="boletagem_grid1_btn2" xml:space="preserve">
+    <value>Novo Boleto</value>
+  </data>
+  <data name="boletagem_grid1_btn2_guide" xml:space="preserve">
+    <value>Novo Boleto</value>
+  </data>
+  <data name="boletagem_grid1_guide" xml:space="preserve">
+    <value>Acesso à área boletas, nessa área é possível visualizar as boletas criadas e ainda não auditadas, além de criar novas boletas manuais ou por débito em conta e também criar e associar novas Verbas.&lt;br/&gt;Para alterar os dados é possível clicando duas vezes na linha desejada, Para Inserir deve-se clicar no ícone + e preencher os campos. Para Excluir é necessário clicar no ícone da lixeira. Após qualquer dessas operações é necessário Salvar ou então Descartar.</value>
+  </data>
+  <data name="boletagem_grid1_popup1_btn" xml:space="preserve">
+    <value>Gravar</value>
+  </data>
+  <data name="boletagem_grid1_popup1_lbl1" xml:space="preserve">
+    <value>A Nova Verba será automaticamente associada ao Contrato selecionado</value>
+  </data>
+  <data name="boletagem_grid1_popup1_lbl10" xml:space="preserve">
+    <value>Intervalo</value>
+  </data>
+  <data name="boletagem_grid1_popup1_lbl2" xml:space="preserve">
+    <value>Entity:</value>
+  </data>
+  <data name="boletagem_grid1_popup1_lbl3" xml:space="preserve">
+    <value>Contrato:</value>
+  </data>
+  <data name="boletagem_grid1_popup1_lbl4" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="boletagem_grid1_popup1_lbl5" xml:space="preserve">
+    <value>Calcula IFRS?</value>
+  </data>
+  <data name="boletagem_grid1_popup1_lbl6" xml:space="preserve">
+    <value>Classificador</value>
+  </data>
+  <data name="boletagem_grid1_popup1_lbl7" xml:space="preserve">
+    <value>Tipo Receita</value>
+  </data>
+  <data name="boletagem_grid1_popup1_lbl8" xml:space="preserve">
+    <value>Periodicidade</value>
+  </data>
+  <data name="boletagem_grid1_popup1_lbl9" xml:space="preserve">
+    <value>Recuperação de Impostos</value>
+  </data>
+  <data name="boletagem_grid1_popup1_titulo" xml:space="preserve">
+    <value>Cadastro Nova Verba</value>
+  </data>
+  <data name="boletagem_grid1_popup2_btn1" xml:space="preserve">
+    <value>Prosseguir</value>
+  </data>
+  <data name="boletagem_grid1_popup2_btn2" xml:space="preserve">
+    <value>Concluir</value>
+  </data>
+  <data name="boletagem_grid1_popup2_btn3" xml:space="preserve">
+    <value>Limpar</value>
+  </data>
+  <data name="boletagem_grid1_popup2_combo1_item1" xml:space="preserve">
+    <value>Boleto Bancário</value>
+  </data>
+  <data name="boletagem_grid1_popup2_combo1_item2" xml:space="preserve">
+    <value>TED/PIX</value>
+  </data>
+  <data name="boletagem_grid1_popup2_combo1_item3" xml:space="preserve">
+    <value>Débito em Conta</value>
+  </data>
+  <data name="boletagem_grid1_popup2_grid_col1" xml:space="preserve">
+    <value>Verbas</value>
+  </data>
+  <data name="boletagem_grid1_popup2_grid_col2" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="boletagem_grid1_popup2_lbl1" xml:space="preserve">
+    <value>Forma de Pagamento</value>
+  </data>
+  <data name="boletagem_grid1_popup2_lbl2" xml:space="preserve">
+    <value>Entity:</value>
+  </data>
+  <data name="boletagem_grid1_popup2_lbl3" xml:space="preserve">
+    <value>Selecione o Contrato</value>
+  </data>
+  <data name="boletagem_grid1_popup2_lbl4" xml:space="preserve">
+    <value>Nome Novo Boleto</value>
+  </data>
+  <data name="boletagem_grid1_popup2_lbl5" xml:space="preserve">
+    <value>Valor Total</value>
+  </data>
+  <data name="boletagem_grid1_popup2_lbl6" xml:space="preserve">
+    <value>Vencimento</value>
+  </data>
+  <data name="boletagem_grid1_popup2_opcoes1" xml:space="preserve">
+    <value>Forma de entrada:</value>
+  </data>
+  <data name="boletagem_grid1_popup2_opcoes2" xml:space="preserve">
+    <value>Leitor Óptico</value>
+  </data>
+  <data name="boletagem_grid1_popup2_opcoes3" xml:space="preserve">
+    <value>Digitação</value>
+  </data>
+  <data name="boletagem_grid1_popup2_opcoes4" xml:space="preserve">
+    <value>Layout Boleto Bancário</value>
+  </data>
+  <data name="boletagem_grid1_popup2_opcoes5" xml:space="preserve">
+    <value>Arrecadação</value>
+  </data>
+  <data name="boletagem_grid1_popup2_opcoes6" xml:space="preserve">
+    <value>Bancário</value>
+  </data>
+  <data name="boletagem_grid1_popup2_titulo" xml:space="preserve">
+    <value>Nova Boletagem</value>
+  </data>
+  <data name="boletagem_grid2" xml:space="preserve">
+    <value>Auditoria</value>
+  </data>
+  <data name="boletagem_grid2_acao1" xml:space="preserve">
+    <value>Rejeitar</value>
+  </data>
+  <data name="boletagem_grid2_acao2" xml:space="preserve">
+    <value>Conferir</value>
+  </data>
+  <data name="boletagem_grid2_guide" xml:space="preserve">
+    <value>Área que disponibiliza as boletagens realizadas, o usuário poderá avaliar as boletas e realizar a auditoria.</value>
+  </data>
+  <data name="boletagem_grid2_status1" xml:space="preserve">
+    <value>Rejeitado</value>
+  </data>
+  <data name="boletagem_grid2_status2" xml:space="preserve">
+    <value>Conferido</value>
+  </data>
+  <data name="boletagem_grid3" xml:space="preserve">
+    <value>Agenda</value>
+  </data>
+  <data name="boletagem_grid3_btn1" xml:space="preserve">
+    <value>Criar Boletagem</value>
+  </data>
+  <data name="boletagem_grid3_guide" xml:space="preserve">
+    <value>Área onde serão exibidas as boletas futuras, ou seja, baseado na data de vencimento da verba o sistema irá programar os pagamentos futuros, é possível criar uma boletagem baseado nesta previsão.&lt;br/&gt;Para alterar os dados é possível clicando duas vezes na linha desejada, Para Inserir deve-se clicar no ícone + e preencher os campos. Para Excluir é necessário clicar no ícone da lixeira. Após qualquer dessas operações é necessário Salvar ou então Descartar.</value>
+  </data>
+  <data name="boletagem_opcoes_1" xml:space="preserve">
+    <value>Modo de Exibição</value>
+  </data>
+  <data name="boletagem_opcoes_1_guide" xml:space="preserve">
+    <value>Data Entry: Acesso à área boletas, nessa área é possível visualizar as boletas criadas e ainda não auditadas, além de criar novas boletas manuais ou por débito em conta e também criar e associar novas Verbas.&lt;br/&gt;Auditoria: Área que disponibiliza as boletagens realizadas, o usuário poderá avaliar as boletas e realizar a auditoria. &lt;br/&gt;Agenda: Área onde serão exibidas as boletas futuras, ou seja, baseado na data de vencimento da verba o sistema irá programar os pagamentos futuros, é possível criar uma boletagem baseado nesta previsão.</value>
+  </data>
+  <data name="boletagem_opcoes_2" xml:space="preserve">
+    <value>Data Entry</value>
+  </data>
+  <data name="boletagem_opcoes_2_lbl1_guide" xml:space="preserve">
+    <value>Selecionar o Mês e Ano da competência da boletagem, ou seja, o período que a boletagem foi realizada.</value>
+  </data>
+  <data name="boletagem_opcoes_3" xml:space="preserve">
+    <value>Auditoria</value>
+  </data>
+  <data name="boletagem_opcoes_3_lbl1" xml:space="preserve">
+    <value>Competência</value>
+  </data>
+  <data name="boletagem_opcoes_3_lbl1_guide" xml:space="preserve">
+    <value>Selecionar o período de Vencimento dos Boletos Futuros ainda não boletados.</value>
+  </data>
+  <data name="boletagem_opcoes_3_lbl2_guide" xml:space="preserve">
+    <value>Selecionar o período de Vencimento dos Boletos Futuros ainda não boletados.</value>
+  </data>
+  <data name="boletagem_opcoes_4" xml:space="preserve">
+    <value>Agenda</value>
+  </data>
+  <data name="boletagem_titulo" xml:space="preserve">
+    <value>Boletagem</value>
+  </data>
+</root>

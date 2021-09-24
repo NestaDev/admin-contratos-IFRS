@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "trans-campus-246715",
+  "private_key_id": "29b819c678770f2b7afca6f7193eb9b15557fb69",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCdYg78A0/GZdTe\nxuBVxkm2/lFUc+hAyy52oAWNxTRcU7ELAmOssGVm32C9lFAgZ/eeK4w81EIIaEl6\nsMBE9n5wH8o3R+fktIrjco3ZazJ8aOkhUz5jb9alfP36hYKukvrt+hsR/RDP9oHL\nGN7mAXUg4cWkH6k76LgaoX/sTq9PsK69wQBckxHUZjA5uswaWpDo1cNf4qyViHa0\nJJXyk7AUal63lasqab6hKWTNko095AtWrlG8mQi1oJSp7NSSz0qOTNhI/7CRXKiX\nbELPpDWlBClm4pQg1uDjpZFmtKWIYl8dMiAQ2GCaS40LHnV7uWXLN+h/Q4Xpd6qE\nUAFTRcsXAgMBAAECggEANQA9aJxa5McNaZrTGL/GumQqEoVYLV3ff16DkEtdx0v9\n/uWmmJTtCThn1WBZnZg1uSQUPbYDqN4qBLH6hh721J64FGbYTtqIPXGqGJKztVcF\nT84/X/Bdemy+AXyt1km0TKliLWwqmcZ7zmBJTG8oOVMfIpbxALZuLbW+pV+YRX8E\nsi4HbBuWi2RnLVbIf7YLBXYO1omfkvlv7S2OsWbtk/1SNoneNhhZNlPZ7yqGD6IR\nQAxiPnOAz+6lqtNElKQVO9nlP7NzFW8kdYopjt/9ldVot2/AGBkUrSzAanRgb949\njjilq9RJf/ABofVGegO7p98/TbUE0NXQJb6X6igSHQKBgQDZXFwO8G1nJIcCmg/2\nYbrFFUWzO94ciAqdZkZclSmMnJ2AyORx1iqCDHMl8oVSAewG0qwrNBpRId9h/9X9\nXLJMpWzPjIzzb4J/E9+HKr5j4AC74xVi/H//UldVZvVAk4M0AJlTAyLCRAzmm4b3\n+uItz3J4i9nt8adHWA75D38T0wKBgQC5XDxhJmych8kcJY6pi7Sx+73OilQ2i+BT\nv+3NpMb5EW1Mf146k5D6eCF4owirloipMx0zxow9G5rbCeNBHPJoJzscHgSwKmpj\nRRqkZh9RK96KscT/LKRykmuCeqe0SsvoqQ4R8QH6XL76HOb1AyBPHG4NgNH/aUyN\nGPS7HxUVLQKBgH1MW5kVCcwCZ32deAQslDDWMWa/5SsHVS8k7Pyj097FzZmWtPHW\nZoyvRpWidy4uA3Rvb2Y8U8tfPllM1HuIOxQp7E68k+gk6NH+j8VoY3ZJg8LLheGY\n8uQpAEUv48MFBgYtLjWHQjtAZTtufmBnFIkZ48APxmH/AtICtibmwveXAoGAEyaP\nam4g3I8+3PSYZ7XyZk0fEB7EkpojBCQZOpzincsKItQp9R1X5jjRJHibpba4ydpp\nEvdZd9rJRgYgf5KxDMe42K/VRiorsbPrC78tTyKcLHIvazm+h8PO7b0kZIExzgjh\nVkMzNB2u8YJY7klzZhkG2chMafoEGbPRXR/Z+sUCgYEAmj1NMuBeeyXYZgzNgsQv\n+BfCD9AN41yL08TJAvkCNg9fASqwIGW4AzB/e5fK5AdsIqlDmvUZy85ttndyB1AR\n70c2pRRZGn4LFhz3UU7hehxOzKzvV/IyXD0H618gd8aKbnfTjrZ+9j9feBG8lNEw\nVzy0ZfctT/3wiIYcY3mDcmU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "conta-speech@trans-campus-246715.iam.gserviceaccount.com",
+  "client_id": "115126356932954444696",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/conta-speech%40trans-campus-246715.iam.gserviceaccount.com"
+}

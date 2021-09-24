@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tipologia_content_tutorial" xml:space="preserve">
+    <value>https://cloud3.webnesta.com/tutorial/ifrs/Tipologia/pt-BR</value>
+  </data>
+  <data name="tipologia_grid1_col1" xml:space="preserve">
+    <value>Tipologia</value>
+  </data>
+  <data name="tipologia_grid1_col10" xml:space="preserve">
+    <value>Depreciação</value>
+  </data>
+  <data name="tipologia_grid1_col11" xml:space="preserve">
+    <value>Remensuração</value>
+  </data>
+  <data name="tipologia_grid1_col2" xml:space="preserve">
+    <value>Origem</value>
+  </data>
+  <data name="tipologia_grid1_col3" xml:space="preserve">
+    <value>Capital</value>
+  </data>
+  <data name="tipologia_grid1_col4" xml:space="preserve">
+    <value>USGAAP</value>
+  </data>
+  <data name="tipologia_grid1_col5" xml:space="preserve">
+    <value>Recuperação Impostos</value>
+  </data>
+  <data name="tipologia_grid1_col6" xml:space="preserve">
+    <value>Reajustes</value>
+  </data>
+  <data name="tipologia_grid1_col7" xml:space="preserve">
+    <value>Carência</value>
+  </data>
+  <data name="tipologia_grid1_col8" xml:space="preserve">
+    <value>Fluxo</value>
+  </data>
+  <data name="tipologia_grid1_col9" xml:space="preserve">
+    <value>Cálculo</value>
+  </data>
+  <data name="tipologia_grid2_col1" xml:space="preserve">
+    <value>Tipologia</value>
+  </data>
+  <data name="tipologia_grid2_col2" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="tipologia_label1" xml:space="preserve">
+    <value>Quiz</value>
+  </data>
+  <data name="tipologia_label2" xml:space="preserve">
+    <value>Tipologias Disponíveis</value>
+  </data>
+  <data name="tipologia_label3" xml:space="preserve">
+    <value>Tipologias Associadas</value>
+  </data>
+  <data name="tipologia_quickguide_acao" xml:space="preserve">
+    <value>Ação do usuário</value>
+  </data>
+  <data name="tipologia_quickguide_empresa" xml:space="preserve">
+    <value>Texto sobre Empresa</value>
+  </data>
+  <data name="tipologia_quickguide_grid1" xml:space="preserve">
+    <value>Escolha a tipologia de contrato associada à Empresa</value>
+  </data>
+  <data name="tipologia_quickguide_grid2" xml:space="preserve">
+    <value>Área destinada a exibição das tipologias associadas à Empresa.&lt;br/&gt;Estas Tipologias estarão disponíveis para utilização nos contratos. Para desassociar uma tipologia é necessário clicar duas vezes sob a linha.</value>
+  </data>
+  <data name="tipologia_quickguide_grid2_col1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tipologia_quickguide_grid2_col10" xml:space="preserve">
+    <value>Informe se a Depreciação será calculada de forma LINEAR ou se haverão valores diferentes para períodos diferentes.</value>
+  </data>
+  <data name="tipologia_quickguide_grid2_col11" xml:space="preserve">
+    <value>Escolha a estrutura do GRUPO econômico, da EMPRESA, da FILIAL ou da LOJA.</value>
+  </data>
+  <data name="tipologia_quickguide_grid2_col2" xml:space="preserve">
+    <value>O tipo de contrato é nacional (só utilizado no seu país) ou com alcance mundial (utilizado o mesmo modelo em todos os países.</value>
+  </data>
+  <data name="tipologia_quickguide_grid2_col3" xml:space="preserve">
+    <value>Responda se a empresa de cadastramento do contrato é de capital aberto (negocia sua ações em bolsas) ou fechado (pertence a sócios acionistas).</value>
+  </data>
+  <data name="tipologia_quickguide_grid2_col4" xml:space="preserve">
+    <value>Responda se a empresa de cadastramento do contrato presta informações contábeis no padrão americano (USA) de práticas de contabilidade geralmente aceitas.</value>
+  </data>
+  <data name="tipologia_quickguide_grid2_col5" xml:space="preserve">
+    <value>Informe se o contrato em cadastramento permite a recuperação de impostos. Consulte o departamento tributário da sua empresa</value>
+  </data>
+  <data name="tipologia_quickguide_grid2_col6" xml:space="preserve">
+    <value>Informe se o contrato está sujeito ao reajuste periódico de preços.</value>
+  </data>
+  <data name="tipologia_quickguide_grid2_col7" xml:space="preserve">
+    <value>Informe se o contrato possui um período de carência, ou seja, um período que de posse de um imóvel, por exemplo, a sua empresa não irá pagar aluguel por um período.</value>
+  </data>
+  <data name="tipologia_quickguide_grid2_col8" xml:space="preserve">
+    <value>Informe se o Fluxo de Pagamentos do contrato é UNIFORME, ou seja, começa e termina com o mesmo valor ou se NÃO UNIFORME possuindo parcelas diferentes em diferentes períodos.</value>
+  </data>
+  <data name="tipologia_quickguide_grid2_col9" xml:space="preserve">
+    <value>Informe se o FLUXO DE CAIXA para apuração do VPL – Valor Presente Líquido do contrato será calculado pelo método da Tabela Price ou Linear.</value>
+  </data>
+  <data name="tipologia_quickguide_ini" xml:space="preserve">
+    <value>Ao posicionar o mouse sobre um campo, será exibido neste quadro um texto explicativo referente ao campo.</value>
+  </data>
+  <data name="tipologia_quickguide_quiz" xml:space="preserve">
+    <value>O cadastro do contrato exige uma TIPOLOGIA. A tipologia é a forma de registro, cálculos e gravações de dados para cada TIPO de contrato. Você precisa escolher a TIPOLOGIA e associá-la ao cadastro do contrato. A TIPOLOGIA é um conjunto de informações exigidas pelo CONTRATO. Para ajudá-lo escolha a alternativa em cada “COLUNA” do Grid e o Nesta apresenta a TIPOLOGIA apropridada. Se o Nesta lhe responder como “NÃO EXISTE”, abra um chamado e lhe enviaremos a TIPOLOGIA.</value>
+  </data>
+  <data name="tipologia_quickguide_titulo" xml:space="preserve">
+    <value>O cadastro do contrato exige uma TIPOLOGIA. A tipologia é a forma de registro, cálculos e gravações de dados para cada TIPO de contrato. Você precisa escolher a TIPOLOGIA e associá-la ao cadastro do contrato. A TIPOLOGIA é um conjunto de informações exigidas pelo CONTRATO. Para ajudá-lo escolha a alternativa em cada “COLUNA” do Grid e o Nesta apresenta a TIPOLOGIA apropridada. Se o Nesta lhe responder como “NÃO EXISTE”, abra um chamado e lhe enviaremos a TIPOLOGIA.</value>
+  </data>
+  <data name="tipologia_quiz" xml:space="preserve">
+    <value>Você entendeu que para o registro de um CONTRATO você necessita escolher o TIPO de contrato, ou seja, o modelo que irá sustentar o cadastramento, cálculos e registros contábeis orientados pela NORMA IFRS 16.
+Os modelos mudam de acordo com a finalidade do contrato, condições contratadas e ainda situações especiais que a sua empresa possa exigir por conta de organização societária e ramo de atividade.</value>
+  </data>
+  <data name="tipologia_quiz_1-1" xml:space="preserve">
+    <value>Nacional</value>
+  </data>
+  <data name="tipologia_quiz_1-2" xml:space="preserve">
+    <value>Mundial</value>
+  </data>
+  <data name="tipologia_quiz_10-1" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="tipologia_quiz_10-2" xml:space="preserve">
+    <value>Não</value>
+  </data>
+  <data name="tipologia_quiz_2-1" xml:space="preserve">
+    <value>Aberto</value>
+  </data>
+  <data name="tipologia_quiz_2-2" xml:space="preserve">
+    <value>Fechado</value>
+  </data>
+  <data name="tipologia_quiz_3-1" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="tipologia_quiz_3-2" xml:space="preserve">
+    <value>Não</value>
+  </data>
+  <data name="tipologia_quiz_4-1" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="tipologia_quiz_4-2" xml:space="preserve">
+    <value>Não</value>
+  </data>
+  <data name="tipologia_quiz_5-1" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="tipologia_quiz_5-2" xml:space="preserve">
+    <value>Não</value>
+  </data>
+  <data name="tipologia_quiz_6-1" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="tipologia_quiz_6-2" xml:space="preserve">
+    <value>Não</value>
+  </data>
+  <data name="tipologia_quiz_7-1" xml:space="preserve">
+    <value>Uniforme</value>
+  </data>
+  <data name="tipologia_quiz_7-2" xml:space="preserve">
+    <value>Não Uniforme</value>
+  </data>
+  <data name="tipologia_quiz_8-1" xml:space="preserve">
+    <value>Tabela Price</value>
+  </data>
+  <data name="tipologia_quiz_8-2" xml:space="preserve">
+    <value>Linear</value>
+  </data>
+  <data name="tipologia_quiz_9-1" xml:space="preserve">
+    <value>Linear</value>
+  </data>
+  <data name="tipologia_quiz_9-2" xml:space="preserve">
+    <value>Diferenciada</value>
+  </data>
+  <data name="tipologia_right_lbl1" xml:space="preserve">
+    <value>Ação do usuário</value>
+  </data>
+  <data name="tipologia_right_lbl2" xml:space="preserve">
+    <value>Seleciona a Empresa</value>
+  </data>
+  <data name="tipologia_tituloPag" xml:space="preserve">
+    <value>Tipologia Contrato</value>
+  </data>
+</root>

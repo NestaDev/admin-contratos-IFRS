@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="relatorio_content_tutorial" xml:space="preserve">
+    <value>https://cloud3.webnesta.com/tutorial/ifrs/query/en-US</value>
+  </data>
+  <data name="relatorio_guide_ini" xml:space="preserve">
+    <value>Texto para início sobre Relatório</value>
+  </data>
+  <data name="relatorio_lbl1" xml:space="preserve">
+    <value>Report Name</value>
+  </data>
+  <data name="relatorio_nome_guide" xml:space="preserve">
+    <value>Texto sobre nome</value>
+  </data>
+  <data name="relatorio_query_guide" xml:space="preserve">
+    <value>Texto sobre query</value>
+  </data>
+  <data name="relatorio_tipo_guide" xml:space="preserve">
+    <value>Texto sobre tipo</value>
+  </data>
+  <data name="setup_content_tutorial" xml:space="preserve">
+    <value>https://cloud3.webnesta.com/tutorial/ifrs/facilities/en-US</value>
+  </data>
+  <data name="setup_guide" xml:space="preserve">
+    <value>Reports: Menu where the advanced user will be able to create and manage the report documents of their use. &lt;br /&gt; Manage Users (Administrator Access): &lt;br /&gt; Registration: Management of system users. Password Creation, Deactivation and Reset. &lt;br /&gt; Approvers: Management of Accounts Payable approvers and their associated levels. &lt;br /&gt; Logged User: View of logged users and their last uses. &lt;br /&gt; Store Registration: Area intended for the creation of stores (Companies) and their affiliations, and the possibility of associating users with stores. &lt;br /&gt; System Log: View logs of system changes. Only users who have accepted the LGPD terms can view the changes. &lt;br /&gt; Lessor Portal: Manage the information entered by Lessor through the Portal.</value>
+  </data>
+  <data name="setup_menu1" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="setup_menu1_col1" xml:space="preserve">
+    <value>Report Name</value>
+  </data>
+  <data name="setup_menu1_col2" xml:space="preserve">
+    <value>Type of Report</value>
+  </data>
+  <data name="setup_menu1_col3" xml:space="preserve">
+    <value>Query</value>
+  </data>
+  <data name="setup_menu1_col3-btn" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="setup_menu1_lbl1" xml:space="preserve">
+    <value>Report Management</value>
+  </data>
+  <data name="setup_menu1_lbl2" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="setup_menu2" xml:space="preserve">
+    <value>Users Management</value>
+  </data>
+  <data name="setup_menu2-1" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="setup_menu2-1_col1" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="setup_menu2-1_col2" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="setup_menu2-1_col3" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="setup_menu2-1_col4" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="setup_menu2-1_col5" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="setup_menu2-1_col6" xml:space="preserve">
+    <value>WhatsApp</value>
+  </data>
+  <data name="setup_menu2-1_col7" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="setup_menu2-1_hint1" xml:space="preserve">
+    <value>Deactivate</value>
+  </data>
+  <data name="setup_menu2-1_hint2" xml:space="preserve">
+    <value>Reset Password</value>
+  </data>
+  <data name="setup_menu2-1_hint3" xml:space="preserve">
+    <value>Reactivate</value>
+  </data>
+  <data name="setup_menu2-1_lbl1" xml:space="preserve">
+    <value>Users Management - Registration</value>
+  </data>
+  <data name="setup_menu2-2" xml:space="preserve">
+    <value>Approvers</value>
+  </data>
+  <data name="setup_menu2-2_grid1_col1" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="setup_menu2-2_grid1_col2" xml:space="preserve">
+    <value>UserName</value>
+  </data>
+  <data name="setup_menu2-2_grid1_lbl1" xml:space="preserve">
+    <value>Associated Users</value>
+  </data>
+  <data name="setup_menu2-2_grid2_col1" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="setup_menu2-2_grid2_col2" xml:space="preserve">
+    <value>Start value</value>
+  </data>
+  <data name="setup_menu2-2_grid2_col3" xml:space="preserve">
+    <value>Final value</value>
+  </data>
+  <data name="setup_menu2-2_grid2_lbl1" xml:space="preserve">
+    <value>Approval Profile</value>
+  </data>
+  <data name="setup_menu2-2_lbl1" xml:space="preserve">
+    <value>Users Management - Approvers</value>
+  </data>
+  <data name="setup_menu2-3" xml:space="preserve">
+    <value>Users Logged</value>
+  </data>
+  <data name="setup_menu2-3_grid1_col1" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="setup_menu2-3_grid1_col2" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="setup_menu2-3_grid1_col3" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="setup_menu2-3_grid1_col4" xml:space="preserve">
+    <value>Last Activity</value>
+  </data>
+  <data name="setup_menu2-3_grid1_col5" xml:space="preserve">
+    <value>Module</value>
+  </data>
+  <data name="setup_menu2-3_grid1_col6" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="setup_menu2-3_grid1_lbl1" xml:space="preserve">
+    <value>Users Logged</value>
+  </data>
+  <data name="setup_menu2-3_lbl1" xml:space="preserve">
+    <value>Users Management - Users Logged</value>
+  </data>
+  <data name="setup_menu3" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="setup_menu3-1" xml:space="preserve">
+    <value>Entity Settings</value>
+  </data>
+  <data name="setup_menu3-2" xml:space="preserve">
+    <value>Financial Market</value>
+  </data>
+  <data name="setup_menu3_grid1_col1" xml:space="preserve">
+    <value>Associated User</value>
+  </data>
+  <data name="setup_menu3_grid2_col1" xml:space="preserve">
+    <value>Available User</value>
+  </data>
+  <data name="setup_menu3_lbl1" xml:space="preserve">
+    <value>Entity Settings</value>
+  </data>
+  <data name="setup_menu3_lbl1_guide" xml:space="preserve">
+    <value>Select if the company to register is Headquarters or Branch. &lt;br/&gt; Headquarters does not have any company superior to it &lt;br/&gt; Branch is necessary to select a company in the Group field to be associated</value>
+  </data>
+  <data name="setup_menu3_lbl2" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="setup_menu3_lbl2-opt1" xml:space="preserve">
+    <value>Headquarters</value>
+  </data>
+  <data name="setup_menu3_lbl2-opt2" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="setup_menu3_lbl2_guide" xml:space="preserve">
+    <value>Select the Group to which the company is affiliated, if applicable.</value>
+  </data>
+  <data name="setup_menu3_lbl3" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="setup_menu3_lbl3_guide" xml:space="preserve">
+    <value>Company name related to the company</value>
+  </data>
+  <data name="setup_menu3_lbl4" xml:space="preserve">
+    <value>Company name</value>
+  </data>
+  <data name="setup_menu3_lbl4_guide" xml:space="preserve">
+    <value>Short name referring to the corporate name</value>
+  </data>
+  <data name="setup_menu3_lbl5" xml:space="preserve">
+    <value>Short name</value>
+  </data>
+  <data name="setup_menu3_lbl5_guide" xml:space="preserve">
+    <value>Company registration code, in Brazil the CNPJ code is used.</value>
+  </data>
+  <data name="setup_menu3_lbl6" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="setup_menu3_lbl6_guide" xml:space="preserve">
+    <value>Company registration country</value>
+  </data>
+  <data name="setup_menu3_lbl7" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="setup_menu3_lbl7_guide" xml:space="preserve">
+    <value>Users who are qualified to use this company in the system, to unlink the user it is necessary to double-click the line</value>
+  </data>
+  <data name="setup_menu3_lbl8_guide" xml:space="preserve">
+    <value>Users who are not qualified to use this company in the system, to link the user it is necessary to double-click.</value>
+  </data>
+  <data name="setup_menu3_right_lbl1" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="setup_menu3_right_lbl2" xml:space="preserve">
+    <value>Entity Selection</value>
+  </data>
+  <data name="setup_menu3_right_lbl3" xml:space="preserve">
+    <value>Operation</value>
+  </data>
+  <data name="setup_menu4" xml:space="preserve">
+    <value>System Logs</value>
+  </data>
+  <data name="setup_menu4_col1" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="setup_menu4_col2" xml:space="preserve">
+    <value>Module</value>
+  </data>
+  <data name="setup_menu4_col3" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="setup_menu4_col4" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="setup_menu4_col5" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="setup_menu4_lbl1" xml:space="preserve">
+    <value>System Logs</value>
+  </data>
+  <data name="setup_menu5" xml:space="preserve">
+    <value>Portal Locador</value>
+  </data>
+  <data name="setup_menu6" xml:space="preserve">
+    <value>Framework</value>
+  </data>
+  <data name="setup_menu6-1" xml:space="preserve">
+    <value>Component</value>
+  </data>
+  <data name="setup_menu6-1_lbl1" xml:space="preserve">
+    <value>Framework - Component</value>
+  </data>
+  <data name="setup_menu6-2" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="setup_menu6-2_lbl1" xml:space="preserve">
+    <value>Framework - Product</value>
+  </data>
+  <data name="setup_menu6-3" xml:space="preserve">
+    <value>Contract Basis</value>
+  </data>
+  <data name="setup_menu6-3_lbl1" xml:space="preserve">
+    <value>Framework - Contract Basis</value>
+  </data>
+  <data name="setup_menu6-4" xml:space="preserve">
+    <value>Modality</value>
+  </data>
+  <data name="setup_menu6-4_lbl1" xml:space="preserve">
+    <value>Framework - Modality</value>
+  </data>
+  <data name="setup_menu6-5" xml:space="preserve">
+    <value>Events</value>
+  </data>
+  <data name="setup_menu6-5_lbl1" xml:space="preserve">
+    <value>Framework - Events</value>
+  </data>
+</root>

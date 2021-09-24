@@ -1,0 +1,196 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebNesta_IRFS_16.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="pt">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Meu aplicativo ASP.NET</title>
+    <script src="https://kit.fontawesome.com/b5ea42977c.js" crossorigin="anonymous"></script>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+        <%: Scripts.Render("~/bundles/jquery") %>
+        <%: Styles.Render("~/Content") %>
+    </asp:PlaceHolder>
+
+    <webopt:BundleReference runat="server" Path="~/Content" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript">
+        function openModal() {
+            $('#myModal').modal('show');
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server" EnableScriptGlobalization="true">
+            <Scripts>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+            </Scripts>
+        </asp:ScriptManager>
+        <asp:HiddenField ID="hfControle" runat="server" />
+        <asp:HiddenField ID="hfCurrentPage" runat="server" />
+        <asp:HiddenField ID="hfOperacao" runat="server" />
+        <asp:HiddenField ID="hf2sides" runat="server" />
+        <div id="site">
+            <div id="header">
+                <table style="width: 100%">
+                    <tr>
+                        <td style="width: 80%">
+                            <h1>
+                                <asp:Label ID="Label1" runat="server" Text="Nesta" ForeColor="Black"></asp:Label></h1>
+                            <asp:Label ID="lblUser" runat="server" Text="Label"></asp:Label>
+                        </td>
+                        <td style="width: 20%; text-align: right">
+                            <asp:DropDownList CssClass="form-control-sm" ID="ddlLanguages" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlLanguages_SelectedIndexChanged">
+                                <asp:ListItem Text="English" Value="en-US" />
+                                <asp:ListItem Text="Español" Value="es-ES" />
+                                <asp:ListItem Text="Português" Value="pt-BR" />
+                            </asp:DropDownList>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="conteudo" class="container-fluid">
+                <div class="row">
+                    <div class="col-2 left_side">
+                        <table style="width: 99%; margin-left: 5%; margin-top: 5%">
+                            <tr>
+                                <td style="width: 50%">
+                                    <asp:Button ID="Button1" CssClass="mb-4 btn-app" runat="server" Text="Lista Contratos" /></td>
+                                <td style="width: 50%">
+                                    <asp:Button ID="Button2" CssClass="mb-4 btn-app" runat="server" Text="Basis" /></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 50%">
+                                    <asp:Button ID="btnAquisicao" CssClass="mb-4 btn-app" runat="server" Text="Criação Contrato" OnClick="Button3_Click" /></td>
+                                <td style="width: 50%">
+                                    <asp:Button ID="Button4" CssClass="mb-4 btn-app" runat="server" Text="Contábil" /></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 50%">
+                                    <asp:Button ID="Button5" CssClass="mb-4 btn-app" runat="server" Text="Nesta Ticket" /></td>
+                                <td style="width: 50%">
+                                    <asp:Button ID="Button6" CssClass="mb-4 btn-app" runat="server" Text="Relatórios" /></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 50%">
+                                    <asp:Button ID="Button7" CssClass="mb-4 btn-app" runat="server" Text="Nesta Learning" /></td>
+                                <td style="width: 50%">
+                                    <asp:Button ID="Button8" CssClass="mb-4 btn-app" runat="server" Text="Contrato Físico" /></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-10 w-100">
+                        <div class="row">
+                           <%if (hf2sides.Value != "x")
+                               { %> <div class="col-10 w-100 left_side"> <%} else { %> <div class="col-12 w-100"> <%}%>
+                                <asp:Panel ID="Panel3" Height="600px" Width="100%" runat="server" Wrap="false" ScrollBars="Vertical">
+                                    <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+                                </asp:Panel>
+                            <%if (hf2sides.Value != "x")
+                                { %></div><div class="col-2 w-100"> <%}
+    else
+    { %><%} %>
+                                <asp:ContentPlaceHolder ID="MainContentSide" runat="server"></asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <asp:Panel ID="Panel2" runat="server">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <table style="width: 70%; margin-left: 10px">
+                                <tr>
+                                    <td style="width: 100%" colspan="2">
+                                        <h6>
+                                            <asp:Label ID="Label2" runat="server" Text="SUPORTE"></asp:Label></h6>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%">
+                                        <asp:LinkButton ID="lnkFornecedores" Font-Size="Small" runat="server" OnClick="lnkFornecedores_Click">+ Fornecedores</asp:LinkButton></td>
+                                    <td style="width: 50%">
+                                        <asp:LinkButton ID="lnkIndex" Font-Size="Small" runat="server" OnClick="lnkIndex_Click1">+ Indexadores</asp:LinkButton></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%">
+                                        <asp:LinkButton ID="lnkClasseCont" Font-Size="Small" runat="server" OnClick="lnkClasseCont_Click">+ Classe Contábil</asp:LinkButton></td>
+                                    <td style="width: 50%"><a href="#">
+                                        <asp:Label ID="Label6" Font-Size="Small" runat="server" Text="+ Encerramento contábil"></asp:Label></a></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%"><a href="#">
+                                        <asp:Label ID="Label7" Font-Size="Small" runat="server" Text="+ Carteira"></asp:Label></a></td>
+                                    <td style="width: 50%"><a href="#">
+                                        <asp:Label ID="Label12" Font-Size="Small" runat="server" Text="+ Interface ERP"></asp:Label></a></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%"><a href="#">
+                                        <asp:Label ID="Label9" Font-Size="Small" runat="server" Text="+ Fórmulas"></asp:Label></a></td>
+                                    <td style="width: 50%"><a href="#">
+                                        <asp:Label ID="Label10" Font-Size="Small" runat="server" Text="+ Recálculo"></asp:Label></a></td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 50%"></td>
+                                    <td style="width: 50%"></td>
+                                </tr>
+                            </table>
+
+                        </div>
+                        <div class="col-lg-6">
+                        </div>
+                    </div>
+                </asp:Panel>
+            </div>
+        </div>
+        <!--Bootstrap Modal (Dialog Box / Pop-up window) Example-->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <%--<button type="button" class="close" data-dismiss="modal">&times;</button>--%>
+                        <asp:Button ID="btnClose" runat="server" CssClass="close btn btn-sm btn-outline-light" Text="X" Font-Size="Small" />
+                    </div>
+                    <div class="modal-body">
+                        <table style="width: 100%">
+                            <tr>
+                                <td>
+                                    <asp:Label ID="lblMsgException" runat="server" Text="Label"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: right">
+                                    <asp:Button ID="btnOK" runat="server" CssClass="btn btn-sm btn-primary" Visible="false" Text="OK" OnClick="btnOK_Click" />
+                                </td>
+                            </tr>
+                        </table>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

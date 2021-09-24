@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="fornecedor_content_tutorial" xml:space="preserve">
+    <value>https://cloud3.webnesta.com/tutorial/ifrs/fornecedores/pt-BR</value>
+  </data>
+  <data name="fornecedor_guide_acao" xml:space="preserve">
+    <value />
+  </data>
+  <data name="fornecedor_guide_agencia" xml:space="preserve">
+    <value>Informe o código numérico da agência vinculada à instituição financeira principal para concretização das movimentações financeiras dos contratos associados ao fornecedor</value>
+  </data>
+  <data name="fornecedor_guide_apelido" xml:space="preserve">
+    <value>Informe a descrição abreviada do fornecedor. Para os contratos regidos pelas leis brasileiras e em consonância à LGPD - Lei Geral de Proteção de Dados (Lei nº 13.709/2018) – quando a personalidade jurídica do fornecedor for Pessoa Jurídica, recomendamos preencher este campo com o Nome Fantasia da empresa ou repetir a Razão Social, e quando for Pessoa Física, recomendamos preencher com as iniciais do nome ou com dados mascarados.</value>
+  </data>
+  <data name="fornecedor_guide_banco" xml:space="preserve">
+    <value>Selecione a instituição financeira (banco) principal para concretização das movimentações financeiras dos contratos associados ao fornecedor</value>
+  </data>
+  <data name="fornecedor_guide_contac" xml:space="preserve">
+    <value>Informe o código numérico da conta (corrente ou poupança) vinculada à instituição financeira principal para concretização das movimentações financeiras dos contratos associados ao fornecedor.</value>
+  </data>
+  <data name="fornecedor_guide_dv1" xml:space="preserve">
+    <value>Informe o dígito verificador (DV) da agência vinculada à instituição financeira principal para concretização das movimentações financeiras dos contratos associados ao fornecedor.</value>
+  </data>
+  <data name="fornecedor_guide_dv2" xml:space="preserve">
+    <value>Informe o dígito verificador (DV) da conta (corrente ou poupança) vinculada à instituição financeira principal para concretização das movimentações financeiras dos contratos associados ao fornecedor.</value>
+  </data>
+  <data name="fornecedor_guide_id" xml:space="preserve">
+    <value>Informe um código alfanumérico com características de chave exclusiva para identificar o fornecedor de forma única dentro do sistema. Para os contratos regidos pelas leis brasileiras e em consonância à LGPD - Lei Geral de Proteção de Dados (Lei nº 13.709/2018) – o sistema NESTA não aplica algoritmos de validação de CNPJ ou de CPF sobre o conteúdo deste campo, justamente por ser tratar de uma chave identificadora informada e cadastrada pelo usuário, podendo conter letras, números e caracteres especiais sem obrigatoriedade de máscara de dados</value>
+    <comment>Página Fornecedores descrição campo guide </comment>
+  </data>
+  <data name="fornecedor_guide_ini" xml:space="preserve">
+    <value>O cadastro de um contrato exige que o FORNECEDOR esteja cadastrado. Cadastre os fornecedores previamente.</value>
+  </data>
+  <data name="fornecedor_guide_nome" xml:space="preserve">
+    <value>Informe a descrição do fornecedor. Para os contratos regidos pelas leis brasileiras e em consonância à LGPD - Lei Geral de Proteção de Dados (Lei nº 13.709/2018) – quando a personalidade jurídica do fornecedor for Pessoa Jurídica, recomendamos preencher este campo com a Razão Social da empresa, e quando for Pessoa Física, recomendamos preencher com as iniciais do nome ou com dados mascarados.</value>
+    <comment>Página Fornecedores descrição campo guide</comment>
+  </data>
+  <data name="fornecedor_guide_pais" xml:space="preserve">
+    <value>Selecione o país de origem do fornecedor</value>
+    <comment>Página Fornecedores descrição campo guide</comment>
+  </data>
+  <data name="fornecedor_guide_titulo" xml:space="preserve">
+    <value>Fornecedores</value>
+  </data>
+  <data name="fornecedor_label_1" xml:space="preserve">
+    <value>ID - Fornecedor</value>
+    <comment>Página Fornecedores </comment>
+  </data>
+  <data name="fornecedor_label_10" xml:space="preserve">
+    <value>Conta Corrente</value>
+  </data>
+  <data name="fornecedor_label_11" xml:space="preserve">
+    <value>DV</value>
+  </data>
+  <data name="fornecedor_label_12" xml:space="preserve">
+    <value>Destino Remessa</value>
+  </data>
+  <data name="fornecedor_label_12-opt1" xml:space="preserve">
+    <value>Selecione</value>
+  </data>
+  <data name="fornecedor_label_12-opt2" xml:space="preserve">
+    <value>Brasil</value>
+  </data>
+  <data name="fornecedor_label_12-opt3" xml:space="preserve">
+    <value>Exterior</value>
+  </data>
+  <data name="fornecedor_label_12_guide" xml:space="preserve">
+    <value>Informe o destino da remessa ao fornecedor, se será no exterior ou no Brasil.</value>
+  </data>
+  <data name="fornecedor_label_13" xml:space="preserve">
+    <value>Nome Contato</value>
+  </data>
+  <data name="fornecedor_label_13_guide" xml:space="preserve">
+    <value>Informe o primeiro nome da pessoa responsável pelas tratativas relacionadas aos contratos associados ao fornecedor.</value>
+  </data>
+  <data name="fornecedor_label_14" xml:space="preserve">
+    <value>Email do Contato</value>
+  </data>
+  <data name="fornecedor_label_14_guide" xml:space="preserve">
+    <value>Informe o endereço eletrônico (e-mail) da pessoa responsável pelas tratativas relacionadas aos contratos associados ao fornecedor</value>
+  </data>
+  <data name="fornecedor_label_15" xml:space="preserve">
+    <value>WhatsApp</value>
+  </data>
+  <data name="fornecedor_label_15_guide" xml:space="preserve">
+    <value>Informe o número do WhatsApp da pessoa responsável pelas tratativas relacionadas aos contratos associados ao fornecedor</value>
+  </data>
+  <data name="fornecedor_label_16" xml:space="preserve">
+    <value>Chave PIX</value>
+  </data>
+  <data name="fornecedor_label_16_guide" xml:space="preserve">
+    <value>Informe a Chave PIX vinculada à instituição financeira principal para concretização das movimentações financeiras dos contratos associados ao fornecedor.</value>
+  </data>
+  <data name="fornecedor_label_2" xml:space="preserve">
+    <value>Nome / Razão Social</value>
+    <comment>Página Fornecedores</comment>
+  </data>
+  <data name="fornecedor_label_3" xml:space="preserve">
+    <value>País</value>
+    <comment>Página Fornecedores</comment>
+  </data>
+  <data name="fornecedor_label_4" xml:space="preserve">
+    <value>Apelido</value>
+  </data>
+  <data name="fornecedor_label_5" xml:space="preserve">
+    <value>Ação do usuário</value>
+  </data>
+  <data name="fornecedor_label_6" xml:space="preserve">
+    <value>Selecione o Fornecedor</value>
+  </data>
+  <data name="fornecedor_label_7" xml:space="preserve">
+    <value>Banco</value>
+  </data>
+  <data name="fornecedor_label_8" xml:space="preserve">
+    <value>Agência</value>
+  </data>
+  <data name="fornecedor_label_9" xml:space="preserve">
+    <value>DV</value>
+  </data>
+  <data name="fornecedor_tituloPag" xml:space="preserve">
+    <value>Fornecedores</value>
+    <comment>Página Fornecedores Título Geral</comment>
+  </data>
+</root>

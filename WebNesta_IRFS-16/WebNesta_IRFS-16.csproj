@@ -1,0 +1,1592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42366606-C5B9-42B9-825E-585321D92FE2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebNesta_IRFS_16</RootNamespace>
+    <AssemblyName>WebNesta_IRFS-16</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44343</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>3.6</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=19.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.19.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap, Version=4.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.4.3.1\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML, Version=0.95.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.95.3\lib\net46\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v20.1.Web, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v20.1.Web.WebForms, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Docs.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.1.Drawing, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Export, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.SpellChecker.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Spreadsheet.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxRichEdit.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxTreeList.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Bootstrap.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Resources.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.1.Web, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.1.Web, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.1.Web.WebForms, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.10.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Api.CommonProtos, Version=2.2.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Api.CommonProtos.2.2.0\lib\net461\Google.Api.CommonProtos.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Api.Gax, Version=3.2.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Api.Gax.3.2.0\lib\net461\Google.Api.Gax.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Api.Gax.Grpc, Version=3.2.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Api.Gax.Grpc.3.2.0\lib\net461\Google.Api.Gax.Grpc.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.51.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.51.0\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.48.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.48.0\lib\net45\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.48.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.48.0\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.51.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.51.0\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.51.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.51.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Cloud.TextToSpeech.V1, Version=2.1.0.0, Culture=neutral, PublicKeyToken=185c282632e132a0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Cloud.TextToSpeech.V1.2.1.0\lib\net461\Google.Cloud.TextToSpeech.V1.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.15.8.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.15.8\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Grpc.Auth, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d754f35622e28bad, processorArchitecture=MSIL">
+      <HintPath>..\packages\Grpc.Auth.2.31.0\lib\net45\Grpc.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Grpc.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d754f35622e28bad, processorArchitecture=MSIL">
+      <HintPath>..\packages\Grpc.Core.2.37.0\lib\net45\Grpc.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Grpc.Core.Api, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d754f35622e28bad, processorArchitecture=MSIL">
+      <HintPath>..\packages\Grpc.Core.Api.2.37.0\lib\net45\Grpc.Core.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.11.28.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.11.28\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.JsonWebTokens.5.3.0\lib\net461\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Logging.5.3.0\lib\net461\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Protocols.5.3.0\lib\net461\Microsoft.IdentityModel.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.5.3.0\lib\net461\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Tokens.5.3.0\lib\net461\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Access.Dao, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Access.Dao.15.0.4420.1017\lib\net20\Microsoft.Office.Interop.Access.Dao.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.5.3.0\lib\net461\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Packaging.4.0.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.3.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Web.DemoData.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Aquisicao.aspx" />
+    <Content Include="Boletagem.aspx" />
+    <Content Include="Book.aspx" />
+    <Content Include="Carteira.aspx" />
+    <Content Include="ClasseContabil.aspx" />
+    <Content Include="ClasseProduto.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\all.css" />
+    <Content Include="Content\all.min.css" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\brands.css" />
+    <Content Include="Content\brands.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\fontawesome.css" />
+    <Content Include="Content\fontawesome.min.css" />
+    <Content Include="Content\regular.css" />
+    <Content Include="Content\regular.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\solid.css" />
+    <Content Include="Content\solid.min.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="Content\svg-with-js.css" />
+    <Content Include="Content\svg-with-js.min.css" />
+    <Content Include="Content\v4-shims.css" />
+    <Content Include="Content\v4-shims.min.css" />
+    <Content Include="Contrato.aspx" />
+    <Content Include="Contrato_Umbrella.aspx" />
+    <Content Include="DadosVerba.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Feriados.aspx" />
+    <Content Include="Formula.aspx" />
+    <Content Include="Fornecedores.aspx" />
+    <Content Include="GED\Icones\doc.png" />
+    <Content Include="GED\Icones\image.png" />
+    <Content Include="GED\Icones\pdf.png" />
+    <Content Include="GED\Icones\txt.png" />
+    <Content Include="GED\Icones\word.png" />
+    <Content Include="Global.asax" />
+    <Content Include="icons\BRASIL.png" />
+    <Content Include="icons\chamado.png" />
+    <Content Include="icons\checked.png" />
+    <Content Include="icons\CONTRATO.png" />
+    <Content Include="icons\england.png" />
+    <Content Include="icons\ESPANHA.png" />
+    <Content Include="icons\exit.png" />
+    <Content Include="icons\facebook.png" />
+    <Content Include="icons\FALECONOSCO.png" />
+    <Content Include="icons\FECH_CONTABIL.png" />
+    <Content Include="icons\fluxo_oper.png" />
+    <Content Include="icons\frame.png" />
+    <Content Include="icons\grid_alterar.png" />
+    <Content Include="icons\grid_analitico.png" />
+    <Content Include="icons\grid_aprova.png" />
+    <Content Include="icons\grid_notify.png" />
+    <Content Include="icons\grid_recusa.png" />
+    <Content Include="icons\HELP.png" />
+    <Content Include="icons\HOMEPAGE.png" />
+    <Content Include="icons\icons8-caixa-de-seleção-desmarcada-40.png" />
+    <Content Include="icons\icons8-caixa-de-seleção-marcada-40.png" />
+    <Content Include="icons\icons8-csv-30.png" />
+    <Content Include="icons\icons8-filter-20.png" />
+    <Content Include="icons\icons8-microsoft-excel-30.png" />
+    <Content Include="icons\icons8-open-view-20.png" />
+    <Content Include="icons\icons8-password-reset-16.png" />
+    <Content Include="icons\icons8-pdf-30.png" />
+    <Content Include="icons\icons8-profit-report-40.png" />
+    <Content Include="icons\icons8-question-mark-40.png" />
+    <Content Include="icons\icons8-seta-para-expandir-30.png" />
+    <Content Include="icons\icons8-seta-para-recolher-30.png" />
+    <Content Include="icons\icons8-xls-30.png" />
+    <Content Include="icons\instagram.png" />
+    <Content Include="icons\MANUAL.png" />
+    <Content Include="icons\menu\about.png" />
+    <Content Include="icons\menu\facilities.png" />
+    <Content Include="icons\menu\fundo_menu.png" />
+    <Content Include="icons\menu\realestate.png" />
+    <Content Include="icons\menu\aquisicao.png" />
+    <Content Include="icons\menu\ICONE CASINHA DO QUICK GUIDE.png" />
+    <Content Include="icons\menu\fluxo.png" />
+    <Content Include="icons\menu\faleconosno.png" />
+    <Content Include="icons\menu\home.png" />
+    <Content Include="icons\menu\logout.png" />
+    <Content Include="icons\menu\operacional.png" />
+    <Content Include="icons\menu\usuario.png" />
+    <Content Include="icons\menu\emissao.png" />
+    <Content Include="icons\menu\usuarios.png" />
+    <Content Include="icons\menu\workflow.png" />
+    <Content Include="icons\ok.png" />
+    <Content Include="icons\icons8-office-16.png" />
+    <Content Include="icons\lupa.png" />
+    <Content Include="icons\ORCAMENTO.png" />
+    <Content Include="icons\organization.png" />
+    <Content Include="icons\RELATORIOS.png" />
+    <Content Include="icons\SETUP.png" />
+    <Content Include="icons\TUTORIAL.png" />
+    <Content Include="icons\twitter.png" />
+    <Content Include="icons\unchecked.png" />
+    <Content Include="icons\USA.png" />
+    <Content Include="icons\usuarios2.png" />
+    <Content Include="icons\whatsapp.png" />
+    <Content Include="img\cancel.png" />
+    <Content Include="img\ENGRENAGEM.png" />
+    <Content Include="img\facebook-40.png" />
+    <Content Include="img\FIGURA MAIOR TELA BOLETAGEM.png" />
+    <Content Include="img\fnd_about.png" />
+    <Content Include="img\fnd_about_nesta.png" />
+    <Content Include="img\FUNDO DA TELA DO BOLETAGEM.png" />
+    <Content Include="img\fundo.png" />
+    <Content Include="img\fundo2.png" />
+    <Content Include="img\fundo_engrenagens.png" />
+    <Content Include="img\icons8-arrow-pointing-left-40.png" />
+    <Content Include="img\icons8-brazil-30.png" />
+    <Content Include="img\icons8-brazil-96.png" />
+    <Content Include="img\icons8-delete-bin-32.png" />
+    <Content Include="img\icons8-duplicate-40.png" />
+    <Content Include="img\icons8-edit-80.png" />
+    <Content Include="img\icons8-email-64.png" />
+    <Content Include="img\icons8-office-16.png" />
+    <Content Include="img\icons8-organization-16.png" />
+    <Content Include="img\icons8-plus-20.png" />
+    <Content Include="img\icons8-recyle-32.png" />
+    <Content Include="img\icons8-spain-30.png" />
+    <Content Include="img\icons8-spain-flag-96.png" />
+    <Content Include="img\icons8-usa-30.png" />
+    <Content Include="img\icons8-usa-96.png" />
+    <Content Include="img\icons8-whatsapp-64.png" />
+    <Content Include="img\img_app.png" />
+    <Content Include="img\img_footer.png" />
+    <Content Include="img\instagram-40.png" />
+    <Content Include="img\left_arrow.png" />
+    <Content Include="img\loadingImage.gif" />
+    <Content Include="img\logo_BK.jpg" />
+    <Content Include="img\lupa.png" />
+    <Content Include="img\MARCA NESTA FINAL BOLETAGEM.png" />
+    <Content Include="img\MENU GERAL VERSÃO 8.png" />
+    <Content Include="img\ok.png" />
+    <Content Include="img\right_arrow.png" />
+    <Content Include="img\rodape.png" />
+    <Content Include="img\rodape2.png" />
+    <Content Include="img\Screenshot_1.jpg" />
+    <Content Include="img\Screenshot_2.jpg" />
+    <Content Include="img\twitter-40.png" />
+    <Content Include="img\whatsapp-40.png" />
+    <Content Include="img\xls.jpg" />
+    <Content Include="Importador.aspx" />
+    <Content Include="Indice.aspx" />
+    <Content Include="Interface.aspx" />
+    <Content Include="invoice.aspx" />
+    <Content Include="Item.aspx" />
+    <Content Include="JurosETTJ.aspx" />
+    <Content Include="LayoutOCR.aspx" />
+    <Content Include="LeituraOCR.aspx" />
+    <Content Include="Monitoramento.aspx" />
+    <Content Include="Oops.aspx" />
+    <Content Include="PassivosAquisicao.aspx" />
+    <Content Include="PassivosAquisicao2.aspx" />
+    <Content Include="PlanoContas.aspx" />
+    <Content Include="RealEstate.aspx" />
+    <Content Include="Relatorios.aspx" />
+    <Content Include="RequisitaContrato.aspx" />
+    <Content Include="Setup.aspx" />
+    <Content Include="TesteFileMng.aspx" />
+    <Content Include="TesteReport.aspx" />
+    <Content Include="TesteXAF.aspx" />
+    <Content Include="UserProfile.aspx" />
+    <Content Include="Utilities.aspx" />
+    <Content Include="Verbas.aspx" />
+    <Content Include="Workflow.aspx" />
+    <Content Include="XMLFile1.xml" />
+    <Content Include="xmlVersion\versionDb.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\ETTJ.xlsx" />
+    <Content Include="Content\Google_Credential.json" />
+    <Content Include="Google_Credential.json" />
+    <Content Include="KeyFiles\trans-campus-246715-29b819c67877.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="KeyFiles\trans-campus-246715-5d93e0e44ff1.p12">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Image1.bmp" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="FluxoCaixa.xsc">
+      <DependentUpon>FluxoCaixa.xsd</DependentUpon>
+    </Content>
+    <Content Include="SetupQueryDetail.aspx" />
+    <Content Include="testeSP.aspx" />
+    <Content Include="Tipologia.aspx" />
+    <Content Include="webfonts\fa-brands-400.svg" />
+    <Content Include="webfonts\fa-regular-400.svg" />
+    <Content Include="webfonts\fa-solid-900.svg" />
+    <Content Include="Error.Master" />
+    <None Include="FluxoCaixa.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FluxoCaixa.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="FluxoCaixa.xss">
+      <DependentUpon>FluxoCaixa.xsd</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\inputmask\bindings\inputmask.binding.js" />
+    <Content Include="Scripts\inputmask\dependencyLibs\inputmask.dependencyLib.jqlite.js" />
+    <Content Include="Scripts\inputmask\dependencyLibs\inputmask.dependencyLib.jquery.js" />
+    <Content Include="Scripts\inputmask\dependencyLibs\inputmask.dependencyLib.js" />
+    <Content Include="Scripts\inputmask\global\window.js" />
+    <Content Include="Scripts\inputmask\inputmask.date.extensions.js" />
+    <Content Include="Scripts\inputmask\inputmask.extensions.js" />
+    <Content Include="Scripts\inputmask\inputmask.js" />
+    <Content Include="Scripts\inputmask\inputmask.numeric.extensions.js" />
+    <Content Include="Scripts\inputmask\jquery.inputmask.js" />
+    <Content Include="Scripts\inputmask\min\bindings\inputmask.binding.min.js" />
+    <Content Include="Scripts\inputmask\min\dependencyLibs\inputmask.dependencyLib.jqlite.min.js" />
+    <Content Include="Scripts\inputmask\min\dependencyLibs\inputmask.dependencyLib.jquery.min.js" />
+    <Content Include="Scripts\inputmask\min\dependencyLibs\inputmask.dependencyLib.min.js" />
+    <Content Include="Scripts\inputmask\min\global\window.min.js" />
+    <Content Include="Scripts\inputmask\min\inputmask.date.extensions.min.js" />
+    <Content Include="Scripts\inputmask\min\inputmask.extensions.min.js" />
+    <Content Include="Scripts\inputmask\min\inputmask.min.js" />
+    <Content Include="Scripts\inputmask\min\inputmask.numeric.extensions.min.js" />
+    <Content Include="Scripts\inputmask\min\jquery.inputmask.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\jquery.maskedinput.js" />
+    <Content Include="Scripts\jquery.maskedinput.min.js" />
+    <Content Include="Scripts\jquery.maskMoney.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Site.Master" />
+    <None Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <Content Include="Site.Mobile.Master" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="webfonts\fa-brands-400.eot" />
+    <Content Include="webfonts\fa-brands-400.ttf" />
+    <Content Include="webfonts\fa-brands-400.woff" />
+    <Content Include="webfonts\fa-brands-400.woff2" />
+    <Content Include="webfonts\fa-regular-400.eot" />
+    <Content Include="webfonts\fa-regular-400.ttf" />
+    <Content Include="webfonts\fa-regular-400.woff" />
+    <Content Include="webfonts\fa-regular-400.woff2" />
+    <Content Include="webfonts\fa-solid-900.eot" />
+    <Content Include="webfonts\fa-solid-900.ttf" />
+    <Content Include="webfonts\fa-solid-900.woff" />
+    <Content Include="webfonts\fa-solid-900.woff2" />
+    <Content Include="webfonts\ARLRDBD.TTF" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\Aquisicao.pt.designer.cs">
+      <DependentUpon>Aquisicao.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Aquisicao.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Aquisicao.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Boletagem.pt.designer.cs">
+      <DependentUpon>Boletagem.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Book.pt.designer.cs">
+      <DependentUpon>Book.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Book.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Book.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Carteira.pt.designer.cs">
+      <DependentUpon>Carteira.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\ClasseContabil.pt.designer.cs">
+      <DependentUpon>ClasseContabil.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\ClasseProduto.pt.designer.cs">
+      <DependentUpon>ClasseProduto.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\DadosVerba.pt.designer.cs">
+      <DependentUpon>DadosVerba.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\ETTJ.pt.designer.cs">
+      <DependentUpon>ETTJ.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Formulas.pt.designer.cs">
+      <DependentUpon>Formulas.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Fornecedores.pt.designer.cs">
+      <DependentUpon>Fornecedores.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\GlobalResource.pt.designer.cs">
+      <DependentUpon>GlobalResource.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Indice.pt.designer.cs">
+      <DependentUpon>Indice.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Monitoramento.pt.designer.cs">
+      <DependentUpon>Monitoramento.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\OCRTools.pt.designer.cs">
+      <DependentUpon>OCRTools.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\PassivosAquisicao.pt.designer.cs">
+      <DependentUpon>PassivosAquisicao.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\PassivosAquisicao2.pt.designer.cs">
+      <DependentUpon>PassivosAquisicao2.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\PlanoContas.pt.designer.cs">
+      <DependentUpon>PlanoContas.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\RealEstate.pt.designer.cs">
+      <DependentUpon>RealEstate.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Relatorios.pt.designer.cs">
+      <DependentUpon>Relatorios.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\RequisitaContrato.pt.designer.cs">
+      <DependentUpon>RequisitaContrato.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\RequisitaContrato.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RequisitaContrato.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Setup.pt.designer.cs">
+      <DependentUpon>Setup.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\SpeechTexts.pt.designer.cs">
+      <DependentUpon>SpeechTexts.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\SpeechTexts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SpeechTexts.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Tipologia.pt.designer.cs">
+      <DependentUpon>Tipologia.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserProfile.pt.designer.cs">
+      <DependentUpon>UserProfile.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserProfile.designer.cs">
+      <DependentUpon>UserProfile.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Setup.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Setup.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Utilities.pt.designer.cs">
+      <DependentUpon>Utilities.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Utilities.designer.cs">
+      <DependentUpon>Utilities.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\ETTJ.designer.cs">
+      <DependentUpon>ETTJ.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Carteira.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Carteira.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ClasseContabil.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClasseContabil.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ClasseProduto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClasseProduto.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\DadosVerba.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DadosVerba.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Formulas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Formulas.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Fornecedores.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fornecedores.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Indice.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Indice.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Boletagem.designer.cs">
+      <DependentUpon>Boletagem.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\OCRTools.designer.cs">
+      <DependentUpon>OCRTools.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Verbas.pt.designer.cs">
+      <DependentUpon>Verbas.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Verbas.designer.cs">
+      <DependentUpon>Verbas.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Monitoramento.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Monitoramento.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\PassivosAquisicao2.designer.cs">
+      <DependentUpon>PassivosAquisicao2.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\PassivosAquisicao.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PassivosAquisicao.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\PlanoContas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlanoContas.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RealEstate.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RealEstate.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Relatorios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Relatorios.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Tipologia.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tipologia.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Workflow.pt.designer.cs">
+      <DependentUpon>Workflow.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Workflow.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Workflow.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Aquisicao.aspx.cs">
+      <DependentUpon>Aquisicao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aquisicao.aspx.designer.cs">
+      <DependentUpon>Aquisicao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Boletagem.aspx.cs">
+      <DependentUpon>Boletagem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Boletagem.aspx.designer.cs">
+      <DependentUpon>Boletagem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Book.aspx.cs">
+      <DependentUpon>Book.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Book.aspx.designer.cs">
+      <DependentUpon>Book.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carteira.aspx.cs">
+      <DependentUpon>Carteira.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carteira.aspx.designer.cs">
+      <DependentUpon>Carteira.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClasseProduto.aspx.cs">
+      <DependentUpon>ClasseProduto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClasseProduto.aspx.designer.cs">
+      <DependentUpon>ClasseProduto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contrato.aspx.cs">
+      <DependentUpon>Contrato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contrato.aspx.designer.cs">
+      <DependentUpon>Contrato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contrato_Umbrella.aspx.cs">
+      <DependentUpon>Contrato_Umbrella.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contrato_Umbrella.aspx.designer.cs">
+      <DependentUpon>Contrato_Umbrella.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DadosVerba.aspx.cs">
+      <DependentUpon>DadosVerba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DadosVerba.aspx.designer.cs">
+      <DependentUpon>DadosVerba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Elements\BBox.cs" />
+    <Compile Include="Elements\hChar.cs" />
+    <Compile Include="Elements\hDocument.cs" />
+    <Compile Include="Elements\hLine.cs" />
+    <Compile Include="Elements\hOcrClass.cs" />
+    <Compile Include="Elements\hPage.cs" />
+    <Compile Include="Elements\hParagraph.cs" />
+    <Compile Include="Elements\hWord.cs" />
+    <Compile Include="Elements\Parser.cs" />
+    <Compile Include="Error.Master.cs">
+      <DependentUpon>Error.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.Master.designer.cs">
+      <DependentUpon>Error.Master</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GlobalResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalResource.resx</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Feriados.aspx.cs">
+      <DependentUpon>Feriados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feriados.aspx.designer.cs">
+      <DependentUpon>Feriados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formula.aspx.cs">
+      <DependentUpon>Formula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formula.aspx.designer.cs">
+      <DependentUpon>Formula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GCalendar.cs" />
+    <Compile Include="Holidays.cs" />
+    <Compile Include="ImageProcessor\Deskew.cs" />
+    <Compile Include="ImageProcessor\GhostScript.cs" />
+    <Compile Include="ImageProcessor\ImageMagick.cs" />
+    <Compile Include="ImageProcessor\ImageProcessor.cs" />
+    <Compile Include="ImageProcessor\JBig2.cs" />
+    <Compile Include="ImageProcessor\OsUtil.cs" />
+    <Compile Include="Importador.aspx.cs">
+      <DependentUpon>Importador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Importador.aspx.designer.cs">
+      <DependentUpon>Importador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Indice.aspx.cs">
+      <DependentUpon>Indice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Indice.aspx.designer.cs">
+      <DependentUpon>Indice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interface.aspx.cs">
+      <DependentUpon>Interface.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interface.aspx.designer.cs">
+      <DependentUpon>Interface.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="invoice.aspx.cs">
+      <DependentUpon>invoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="invoice.aspx.designer.cs">
+      <DependentUpon>invoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Item.aspx.cs">
+      <DependentUpon>Item.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Item.aspx.designer.cs">
+      <DependentUpon>Item.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JurosETTJ.aspx.cs">
+      <DependentUpon>JurosETTJ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JurosETTJ.aspx.designer.cs">
+      <DependentUpon>JurosETTJ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutOCR.aspx.cs">
+      <DependentUpon>LayoutOCR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LayoutOCR.aspx.designer.cs">
+      <DependentUpon>LayoutOCR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeituraOCR.aspx.cs">
+      <DependentUpon>LeituraOCR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeituraOCR.aspx.designer.cs">
+      <DependentUpon>LeituraOCR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Monitoramento.aspx.cs">
+      <DependentUpon>Monitoramento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Monitoramento.aspx.designer.cs">
+      <DependentUpon>Monitoramento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PassivosAquisicao.aspx.designer.cs">
+      <DependentUpon>PassivosAquisicao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PassivosAquisicao2.aspx.cs">
+      <DependentUpon>PassivosAquisicao2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PassivosAquisicao2.aspx.designer.cs">
+      <DependentUpon>PassivosAquisicao2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pdf\PageSizes.cs" />
+    <Compile Include="Pdf\PdfCompressor.cs" />
+    <Compile Include="Pdf\PdfCreator.cs" />
+    <Compile Include="Pdf\PdfReader.cs" />
+    <Compile Include="Pdf\PDFSettings.cs" />
+    <Compile Include="PlanoContas.aspx.cs">
+      <DependentUpon>PlanoContas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlanoContas.aspx.designer.cs">
+      <DependentUpon>PlanoContas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RealEstate.aspx.cs">
+      <DependentUpon>RealEstate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RealEstate.aspx.designer.cs">
+      <DependentUpon>RealEstate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistraLog.cs" />
+    <Compile Include="Relatorios.aspx.cs">
+      <DependentUpon>Relatorios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Relatorios.aspx.designer.cs">
+      <DependentUpon>Relatorios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report1.Designer.cs">
+      <DependentUpon>Report1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequisitaContrato.aspx.cs">
+      <DependentUpon>RequisitaContrato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequisitaContrato.aspx.designer.cs">
+      <DependentUpon>RequisitaContrato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResponseHelper.cs" />
+    <Compile Include="Setup.aspx.cs">
+      <DependentUpon>Setup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Setup.aspx.designer.cs">
+      <DependentUpon>Setup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetupQueryDetail.aspx.cs">
+      <DependentUpon>SetupQueryDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetupQueryDetail.aspx.designer.cs">
+      <DependentUpon>SetupQueryDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TesteFileMng.aspx.cs">
+      <DependentUpon>TesteFileMng.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TesteFileMng.aspx.designer.cs">
+      <DependentUpon>TesteFileMng.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TesteReport.aspx.cs">
+      <DependentUpon>TesteReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TesteReport.aspx.designer.cs">
+      <DependentUpon>TesteReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testeSP.aspx.cs">
+      <DependentUpon>testeSP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testeSP.aspx.designer.cs">
+      <DependentUpon>testeSP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TesteXAF.aspx.cs">
+      <DependentUpon>TesteXAF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TesteXAF.aspx.designer.cs">
+      <DependentUpon>TesteXAF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities.aspx.cs">
+      <DependentUpon>Utilities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utilities.aspx.designer.cs">
+      <DependentUpon>Utilities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\FileManagmentUtils.cs" />
+    <Compile Include="Utils\LogWriter.cs" />
+    <Compile Include="Utils\OcrController.cs" />
+    <Compile Include="Utils\TempData.cs" />
+    <Compile Include="Verbas.aspx.cs">
+      <DependentUpon>Verbas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Verbas.aspx.designer.cs">
+      <DependentUpon>Verbas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WA_API\Helpers\Base64String.cs" />
+    <Compile Include="WA_API\Helpers\Json\Answer.cs" />
+    <Compile Include="WA_API\WaApi.cs" />
+    <Compile Include="Workflow.aspx.cs">
+      <DependentUpon>Workflow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Workflow.aspx.designer.cs">
+      <DependentUpon>Workflow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Content Include="GridUtils.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BasePage\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="ClasseContabil.aspx.cs">
+      <DependentUpon>ClasseContabil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClasseContabil.aspx.designer.cs">
+      <DependentUpon>ClasseContabil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FluxoCaixa.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FluxoCaixa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedores.aspx.cs">
+      <DependentUpon>Fornecedores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fornecedores.aspx.designer.cs">
+      <DependentUpon>Fornecedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Oops.aspx.cs">
+      <DependentUpon>Oops.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Oops.aspx.designer.cs">
+      <DependentUpon>Oops.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PassivosAquisicao.aspx.cs">
+      <DependentUpon>PassivosAquisicao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Tipologia.aspx.cs">
+      <DependentUpon>Tipologia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tipologia.aspx.designer.cs">
+      <DependentUpon>Tipologia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="GED\Arquivos\" />
+    <Folder Include="ImgEmailsTemp\" />
+    <Folder Include="Leitura\" />
+    <Folder Include="Logs\" />
+    <Folder Include="Old_App_Code\" />
+    <Folder Include="sql\" />
+    <Folder Include="upload\ETTJ\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="upload\contractstbznlptm.pdf" />
+    <Content Include="upload\contracts\0sjngxgw.pdf" />
+    <Content Include="upload\contracts\52kt3odx.pdf" />
+    <Content Include="upload\contracts\52rvvslr.pdf" />
+    <Content Include="upload\contracts\dxhskoal.pdf" />
+    <Content Include="upload\contracts\h2304cfz.pdf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataBase\DataBase.csproj">
+      <Project>{85168c91-6d6c-49e0-96e2-d6738cc51636}</Project>
+      <Name>DataBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PdfViewer\PdfViewer.csproj">
+      <Project>{f5a05a5c-6aff-4432-92ab-9dbfcbaf2cfa}</Project>
+      <Name>PdfViewer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Fornecedores.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Fornecedores.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Formulas.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Formulas.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ClasseContabil.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ClasseContabil.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Carteira.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Carteira.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Indice.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Indice.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ClasseProduto.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ClasseProduto.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\PlanoContas.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PlanoContas.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\PassivosAquisicao.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PassivosAquisicao.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Tipologia.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Tipologia.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Relatorios.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Relatorios.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\DadosVerba.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>DadosVerba.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Monitoramento.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Monitoramento.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\RealEstate.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RealEstate.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\PassivosAquisicao2.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PassivosAquisicao2.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Verbas.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Verbas.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Boletagem.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Boletagem.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\OCRTools.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>OCRTools.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ETTJ.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ETTJ.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Utilities.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Utilities.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Setup.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Setup.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Book.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Book.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Workflow.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Workflow.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RequisitaContrato.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RequisitaContrato.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\UserProfile.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserProfile.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Aquisicao.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Aquisicao.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Aquisicao.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Aquisicao.pt.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Boletagem.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Boletagem.pt.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Book.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Book.pt.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Carteira.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Carteira.pt.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\ClasseContabil.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ClasseContabil.pt.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ClasseProduto.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ClasseProduto.pt.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\DadosVerba.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>DadosVerba.pt.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ETTJ.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ETTJ.pt.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Formulas.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Formulas.pt.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Fornecedores.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Fornecedores.pt.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\GlobalResource.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GlobalResource.pt.designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Indice.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Indice.pt.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Monitoramento.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Monitoramento.pt.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\OCRTools.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>OCRTools.pt.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\PassivosAquisicao.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PassivosAquisicao.pt.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\PassivosAquisicao2.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PassivosAquisicao2.pt.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\PlanoContas.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PlanoContas.pt.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\RealEstate.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RealEstate.pt.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Relatorios.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Relatorios.pt.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RequisitaContrato.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RequisitaContrato.pt.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Setup.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Setup.pt.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Tipologia.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Tipologia.pt.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\UserProfile.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserProfile.pt.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Utilities.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Utilities.pt.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Verbas.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Verbas.pt.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Workflow.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Workflow.pt.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\SpeechTexts.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>SpeechTexts.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\SpeechTexts.pt.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>SpeechTexts.pt.designer.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Content Include="App_GlobalResources\GlobalResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalResource.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.resx">
+      <DependentUpon>Report1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57487</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44343/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este projeto faz referência a pacotes do NuGet que não estão presentes neste computador. Use a Restauração de Pacotes do NuGet para baixá-los.  Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkID=322105. O arquivo ausente é {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Grpc.Core.2.37.0\build\net45\Grpc.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Grpc.Core.2.37.0\build\net45\Grpc.Core.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <Import Project="..\packages\Grpc.Core.2.37.0\build\net45\Grpc.Core.targets" Condition="Exists('..\packages\Grpc.Core.2.37.0\build\net45\Grpc.Core.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

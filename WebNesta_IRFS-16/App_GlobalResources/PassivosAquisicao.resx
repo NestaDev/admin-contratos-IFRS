@@ -1,0 +1,632 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="contabil_card1_coluna1" xml:space="preserve">
+    <value>ID</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Contratos</comment>
+  </data>
+  <data name="contabil_card1_coluna2" xml:space="preserve">
+    <value>Contract Number</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Contratos</comment>
+  </data>
+  <data name="contabil_card1_coluna3" xml:space="preserve">
+    <value>Description</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Contratos</comment>
+  </data>
+  <data name="contabil_card1_coluna4" xml:space="preserve">
+    <value>Supplier</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Contratos</comment>
+  </data>
+  <data name="contabil_card1_coluna5" xml:space="preserve">
+    <value>Index</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Contratos</comment>
+  </data>
+  <data name="contabil_card1_coluna6" xml:space="preserve">
+    <value>Legal Entity</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Contratos</comment>
+  </data>
+  <data name="contabil_card1_coluna7" xml:space="preserve">
+    <value>Product</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Contratos</comment>
+  </data>
+  <data name="contabil_card1_coluna8" xml:space="preserve">
+    <value>Auxiliary Number</value>
+  </data>
+  <data name="contabil_card1_titulo1" xml:space="preserve">
+    <value>Contracts</value>
+    <comment>Página PassivosAquisicao.aspx título do grupo Contratos</comment>
+  </data>
+  <data name="contabil_card2_coluna1" xml:space="preserve">
+    <value>Event</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Fluxo de Caixa</comment>
+  </data>
+  <data name="contabil_card2_coluna10" xml:space="preserve">
+    <value>Spread</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Fluxo de Caixa</comment>
+  </data>
+  <data name="contabil_card2_coluna11" xml:space="preserve">
+    <value>Venc1</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Fluxo de Caixa</comment>
+  </data>
+  <data name="contabil_card2_coluna12" xml:space="preserve">
+    <value>Venc2</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Fluxo de Caixa</comment>
+  </data>
+  <data name="contabil_card2_coluna13" xml:space="preserve">
+    <value>Fees</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Fluxo de Caixa</comment>
+  </data>
+  <data name="contabil_card2_coluna14" xml:space="preserve">
+    <value>Total</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Fluxo de Caixa</comment>
+  </data>
+  <data name="contabil_card2_coluna2" xml:space="preserve">
+    <value>Payment</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Fluxo de Caixa</comment>
+  </data>
+  <data name="contabil_card2_coluna3" xml:space="preserve">
+    <value>Nr.</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Fluxo de Caixa</comment>
+  </data>
+  <data name="contabil_card2_coluna4" xml:space="preserve">
+    <value>Seq</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Fluxo de Caixa</comment>
+  </data>
+  <data name="contabil_card2_coluna5" xml:space="preserve">
+    <value>Days</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Fluxo de Caixa</comment>
+  </data>
+  <data name="contabil_card2_coluna6" xml:space="preserve">
+    <value>Debtor</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Fluxo de Caixa</comment>
+  </data>
+  <data name="contabil_card2_coluna7" xml:space="preserve">
+    <value>Amortization</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Fluxo de Caixa</comment>
+  </data>
+  <data name="contabil_card2_coluna8" xml:space="preserve">
+    <value>Interests</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Fluxo de Caixa</comment>
+  </data>
+  <data name="contabil_card2_coluna9" xml:space="preserve">
+    <value>Commission</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Fluxo de Caixa</comment>
+  </data>
+  <data name="contabil_card2_titulo1" xml:space="preserve">
+    <value>Cash Flow</value>
+    <comment>Página PassivosAquisicao.aspx título do grupo Fluxo de Caixa</comment>
+  </data>
+  <data name="contabil_card3_coluna1" xml:space="preserve">
+    <value>Event</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Extrato Financeiro</comment>
+  </data>
+  <data name="contabil_card3_coluna2" xml:space="preserve">
+    <value>Description</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Extrato Financeiro</comment>
+  </data>
+  <data name="contabil_card3_coluna3" xml:space="preserve">
+    <value>Debit</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Extrato Financeiro</comment>
+  </data>
+  <data name="contabil_card3_coluna4" xml:space="preserve">
+    <value>Credit</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Extrato Financeiro</comment>
+  </data>
+  <data name="contabil_card3_coluna5" xml:space="preserve">
+    <value>Debt Balance</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Extrato Financeiro</comment>
+  </data>
+  <data name="contabil_card3_coluna5.2" xml:space="preserve">
+    <value>Liabilities</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Extrato Financeiro</comment>
+  </data>
+  <data name="contabil_card3_coluna6" xml:space="preserve">
+    <value>Main Balance</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Extrato Financeiro</comment>
+  </data>
+  <data name="contabil_card3_coluna6.2" xml:space="preserve">
+    <value>Right of use</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Extrato Financeiro</comment>
+  </data>
+  <data name="contabil_card3_coluna7" xml:space="preserve">
+    <value>Quotation</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Extrato Financeiro</comment>
+  </data>
+  <data name="contabil_card3_titulo1" xml:space="preserve">
+    <value>Financial Statement</value>
+    <comment>Página PassivosAquisicao.aspx titulo do grupo Extrato Financeiro</comment>
+  </data>
+  <data name="contabil_card4_coluna1" xml:space="preserve">
+    <value>Event</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Contabil</comment>
+  </data>
+  <data name="contabil_card4_coluna2" xml:space="preserve">
+    <value>D/C</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Contabil</comment>
+  </data>
+  <data name="contabil_card4_coluna3" xml:space="preserve">
+    <value>Account Number</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Contabil</comment>
+  </data>
+  <data name="contabil_card4_coluna4" xml:space="preserve">
+    <value>Description</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Contabil</comment>
+  </data>
+  <data name="contabil_card4_coluna5" xml:space="preserve">
+    <value>Modality</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Contabil</comment>
+  </data>
+  <data name="contabil_card4_coluna6" xml:space="preserve">
+    <value>Value</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Contabil</comment>
+  </data>
+  <data name="contabil_card4_titulo1" xml:space="preserve">
+    <value>Accounting Statement</value>
+    <comment>Página PassivosAquisicao.aspx titulo do grupo Contabil</comment>
+  </data>
+  <data name="contabil_card5_btn1" xml:space="preserve">
+    <value>Cash Flow</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Multi Processamento</comment>
+  </data>
+  <data name="contabil_card5_btn2" xml:space="preserve">
+    <value>Financial Statement</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Multi Processamento</comment>
+  </data>
+  <data name="contabil_card5_btn3" xml:space="preserve">
+    <value>Accounting Statement</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Multi Processamento</comment>
+  </data>
+  <data name="contabil_card5_btn4" xml:space="preserve">
+    <value>Limpar seleção</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Multi Processamento, não alterar o texto ##</comment>
+  </data>
+  <data name="contabil_card5_coluna1" xml:space="preserve">
+    <value>ID</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Multi Processamento</comment>
+  </data>
+  <data name="contabil_card5_coluna2" xml:space="preserve">
+    <value>Contract Number</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Multi Processamento</comment>
+  </data>
+  <data name="contabil_card5_coluna3" xml:space="preserve">
+    <value>Description</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Multi Processamento</comment>
+  </data>
+  <data name="contabil_card5_coluna4" xml:space="preserve">
+    <value>Supplier</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Multi Processamento</comment>
+  </data>
+  <data name="contabil_card5_coluna5" xml:space="preserve">
+    <value>Index</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Multi Processamento</comment>
+  </data>
+  <data name="contabil_card5_coluna6" xml:space="preserve">
+    <value>Corporate</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Contratos</comment>
+  </data>
+  <data name="contabil_card5_coluna7" xml:space="preserve">
+    <value>Product</value>
+    <comment>Página PassivosAquisicao.aspx grid localizado no grupo Contratos</comment>
+  </data>
+  <data name="contabil_card5_titulo1" xml:space="preserve">
+    <value>Select contracts for processing</value>
+    <comment>Página PassivosAquisicao.aspx titulo do grupo Multi Processamento</comment>
+  </data>
+  <data name="contabil_card6_coluna1" xml:space="preserve">
+    <value>Country ID</value>
+  </data>
+  <data name="contabil_card6_coluna10" xml:space="preserve">
+    <value>Event</value>
+  </data>
+  <data name="contabil_card6_coluna11" xml:space="preserve">
+    <value>Debit/Credit</value>
+  </data>
+  <data name="contabil_card6_coluna12" xml:space="preserve">
+    <value>Account Number</value>
+  </data>
+  <data name="contabil_card6_coluna13" xml:space="preserve">
+    <value>Account Description</value>
+  </data>
+  <data name="contabil_card6_coluna14" xml:space="preserve">
+    <value>Modality ID</value>
+  </data>
+  <data name="contabil_card6_coluna15" xml:space="preserve">
+    <value>Modality</value>
+  </data>
+  <data name="contabil_card6_coluna16" xml:space="preserve">
+    <value>Contract Currency ID</value>
+  </data>
+  <data name="contabil_card6_coluna17" xml:space="preserve">
+    <value>Contract Currency</value>
+  </data>
+  <data name="contabil_card6_coluna18" xml:space="preserve">
+    <value>Currency ID</value>
+  </data>
+  <data name="contabil_card6_coluna19" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="contabil_card6_coluna2" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="contabil_card6_coluna20" xml:space="preserve">
+    <value>Debit</value>
+  </data>
+  <data name="contabil_card6_coluna21" xml:space="preserve">
+    <value>Credit</value>
+  </data>
+  <data name="contabil_card6_coluna22" xml:space="preserve">
+    <value>D/C Value</value>
+  </data>
+  <data name="contabil_card6_coluna23" xml:space="preserve">
+    <value>Cost Center ID</value>
+  </data>
+  <data name="contabil_card6_coluna24" xml:space="preserve">
+    <value>Cost Center</value>
+  </data>
+  <data name="contabil_card6_coluna25" xml:space="preserve">
+    <value>Profit Center ID</value>
+  </data>
+  <data name="contabil_card6_coluna26" xml:space="preserve">
+    <value>Profit Center</value>
+  </data>
+  <data name="contabil_card6_coluna27" xml:space="preserve">
+    <value>Transaction Currency</value>
+  </data>
+  <data name="contabil_card6_coluna28" xml:space="preserve">
+    <value>Creation Date</value>
+  </data>
+  <data name="contabil_card6_coluna29" xml:space="preserve">
+    <value>Processing Date</value>
+  </data>
+  <data name="contabil_card6_coluna3" xml:space="preserve">
+    <value>Legal Entity ID</value>
+  </data>
+  <data name="contabil_card6_coluna30" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="contabil_card6_coluna30.1" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="contabil_card6_coluna30.2" xml:space="preserve">
+    <value>Processed</value>
+  </data>
+  <data name="contabil_card6_coluna30.3" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="contabil_card6_coluna31" xml:space="preserve">
+    <value>Log Error</value>
+  </data>
+  <data name="contabil_card6_coluna32" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="contabil_card6_coluna33" xml:space="preserve">
+    <value>Document Number</value>
+  </data>
+  <data name="contabil_card6_coluna4" xml:space="preserve">
+    <value>Legal Entity</value>
+  </data>
+  <data name="contabil_card6_coluna5" xml:space="preserve">
+    <value>Internal ID</value>
+  </data>
+  <data name="contabil_card6_coluna6" xml:space="preserve">
+    <value>Contract Number</value>
+  </data>
+  <data name="contabil_card6_coluna7" xml:space="preserve">
+    <value>Auxiliary Number</value>
+  </data>
+  <data name="contabil_card6_coluna8" xml:space="preserve">
+    <value>Portfolio</value>
+  </data>
+  <data name="contabil_card6_coluna9" xml:space="preserve">
+    <value>Year.Month</value>
+  </data>
+  <data name="contabil_card6_titulo1" xml:space="preserve">
+    <value>Accounting Process</value>
+  </data>
+  <data name="contabil_card7_col1" xml:space="preserve">
+    <value>Internal ID</value>
+  </data>
+  <data name="contabil_card7_col2" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="contabil_card7_col3" xml:space="preserve">
+    <value>Closing</value>
+  </data>
+  <data name="contabil_card7_col3.1" xml:space="preserve">
+    <value>Closed</value>
+  </data>
+  <data name="contabil_card7_col3.2" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="contabil_card7_titulo" xml:space="preserve">
+    <value>Period Closing</value>
+  </data>
+  <data name="contabil_content_tutorial" xml:space="preserve">
+    <value>https://cloud3.webnesta.com/tutorial/ifrs/FluxoIFRS/en-US</value>
+  </data>
+  <data name="contabil_msg_erro1" xml:space="preserve">
+    <value>Please, select a business day.</value>
+  </data>
+  <data name="contabil_msg_erro2" xml:space="preserve">
+    <value>Please, select a date before today.</value>
+  </data>
+  <data name="contabil_msg_erro3" xml:space="preserve">
+    <value>Previous month have no closing.</value>
+  </data>
+  <data name="contabil_msg_erro4" xml:space="preserve">
+    <value>Selected date have closing.</value>
+  </data>
+  <data name="contabil_quick_guide1" xml:space="preserve">
+    <value>When checked, this option enables the feature to select from the grid several contracts for processing cash flow, financial statement, accounting statement, contract termination or renegotiation of fees.</value>
+  </data>
+  <data name="contabil_quick_guide2" xml:space="preserve">
+    <value>This form lists the contracts covered by IFRS16. Use the filters (funnel) to manipulate the sample data. Click on the column title to sort the data in ascending ↑ or descending ↓ order. Double-click on the grid line to select the contract for which you want to consult or process the cash flow, financial statement or accounting statement.</value>
+  </data>
+  <data name="contabil_quick_guide3" xml:space="preserve">
+    <value>Select which action you want to perform on the selected contract: cash flow, financial statement, accounting statement, contract termination or renegotiation of fees. Then choose the applicable scenario, which can be REAL, NOMINAL, INFLATED, CURRENCY and USGAAP. These scenarios are parameterized in the system according to the use license agreement signed with NESTA.</value>
+  </data>
+  <data name="contabil_quick_guide4" xml:space="preserve">
+    <value>After selecting the contract and the respective applicable scenario, click on the PROCESS button to execute the cash flow, financial statement, accounting statement, contract termination or renegotiation of fees. When present, the processes are executed simultaneously in the REAL, NOMINAL and INFLATED scenarios. Specifically for the financial statement, when the deadline is not noted, the statement is executed until the end of the contract term. Specifically for the accounting statement, when the deadline is not noted, the accounting is carried out until the last entry recorded on the financial statement.</value>
+  </data>
+  <data name="contabil_quick_guide5" xml:space="preserve">
+    <value>Right-click on the grid to export the data collection in CSV ("Comma-Separated-Values" formats supported by Microsoft Excel, Google Sheets, Apple Numbers, OpenOffice Calc, LibreOffice) or XLSX (Microsoft Excel) . Choose the Refresh option to show in the grid the latest version of the data collection recorded in the database.</value>
+  </data>
+  <data name="contabil_quick_guide6" xml:space="preserve">
+    <value>This form lists the contracts covered by IFRS16. Use the filters (funnel) to manipulate the sample data. Click on the column title to sort the data in ascending ↑ or descending ↓ order. Double-click on the grid line to select the contract for which you want to consult or process the cash flow, financial statement or accounting statement.</value>
+  </data>
+  <data name="contabil_quick_guide7" xml:space="preserve">
+    <value>When selecting the contract, the fields will be filled with the information from the Contract Code, the Index used in the contract, the Contract Description used for classification and the Supplier associated with the Contract.</value>
+  </data>
+  <data name="contabil_quick_guide8" xml:space="preserve">
+    <value>Choose the scenario on which you want to view the selected contract cash flow, financial statement or accounting statement. The scenarios can be REAL (contract currency), NOMINAL, INFLATION, CURRENCY (functional currency) and USGAAP. These scenarios are parameterized in the system according to the license agreement signed with NESTA.</value>
+  </data>
+  <data name="contabil_right_checkbox1" xml:space="preserve">
+    <value>Allow multi selection</value>
+    <comment>Página PassivosAquisicao.aspx coluna à direita</comment>
+  </data>
+  <data name="contabil_right_checkbox2" xml:space="preserve">
+    <value>Balance</value>
+    <comment>Página PassivosAquisicao.aspx coluna à direita</comment>
+  </data>
+  <data name="contabil_right_checkbox3" xml:space="preserve">
+    <value>Statement</value>
+    <comment>Página PassivosAquisicao.aspx coluna à direita</comment>
+  </data>
+  <data name="contabil_right_checkbox4" xml:space="preserve">
+    <value>Closure</value>
+  </data>
+  <data name="contabil_right_checkbox5" xml:space="preserve">
+    <value>Reopening</value>
+  </data>
+  <data name="contabil_right_combo1" xml:space="preserve">
+    <value>Contracts</value>
+    <comment>Página PassivosAquisicao.aspx coluna à direita</comment>
+  </data>
+  <data name="contabil_right_combo2" xml:space="preserve">
+    <value>IFRS Cash Flow</value>
+    <comment>Página PassivosAquisicao.aspx coluna à direita</comment>
+  </data>
+  <data name="contabil_right_combo3" xml:space="preserve">
+    <value>Financial Statement</value>
+    <comment>Página PassivosAquisicao.aspx coluna à direita</comment>
+  </data>
+  <data name="contabil_right_combo4" xml:space="preserve">
+    <value>Accounting Statement</value>
+    <comment>Página PassivosAquisicao.aspx coluna à direita</comment>
+  </data>
+  <data name="contabil_right_combo5" xml:space="preserve">
+    <value>Termination</value>
+    <comment>Página PassivosAquisicao.aspx coluna à direita</comment>
+  </data>
+  <data name="contabil_right_combo6" xml:space="preserve">
+    <value>Renegotiation</value>
+    <comment>Página PassivosAquisicao.aspx coluna à direita</comment>
+  </data>
+  <data name="contabil_right_combo7" xml:space="preserve">
+    <value>Period Closing</value>
+  </data>
+  <data name="contabil_right_combo8" xml:space="preserve">
+    <value>Accounting Integration</value>
+  </data>
+  <data name="contabil_right_date" xml:space="preserve">
+    <value>Date:</value>
+    <comment>Página PassivosAquisicao.aspx coluna à direita</comment>
+  </data>
+  <data name="contabil_right_main_btn" xml:space="preserve">
+    <value>Process</value>
+    <comment>Página PassivosAquisicao.aspx coluna à direita</comment>
+  </data>
+  <data name="contabil_right_processo_date" xml:space="preserve">
+    <value>Accounting Period</value>
+  </data>
+  <data name="contabil_right_repact_date" xml:space="preserve">
+    <value>Renegotiation Date</value>
+    <comment>Página PassivosAquisicao.aspx coluna à direita</comment>
+  </data>
+  <data name="contabil_right_repact_taxa" xml:space="preserve">
+    <value>Renegotiation Rate</value>
+    <comment>Página PassivosAquisicao.aspx coluna à direita</comment>
+  </data>
+  <data name="contabil_right_rescisao_date" xml:space="preserve">
+    <value>Termination Date</value>
+    <comment>Página PassivosAquisicao.aspx coluna à direita</comment>
+  </data>
+  <data name="contabil_right_rescisao_valor" xml:space="preserve">
+    <value>Termination Penalty</value>
+    <comment>Página Contabil à direita</comment>
+  </data>
+  <data name="contabil_right_titulo1" xml:space="preserve">
+    <value>User actions</value>
+    <comment>Página PassivosAquisicao.aspx coluna à direita</comment>
+  </data>
+  <data name="contabil_right_titulo2" xml:space="preserve">
+    <value>Processing Mode</value>
+    <comment>Página PassivosAquisicao.aspx coluna à direita</comment>
+  </data>
+  <data name="contabil_right_titulo3" xml:space="preserve">
+    <value>Navigation</value>
+  </data>
+  <data name="contabil_tituloPag" xml:space="preserve">
+    <value>Contract Operations</value>
+    <comment>Página Contabil Titulo geral</comment>
+  </data>
+  <data name="contabil_top1" xml:space="preserve">
+    <value># OPIDCONT</value>
+    <comment>Página PassivosAquisicao.aspx primeira linha de campos</comment>
+  </data>
+  <data name="contabil_top2" xml:space="preserve">
+    <value>Contract Number</value>
+    <comment>Página PassivosAquisicao.aspx primeira linha de campos</comment>
+  </data>
+  <data name="contabil_top3" xml:space="preserve">
+    <value>Description</value>
+    <comment>Página PassivosAquisicao.aspx primeira linha de campos</comment>
+  </data>
+  <data name="contabil_top4" xml:space="preserve">
+    <value>Supplier</value>
+    <comment>Página PassivosAquisicao.aspx primeira linha de campos</comment>
+  </data>
+  <data name="contabil_top5" xml:space="preserve">
+    <value>Contract Currency</value>
+    <comment>Página PassivosAquisicao.aspx primeira linha de campos</comment>
+  </data>
+  <data name="contabil_top6" xml:space="preserve">
+    <value>Exchange Currency</value>
+    <comment>Página PassivosAquisicao.aspx primeira linha de campos</comment>
+  </data>
+  <data name="contabil_top7" xml:space="preserve">
+    <value>Functional Currency</value>
+    <comment>Página PassivosAquisicao.aspx primeira linha de campos</comment>
+  </data>
+  <data name="filtro_grid_CONTABILIZAMOEDA" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="filtro_grid_CVM_INFLACIONADO" xml:space="preserve">
+    <value>Inflation</value>
+  </data>
+  <data name="filtro_grid_CVM_NOMINAL" xml:space="preserve">
+    <value>Nominal</value>
+  </data>
+  <data name="filtro_grid_CVM_REAL" xml:space="preserve">
+    <value>Real</value>
+  </data>
+  <data name="filtro_grid_USGAAP" xml:space="preserve">
+    <value>USGAAP</value>
+  </data>
+</root>

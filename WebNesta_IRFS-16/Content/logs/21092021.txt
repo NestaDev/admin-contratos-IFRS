@@ -1,0 +1,4963 @@
+
+Log Entry : 12:23:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 12:23:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 1
+-------------------------------
+
+Log Entry : 12:23:28 terça-feira, 21 de setembro de 2021
+  :
+  :Envio: 
+{   "row": [{
+  "id_processo": "NST0000120210800",
+  "header": {
+    "operacao": "RFBU",
+    "username": "JOBTRK",
+    "empresa": "1000",
+    "data_documento": "2021-08-31",
+    "data_lancamento": "2021-08-31",
+    "exercicio": "2021",
+    "periodo": "08",
+    "tipo_documento": "SA",
+    "referencia": "1000029",
+    "texto_cabec": "NST0000120210800"
+  },
+  "account_gl": [
+    {
+      "item_num": "0000000001",
+      "account": "0000411566",
+      "texto": "PIS s/ Depreciacao-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0325-AJC",
+      "centro_custo": "0011032500"
+    },
+    {
+      "item_num": "0000000002",
+      "account": "0000422057",
+      "texto": "PIS s/ Depreciacao-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0325-AJC",
+      "centro_custo": "0011032500"
+    },
+    {
+      "item_num": "0000000003",
+      "account": "0000422057",
+      "texto": "PIS s/ Pagamento-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0325-AJC",
+      "centro_custo": "0011032500"
+    },
+    {
+      "item_num": "0000000004",
+      "account": "0000421377",
+      "texto": "PIS s/ Pagamento-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0325-AJC",
+      "centro_custo": "0011032500"
+    },
+    {
+      "item_num": "0000000005",
+      "account": "0000411566",
+      "texto": "COFINS s/ Depreciacao-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0325-AJC",
+      "centro_custo": "0011032500"
+    },
+    {
+      "item_num": "0000000006",
+      "account": "0000422057",
+      "texto": "COFINS s/ Depreciacao-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0325-AJC",
+      "centro_custo": "0011032500"
+    },
+    {
+      "item_num": "0000000007",
+      "account": "0000422057",
+      "texto": "COFINS s/ Pagamento-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0325-AJC",
+      "centro_custo": "0011032500"
+    },
+    {
+      "item_num": "0000000008",
+      "account": "0000421377",
+      "texto": "COFINS s/ Pagamento-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0325-AJC",
+      "centro_custo": "0011032500"
+    },
+    {
+      "item_num": "0000000009",
+      "account": "0000411504",
+      "texto": "Bx. Encargos Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0325-AJC",
+      "centro_custo": "0011032500"
+    },
+    {
+      "item_num": "0000000010",
+      "account": "0000211199",
+      "texto": "Bx. Encargos Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0325-AJC",
+      "centro_lucro": "0011032500"
+    },
+    {
+      "item_num": "0000000011",
+      "account": "0000422056",
+      "texto": "Encargos Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0325-AJC",
+      "centro_custo": "0011032500"
+    },
+    {
+      "item_num": "0000000012",
+      "account": "0000211199",
+      "texto": "Encargos Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0325-AJC",
+      "centro_lucro": "0011032500"
+    },
+    {
+      "item_num": "0000000013",
+      "account": "0000411504",
+      "texto": "Bx. Principal Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0325-AJC",
+      "centro_custo": "0011032500"
+    },
+    {
+      "item_num": "0000000014",
+      "account": "0000225015",
+      "texto": "Transf L ->C Principal-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0325-AJC",
+      "centro_lucro": "0011032500"
+    },
+    {
+      "item_num": "0000000015",
+      "account": "0000211199",
+      "texto": "Transf L ->C Principal-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0325-AJC",
+      "centro_lucro": "0011032500"
+    },
+    {
+      "item_num": "0000000016",
+      "account": "0000211199",
+      "texto": "Bx. Principal Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0325-AJC",
+      "centro_lucro": "0011032500"
+    },
+    {
+      "item_num": "0000000017",
+      "account": "0000411565",
+      "texto": "Depreciacao Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0325-AJC",
+      "centro_custo": "0011032500"
+    },
+    {
+      "item_num": "0000000018",
+      "account": "0000133030",
+      "texto": "Depreciacao Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0325-AJC",
+      "centro_lucro": "0011032500"
+    }
+  ],
+  "currency_amount": [
+    {
+      "item_num": "0000000001",
+      "moeda": "BRL",
+      "montante": "3382.2600-"
+    },
+    {
+      "item_num": "0000000002",
+      "moeda": "BRL",
+      "montante": "3382.2600"
+    },
+    {
+      "item_num": "0000000003",
+      "moeda": "BRL",
+      "montante": "3533.8500-"
+    },
+    {
+      "item_num": "0000000004",
+      "moeda": "BRL",
+      "montante": "3533.8500"
+    },
+    {
+      "item_num": "0000000005",
+      "moeda": "BRL",
+      "montante": "15578.8900-"
+    },
+    {
+      "item_num": "0000000006",
+      "moeda": "BRL",
+      "montante": "15578.8900"
+    },
+    {
+      "item_num": "0000000007",
+      "moeda": "BRL",
+      "montante": "16277.1500-"
+    },
+    {
+      "item_num": "0000000008",
+      "moeda": "BRL",
+      "montante": "16277.1500"
+    },
+    {
+      "item_num": "0000000009",
+      "moeda": "BRL",
+      "montante": "40103.6200-"
+    },
+    {
+      "item_num": "0000000010",
+      "moeda": "BRL",
+      "montante": "40103.6200"
+    },
+    {
+      "item_num": "0000000011",
+      "moeda": "BRL",
+      "montante": "58747.7200"
+    },
+    {
+      "item_num": "0000000012",
+      "moeda": "BRL",
+      "montante": "58747.7200-"
+    },
+    {
+      "item_num": "0000000013",
+      "moeda": "BRL",
+      "montante": "174069.3400-"
+    },
+    {
+      "item_num": "0000000014",
+      "moeda": "BRL",
+      "montante": "174069.3400"
+    },
+    {
+      "item_num": "0000000015",
+      "moeda": "BRL",
+      "montante": "174069.3400-"
+    },
+    {
+      "item_num": "0000000016",
+      "moeda": "BRL",
+      "montante": "174069.3400"
+    },
+    {
+      "item_num": "0000000017",
+      "moeda": "BRL",
+      "montante": "204985.3700"
+    },
+    {
+      "item_num": "0000000018",
+      "moeda": "BRL",
+      "montante": "204985.3700-"
+    }
+  ]
+}]}
+-------------------------------
+
+Log Entry : 12:23:49 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível acessar a API https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/
+-------------------------------
+
+Log Entry : 12:23:49 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 12:23:49 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 2
+-------------------------------
+
+Log Entry : 12:23:49 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 2período 08/2021
+-------------------------------
+
+Log Entry : 12:23:49 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 12:23:49 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 7
+-------------------------------
+
+Log Entry : 12:23:50 terça-feira, 21 de setembro de 2021
+  :
+  :Envio: 
+{   "row": [{
+  "id_processo": "NST0000720210800",
+  "header": {
+    "operacao": "RFBU",
+    "username": "JOBTRK",
+    "empresa": "1000",
+    "data_documento": "2021-08-31",
+    "data_lancamento": "2021-08-31",
+    "exercicio": "2021",
+    "periodo": "08",
+    "tipo_documento": "SA",
+    "referencia": "1000116",
+    "texto_cabec": "NST0000720210800"
+  },
+  "account_gl": [
+    {
+      "item_num": "0000000001",
+      "account": "0000211199",
+      "texto": "Bx. Encargos Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato aluguel loja 005",
+      "centro_lucro": "0011066500"
+    },
+    {
+      "item_num": "0000000002",
+      "account": "0000411504",
+      "texto": "Bx. Encargos Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato aluguel loja 005",
+      "centro_custo": "0011066500"
+    },
+    {
+      "item_num": "0000000003",
+      "account": "0000422056",
+      "texto": "Encargos Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato aluguel loja 005",
+      "centro_custo": "0011066500"
+    },
+    {
+      "item_num": "0000000004",
+      "account": "0000211199",
+      "texto": "Encargos Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato aluguel loja 005",
+      "centro_lucro": "0011066500"
+    },
+    {
+      "item_num": "0000000005",
+      "account": "0000133030",
+      "texto": "Depreciacao Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato aluguel loja 005",
+      "centro_lucro": "0011066500"
+    },
+    {
+      "item_num": "0000000006",
+      "account": "0000411565",
+      "texto": "Depreciacao Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato aluguel loja 005",
+      "centro_custo": "0011066500"
+    },
+    {
+      "item_num": "0000000007",
+      "account": "0000211199",
+      "texto": "Bx. Principal Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato aluguel loja 005",
+      "centro_lucro": "0011066500"
+    },
+    {
+      "item_num": "0000000008",
+      "account": "0000211199",
+      "texto": "Transf L ->C Principal-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato aluguel loja 005",
+      "centro_lucro": "0011066500"
+    },
+    {
+      "item_num": "0000000009",
+      "account": "0000225015",
+      "texto": "Transf L ->C Principal-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato aluguel loja 005",
+      "centro_lucro": "0011066500"
+    },
+    {
+      "item_num": "0000000010",
+      "account": "0000411504",
+      "texto": "Bx. Principal Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato aluguel loja 005",
+      "centro_custo": "0011066500"
+    }
+  ],
+  "currency_amount": [
+    {
+      "item_num": "0000000001",
+      "moeda": "BRL",
+      "montante": "2544.2800"
+    },
+    {
+      "item_num": "0000000002",
+      "moeda": "BRL",
+      "montante": "2544.2800-"
+    },
+    {
+      "item_num": "0000000003",
+      "moeda": "BRL",
+      "montante": "3488.2300"
+    },
+    {
+      "item_num": "0000000004",
+      "moeda": "BRL",
+      "montante": "3488.2300-"
+    },
+    {
+      "item_num": "0000000005",
+      "moeda": "BRL",
+      "montante": "10505.4000-"
+    },
+    {
+      "item_num": "0000000006",
+      "moeda": "BRL",
+      "montante": "10505.4000"
+    },
+    {
+      "item_num": "0000000007",
+      "moeda": "BRL",
+      "montante": "10965.0800"
+    },
+    {
+      "item_num": "0000000008",
+      "moeda": "BRL",
+      "montante": "10965.0800-"
+    },
+    {
+      "item_num": "0000000009",
+      "moeda": "BRL",
+      "montante": "10965.0800"
+    },
+    {
+      "item_num": "0000000010",
+      "moeda": "BRL",
+      "montante": "10965.0800-"
+    }
+  ]
+}]}
+-------------------------------
+
+Log Entry : 12:24:11 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível acessar a API https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/
+-------------------------------
+
+Log Entry : 12:24:11 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 12:24:11 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8
+-------------------------------
+
+Log Entry : 12:24:11 terça-feira, 21 de setembro de 2021
+  :
+  :Envio: 
+{   "row": [{
+  "id_processo": "NST0000820210800",
+  "header": {
+    "operacao": "RFBU",
+    "username": "JOBTRK",
+    "empresa": "1000",
+    "data_documento": "2021-08-31",
+    "data_lancamento": "2021-08-31",
+    "exercicio": "2021",
+    "periodo": "08",
+    "tipo_documento": "SA",
+    "referencia": "3000198",
+    "texto_cabec": "NST0000820210800"
+  },
+  "account_gl": [
+    {
+      "item_num": "0000000001",
+      "account": "0000411566",
+      "texto": "PIS s/ Depreciacao-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0676-CPI",
+      "centro_custo": "0011067600"
+    },
+    {
+      "item_num": "0000000002",
+      "account": "0000422057",
+      "texto": "PIS s/ Depreciacao-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0676-CPI",
+      "centro_custo": "0011067600"
+    },
+    {
+      "item_num": "0000000003",
+      "account": "0000422057",
+      "texto": "PIS s/ Pagamento-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0676-CPI",
+      "centro_custo": "0011067600"
+    },
+    {
+      "item_num": "0000000004",
+      "account": "0000421377",
+      "texto": "PIS s/ Pagamento-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0676-CPI",
+      "centro_custo": "0011067600"
+    },
+    {
+      "item_num": "0000000005",
+      "account": "0000411566",
+      "texto": "COFINS s/ Depreciacao-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0676-CPI",
+      "centro_custo": "0011067600"
+    },
+    {
+      "item_num": "0000000006",
+      "account": "0000422057",
+      "texto": "COFINS s/ Depreciacao-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0676-CPI",
+      "centro_custo": "0011067600"
+    },
+    {
+      "item_num": "0000000007",
+      "account": "0000422057",
+      "texto": "COFINS s/ Pagamento-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0676-CPI",
+      "centro_custo": "0011067600"
+    },
+    {
+      "item_num": "0000000008",
+      "account": "0000421377",
+      "texto": "COFINS s/ Pagamento-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0676-CPI",
+      "centro_custo": "0011067600"
+    },
+    {
+      "item_num": "0000000009",
+      "account": "0000211199",
+      "texto": "Bx. Encargos Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0676-CPI",
+      "centro_lucro": "0011067600"
+    },
+    {
+      "item_num": "0000000010",
+      "account": "0000411504",
+      "texto": "Bx. Encargos Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0676-CPI",
+      "centro_custo": "0011067600"
+    },
+    {
+      "item_num": "0000000011",
+      "account": "0000422056",
+      "texto": "Encargos Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0676-CPI",
+      "centro_custo": "0011067600"
+    },
+    {
+      "item_num": "0000000012",
+      "account": "0000211199",
+      "texto": "Encargos Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0676-CPI",
+      "centro_lucro": "0011067600"
+    },
+    {
+      "item_num": "0000000013",
+      "account": "0000411504",
+      "texto": "Bx. Principal Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0676-CPI",
+      "centro_custo": "0011067600"
+    },
+    {
+      "item_num": "0000000014",
+      "account": "0000211199",
+      "texto": "Bx. Principal Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0676-CPI",
+      "centro_lucro": "0011067600"
+    },
+    {
+      "item_num": "0000000015",
+      "account": "0000411565",
+      "texto": "Depreciacao Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0676-CPI",
+      "centro_custo": "0011067600"
+    },
+    {
+      "item_num": "0000000016",
+      "account": "0000133030",
+      "texto": "Depreciacao Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0676-CPI",
+      "centro_lucro": "0011067600"
+    },
+    {
+      "item_num": "0000000017",
+      "account": "0000225015",
+      "texto": "Transf L ->C Principal-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0676-CPI",
+      "centro_lucro": "0011067600"
+    },
+    {
+      "item_num": "0000000018",
+      "account": "0000211199",
+      "texto": "Transf L ->C Principal-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "LJ0676-CPI",
+      "centro_lucro": "0011067600"
+    }
+  ],
+  "currency_amount": [
+    {
+      "item_num": "0000000001",
+      "moeda": "BRL",
+      "montante": "653.1900-"
+    },
+    {
+      "item_num": "0000000002",
+      "moeda": "BRL",
+      "montante": "653.1900"
+    },
+    {
+      "item_num": "0000000003",
+      "moeda": "BRL",
+      "montante": "818.0900-"
+    },
+    {
+      "item_num": "0000000004",
+      "moeda": "BRL",
+      "montante": "818.0900"
+    },
+    {
+      "item_num": "0000000005",
+      "moeda": "BRL",
+      "montante": "3008.6400-"
+    },
+    {
+      "item_num": "0000000006",
+      "moeda": "BRL",
+      "montante": "3008.6400"
+    },
+    {
+      "item_num": "0000000007",
+      "moeda": "BRL",
+      "montante": "3768.1700-"
+    },
+    {
+      "item_num": "0000000008",
+      "moeda": "BRL",
+      "montante": "3768.1700"
+    },
+    {
+      "item_num": "0000000009",
+      "moeda": "BRL",
+      "montante": "15760.7600"
+    },
+    {
+      "item_num": "0000000010",
+      "moeda": "BRL",
+      "montante": "15760.7600-"
+    },
+    {
+      "item_num": "0000000011",
+      "moeda": "BRL",
+      "montante": "32618.9400"
+    },
+    {
+      "item_num": "0000000012",
+      "moeda": "BRL",
+      "montante": "32618.9400-"
+    },
+    {
+      "item_num": "0000000013",
+      "moeda": "BRL",
+      "montante": "33820.4900-"
+    },
+    {
+      "item_num": "0000000014",
+      "moeda": "BRL",
+      "montante": "33820.4900"
+    },
+    {
+      "item_num": "0000000015",
+      "moeda": "BRL",
+      "montante": "39587.3400"
+    },
+    {
+      "item_num": "0000000016",
+      "moeda": "BRL",
+      "montante": "39587.3400-"
+    },
+    {
+      "item_num": "0000000017",
+      "moeda": "BRL",
+      "montante": "42275.6000"
+    },
+    {
+      "item_num": "0000000018",
+      "moeda": "BRL",
+      "montante": "42275.6000-"
+    }
+  ]
+}]}
+-------------------------------
+
+Log Entry : 12:24:32 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível acessar a API https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/
+-------------------------------
+
+Log Entry : 12:24:32 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 12:24:32 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 17
+-------------------------------
+
+Log Entry : 12:24:32 terça-feira, 21 de setembro de 2021
+  :
+  :Envio: 
+{   "row": [{
+  "id_processo": "NST0001720210800",
+  "header": {
+    "operacao": "RFBU",
+    "username": "JOBTRK",
+    "empresa": "1000",
+    "data_documento": "2021-08-31",
+    "data_lancamento": "2021-08-31",
+    "exercicio": "2021",
+    "periodo": "08",
+    "tipo_documento": "SA",
+    "referencia": "3000200",
+    "texto_cabec": "NST0001720210800"
+  },
+  "account_gl": [
+    {
+      "item_num": "0000000001",
+      "account": "0000422057",
+      "texto": "PIS s/ Pagamento-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato estacionamento unidade 009",
+      "centro_custo": "0011022600"
+    },
+    {
+      "item_num": "0000000002",
+      "account": "0000421377",
+      "texto": "PIS s/ Pagamento-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato estacionamento unidade 009",
+      "centro_custo": "0011022600"
+    },
+    {
+      "item_num": "0000000003",
+      "account": "0000422057",
+      "texto": "PIS s/ Depreciacao-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato estacionamento unidade 009",
+      "centro_custo": "0011022600"
+    },
+    {
+      "item_num": "0000000004",
+      "account": "0000411566",
+      "texto": "PIS s/ Depreciacao-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato estacionamento unidade 009",
+      "centro_custo": "0011022600"
+    },
+    {
+      "item_num": "0000000005",
+      "account": "0000422057",
+      "texto": "COFINS s/ Pagamento-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato estacionamento unidade 009",
+      "centro_custo": "0011022600"
+    },
+    {
+      "item_num": "0000000006",
+      "account": "0000421377",
+      "texto": "COFINS s/ Pagamento-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato estacionamento unidade 009",
+      "centro_custo": "0011022600"
+    },
+    {
+      "item_num": "0000000007",
+      "account": "0000422057",
+      "texto": "COFINS s/ Depreciacao-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato estacionamento unidade 009",
+      "centro_custo": "0011022600"
+    },
+    {
+      "item_num": "0000000008",
+      "account": "0000411566",
+      "texto": "COFINS s/ Depreciacao-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato estacionamento unidade 009",
+      "centro_custo": "0011022600"
+    },
+    {
+      "item_num": "0000000009",
+      "account": "0000411504",
+      "texto": "Bx. Encargos Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato estacionamento unidade 009",
+      "centro_custo": "0011022600"
+    },
+    {
+      "item_num": "0000000010",
+      "account": "0000211199",
+      "texto": "Bx. Encargos Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato estacionamento unidade 009",
+      "centro_lucro": "0011022600"
+    },
+    {
+      "item_num": "0000000011",
+      "account": "0000211199",
+      "texto": "Bx. Principal Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato estacionamento unidade 009",
+      "centro_lucro": "0011022600"
+    },
+    {
+      "item_num": "0000000012",
+      "account": "0000411504",
+      "texto": "Bx. Principal Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato estacionamento unidade 009",
+      "centro_custo": "0011022600"
+    },
+    {
+      "item_num": "0000000013",
+      "account": "0000422056",
+      "texto": "Encargos Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato estacionamento unidade 009",
+      "centro_custo": "0011022600"
+    },
+    {
+      "item_num": "0000000014",
+      "account": "0000211199",
+      "texto": "Encargos Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato estacionamento unidade 009",
+      "centro_lucro": "0011022600"
+    },
+    {
+      "item_num": "0000000015",
+      "account": "0000411565",
+      "texto": "Depreciacao Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato estacionamento unidade 009",
+      "centro_custo": "0011022600"
+    },
+    {
+      "item_num": "0000000016",
+      "account": "0000133030",
+      "texto": "Depreciacao Bens Intangiveis-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato estacionamento unidade 009",
+      "centro_lucro": "0011022600"
+    },
+    {
+      "item_num": "0000000017",
+      "account": "0000211199",
+      "texto": "Transf L ->C Principal-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato estacionamento unidade 009",
+      "centro_lucro": "0011022600"
+    },
+    {
+      "item_num": "0000000018",
+      "account": "0000225015",
+      "texto": "Transf L ->C Principal-08/21",
+      "empresa": "1000",
+      "num_atribuicao": "Contrato estacionamento unidade 009",
+      "centro_lucro": "0011022600"
+    }
+  ],
+  "currency_amount": [
+    {
+      "item_num": "0000000001",
+      "moeda": "BRL",
+      "montante": "488.2300-"
+    },
+    {
+      "item_num": "0000000002",
+      "moeda": "BRL",
+      "montante": "488.2300"
+    },
+    {
+      "item_num": "0000000003",
+      "moeda": "BRL",
+      "montante": "804.8900"
+    },
+    {
+      "item_num": "0000000004",
+      "moeda": "BRL",
+      "montante": "804.8900-"
+    },
+    {
+      "item_num": "0000000005",
+      "moeda": "BRL",
+      "montante": "2248.8100-"
+    },
+    {
+      "item_num": "0000000006",
+      "moeda": "BRL",
+      "montante": "2248.8100"
+    },
+    {
+      "item_num": "0000000007",
+      "moeda": "BRL",
+      "montante": "3707.3700"
+    },
+    {
+      "item_num": "0000000008",
+      "moeda": "BRL",
+      "montante": "3707.3700-"
+    },
+    {
+      "item_num": "0000000009",
+      "moeda": "BRL",
+      "montante": "10151.2700-"
+    },
+    {
+      "item_num": "0000000010",
+      "moeda": "BRL",
+      "montante": "10151.2700"
+    },
+    {
+      "item_num": "0000000011",
+      "moeda": "BRL",
+      "montante": "19438.3500"
+    },
+    {
+      "item_num": "0000000012",
+      "moeda": "BRL",
+      "montante": "19438.3500-"
+    },
+    {
+      "item_num": "0000000013",
+      "moeda": "BRL",
+      "montante": "45714.4500"
+    },
+    {
+      "item_num": "0000000014",
+      "moeda": "BRL",
+      "montante": "45714.4500-"
+    },
+    {
+      "item_num": "0000000015",
+      "moeda": "BRL",
+      "montante": "48781.2500"
+    },
+    {
+      "item_num": "0000000016",
+      "moeda": "BRL",
+      "montante": "48781.2500-"
+    },
+    {
+      "item_num": "0000000017",
+      "moeda": "BRL",
+      "montante": "51443.6600-"
+    },
+    {
+      "item_num": "0000000018",
+      "moeda": "BRL",
+      "montante": "51443.6600"
+    }
+  ]
+}]}
+-------------------------------
+
+Log Entry : 12:24:53 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível acessar a API https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/
+-------------------------------
+
+Log Entry : 15:28:57 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:28:57 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 1
+-------------------------------
+
+Log Entry : 15:28:58 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:28:58 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 2
+-------------------------------
+
+Log Entry : 15:28:58 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 2período 08/2021
+-------------------------------
+
+Log Entry : 15:28:59 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:28:59 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 7
+-------------------------------
+
+Log Entry : 15:29:00 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:00 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8
+-------------------------------
+
+Log Entry : 15:29:01 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:01 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 17
+-------------------------------
+
+Log Entry : 15:29:02 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:02 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 29
+-------------------------------
+
+Log Entry : 15:29:03 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:03 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 30
+-------------------------------
+
+Log Entry : 15:29:04 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:04 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 31
+-------------------------------
+
+Log Entry : 15:29:04 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:04 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 32
+-------------------------------
+
+Log Entry : 15:29:05 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:05 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 33
+-------------------------------
+
+Log Entry : 15:29:06 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:06 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 34
+-------------------------------
+
+Log Entry : 15:29:07 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:07 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 44
+-------------------------------
+
+Log Entry : 15:29:07 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:07 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 53
+-------------------------------
+
+Log Entry : 15:29:08 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:08 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 55
+-------------------------------
+
+Log Entry : 15:29:09 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:09 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 56
+-------------------------------
+
+Log Entry : 15:29:09 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:09 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 63
+-------------------------------
+
+Log Entry : 15:29:09 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 63período 08/2021
+-------------------------------
+
+Log Entry : 15:29:10 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:10 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 66
+-------------------------------
+
+Log Entry : 15:29:11 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:11 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 67
+-------------------------------
+
+Log Entry : 15:29:12 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:12 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 68
+-------------------------------
+
+Log Entry : 15:29:12 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:12 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 69
+-------------------------------
+
+Log Entry : 15:29:13 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:13 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 70
+-------------------------------
+
+Log Entry : 15:29:13 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:13 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 71
+-------------------------------
+
+Log Entry : 15:29:14 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:14 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 127
+-------------------------------
+
+Log Entry : 15:29:14 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:14 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 128
+-------------------------------
+
+Log Entry : 15:29:15 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:15 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 134
+-------------------------------
+
+Log Entry : 15:29:15 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:15 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 135
+-------------------------------
+
+Log Entry : 15:29:16 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:16 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 137
+-------------------------------
+
+Log Entry : 15:29:16 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 137período 08/2021
+-------------------------------
+
+Log Entry : 15:29:24 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:24 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 138
+-------------------------------
+
+Log Entry : 15:29:29 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:29 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 269
+-------------------------------
+
+Log Entry : 15:29:29 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 269período 08/2021
+-------------------------------
+
+Log Entry : 15:29:29 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:29 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 273
+-------------------------------
+
+Log Entry : 15:29:29 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 273período 08/2021
+-------------------------------
+
+Log Entry : 15:29:29 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:29 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 337
+-------------------------------
+
+Log Entry : 15:29:29 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 337período 08/2021
+-------------------------------
+
+Log Entry : 15:29:30 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:30 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 338
+-------------------------------
+
+Log Entry : 15:29:31 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:31 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 339
+-------------------------------
+
+Log Entry : 15:29:31 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:31 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 340
+-------------------------------
+
+Log Entry : 15:29:31 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 340período 08/2021
+-------------------------------
+
+Log Entry : 15:29:32 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:32 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 341
+-------------------------------
+
+Log Entry : 15:29:32 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:32 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 342
+-------------------------------
+
+Log Entry : 15:29:32 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 342período 08/2021
+-------------------------------
+
+Log Entry : 15:29:33 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:33 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 343
+-------------------------------
+
+Log Entry : 15:29:33 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:33 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 344
+-------------------------------
+
+Log Entry : 15:29:33 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 344período 08/2021
+-------------------------------
+
+Log Entry : 15:29:34 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:34 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 345
+-------------------------------
+
+Log Entry : 15:29:34 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 345período 08/2021
+-------------------------------
+
+Log Entry : 15:29:35 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:35 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 346
+-------------------------------
+
+Log Entry : 15:29:35 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 346período 08/2021
+-------------------------------
+
+Log Entry : 15:29:36 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:36 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 347
+-------------------------------
+
+Log Entry : 15:29:36 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 347período 08/2021
+-------------------------------
+
+Log Entry : 15:29:37 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:37 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 348
+-------------------------------
+
+Log Entry : 15:29:37 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 348período 08/2021
+-------------------------------
+
+Log Entry : 15:29:37 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:37 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 349
+-------------------------------
+
+Log Entry : 15:29:37 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 349período 08/2021
+-------------------------------
+
+Log Entry : 15:29:38 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:38 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 350
+-------------------------------
+
+Log Entry : 15:29:38 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 350período 08/2021
+-------------------------------
+
+Log Entry : 15:29:38 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:38 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 351
+-------------------------------
+
+Log Entry : 15:29:38 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 351período 08/2021
+-------------------------------
+
+Log Entry : 15:29:38 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:38 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 352
+-------------------------------
+
+Log Entry : 15:29:38 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 352período 08/2021
+-------------------------------
+
+Log Entry : 15:29:39 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:39 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 353
+-------------------------------
+
+Log Entry : 15:29:39 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 353período 08/2021
+-------------------------------
+
+Log Entry : 15:29:39 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:39 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 354
+-------------------------------
+
+Log Entry : 15:29:39 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 354período 08/2021
+-------------------------------
+
+Log Entry : 15:29:39 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:39 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 355
+-------------------------------
+
+Log Entry : 15:29:39 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 355período 08/2021
+-------------------------------
+
+Log Entry : 15:29:39 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:39 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 356
+-------------------------------
+
+Log Entry : 15:29:39 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 356período 08/2021
+-------------------------------
+
+Log Entry : 15:29:39 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:39 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 357
+-------------------------------
+
+Log Entry : 15:29:39 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 357período 08/2021
+-------------------------------
+
+Log Entry : 15:29:40 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:40 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 358
+-------------------------------
+
+Log Entry : 15:29:40 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 358período 08/2021
+-------------------------------
+
+Log Entry : 15:29:40 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:40 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 359
+-------------------------------
+
+Log Entry : 15:29:40 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 359período 08/2021
+-------------------------------
+
+Log Entry : 15:29:40 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:40 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 360
+-------------------------------
+
+Log Entry : 15:29:40 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 360período 08/2021
+-------------------------------
+
+Log Entry : 15:29:40 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:40 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 361
+-------------------------------
+
+Log Entry : 15:29:40 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 361período 08/2021
+-------------------------------
+
+Log Entry : 15:29:40 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:40 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 362
+-------------------------------
+
+Log Entry : 15:29:40 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 362período 08/2021
+-------------------------------
+
+Log Entry : 15:29:41 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:41 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 363
+-------------------------------
+
+Log Entry : 15:29:41 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 363período 08/2021
+-------------------------------
+
+Log Entry : 15:29:41 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:41 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 364
+-------------------------------
+
+Log Entry : 15:29:41 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 364período 08/2021
+-------------------------------
+
+Log Entry : 15:29:41 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:41 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 365
+-------------------------------
+
+Log Entry : 15:29:41 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 365período 08/2021
+-------------------------------
+
+Log Entry : 15:29:41 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:41 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 366
+-------------------------------
+
+Log Entry : 15:29:41 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 366período 08/2021
+-------------------------------
+
+Log Entry : 15:29:41 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:41 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 367
+-------------------------------
+
+Log Entry : 15:29:41 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 367período 08/2021
+-------------------------------
+
+Log Entry : 15:29:41 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:41 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 368
+-------------------------------
+
+Log Entry : 15:29:41 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 368período 08/2021
+-------------------------------
+
+Log Entry : 15:29:42 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:42 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 369
+-------------------------------
+
+Log Entry : 15:29:42 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 369período 08/2021
+-------------------------------
+
+Log Entry : 15:29:42 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:42 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 370
+-------------------------------
+
+Log Entry : 15:29:42 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 370período 08/2021
+-------------------------------
+
+Log Entry : 15:29:42 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:42 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 371
+-------------------------------
+
+Log Entry : 15:29:42 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 371período 08/2021
+-------------------------------
+
+Log Entry : 15:29:42 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:42 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 372
+-------------------------------
+
+Log Entry : 15:29:42 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 372período 08/2021
+-------------------------------
+
+Log Entry : 15:29:42 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:42 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 373
+-------------------------------
+
+Log Entry : 15:29:42 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 373período 08/2021
+-------------------------------
+
+Log Entry : 15:29:43 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:43 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 374
+-------------------------------
+
+Log Entry : 15:29:43 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 374período 08/2021
+-------------------------------
+
+Log Entry : 15:29:43 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:43 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 375
+-------------------------------
+
+Log Entry : 15:29:43 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 375período 08/2021
+-------------------------------
+
+Log Entry : 15:29:43 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:43 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 376
+-------------------------------
+
+Log Entry : 15:29:43 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 376período 08/2021
+-------------------------------
+
+Log Entry : 15:29:43 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:43 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 377
+-------------------------------
+
+Log Entry : 15:29:43 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 377período 08/2021
+-------------------------------
+
+Log Entry : 15:29:43 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:43 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 378
+-------------------------------
+
+Log Entry : 15:29:44 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:44 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 379
+-------------------------------
+
+Log Entry : 15:29:44 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 379período 08/2021
+-------------------------------
+
+Log Entry : 15:29:44 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:44 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 380
+-------------------------------
+
+Log Entry : 15:29:44 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:44 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 381
+-------------------------------
+
+Log Entry : 15:29:44 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:44 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 382
+-------------------------------
+
+Log Entry : 15:29:44 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:44 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 383
+-------------------------------
+
+Log Entry : 15:29:45 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:45 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 384
+-------------------------------
+
+Log Entry : 15:29:45 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:45 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 385
+-------------------------------
+
+Log Entry : 15:29:45 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:45 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 386
+-------------------------------
+
+Log Entry : 15:29:46 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:46 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 387
+-------------------------------
+
+Log Entry : 15:29:51 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:51 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 388
+-------------------------------
+
+Log Entry : 15:29:51 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:51 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 389
+-------------------------------
+
+Log Entry : 15:29:51 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:51 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 390
+-------------------------------
+
+Log Entry : 15:29:51 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:51 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 391
+-------------------------------
+
+Log Entry : 15:29:52 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:52 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 392
+-------------------------------
+
+Log Entry : 15:29:52 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:52 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 393
+-------------------------------
+
+Log Entry : 15:29:52 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:52 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 394
+-------------------------------
+
+Log Entry : 15:29:52 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:52 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 395
+-------------------------------
+
+Log Entry : 15:29:52 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 395período 08/2021
+-------------------------------
+
+Log Entry : 15:29:52 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:52 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 396
+-------------------------------
+
+Log Entry : 15:29:52 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:52 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 397
+-------------------------------
+
+Log Entry : 15:29:53 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:53 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 398
+-------------------------------
+
+Log Entry : 15:29:53 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 398período 08/2021
+-------------------------------
+
+Log Entry : 15:29:54 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:54 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 399
+-------------------------------
+
+Log Entry : 15:29:54 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:54 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 400
+-------------------------------
+
+Log Entry : 15:29:54 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 400período 08/2021
+-------------------------------
+
+Log Entry : 15:29:54 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:54 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 401
+-------------------------------
+
+Log Entry : 15:29:54 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 401período 08/2021
+-------------------------------
+
+Log Entry : 15:29:54 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:54 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 402
+-------------------------------
+
+Log Entry : 15:29:54 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 402período 08/2021
+-------------------------------
+
+Log Entry : 15:29:54 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:54 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 403
+-------------------------------
+
+Log Entry : 15:29:54 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 403período 08/2021
+-------------------------------
+
+Log Entry : 15:29:54 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:54 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 404
+-------------------------------
+
+Log Entry : 15:29:54 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 404período 08/2021
+-------------------------------
+
+Log Entry : 15:29:55 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:55 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 405
+-------------------------------
+
+Log Entry : 15:29:55 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 405período 08/2021
+-------------------------------
+
+Log Entry : 15:29:55 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:55 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 406
+-------------------------------
+
+Log Entry : 15:29:55 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 406período 08/2021
+-------------------------------
+
+Log Entry : 15:29:55 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:55 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 407
+-------------------------------
+
+Log Entry : 15:29:56 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:56 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 408
+-------------------------------
+
+Log Entry : 15:29:57 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:57 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 409
+-------------------------------
+
+Log Entry : 15:29:57 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:57 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 410
+-------------------------------
+
+Log Entry : 15:29:57 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:57 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 411
+-------------------------------
+
+Log Entry : 15:29:57 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:57 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 412
+-------------------------------
+
+Log Entry : 15:29:57 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 412período 08/2021
+-------------------------------
+
+Log Entry : 15:29:58 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:58 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 413
+-------------------------------
+
+Log Entry : 15:29:58 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:58 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 414
+-------------------------------
+
+Log Entry : 15:29:59 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:29:59 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 415
+-------------------------------
+
+Log Entry : 15:30:00 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:00 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 416
+-------------------------------
+
+Log Entry : 15:30:00 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:00 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 417
+-------------------------------
+
+Log Entry : 15:30:00 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:00 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 418
+-------------------------------
+
+Log Entry : 15:30:00 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 418período 08/2021
+-------------------------------
+
+Log Entry : 15:30:00 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:00 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 419
+-------------------------------
+
+Log Entry : 15:30:00 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 419período 08/2021
+-------------------------------
+
+Log Entry : 15:30:01 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:01 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 420
+-------------------------------
+
+Log Entry : 15:30:01 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 420período 08/2021
+-------------------------------
+
+Log Entry : 15:30:01 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:01 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 421
+-------------------------------
+
+Log Entry : 15:30:01 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 421período 08/2021
+-------------------------------
+
+Log Entry : 15:30:01 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:01 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 422
+-------------------------------
+
+Log Entry : 15:30:01 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 422período 08/2021
+-------------------------------
+
+Log Entry : 15:30:01 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:01 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 423
+-------------------------------
+
+Log Entry : 15:30:01 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 423período 08/2021
+-------------------------------
+
+Log Entry : 15:30:01 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:01 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 424
+-------------------------------
+
+Log Entry : 15:30:01 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 424período 08/2021
+-------------------------------
+
+Log Entry : 15:30:01 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:01 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 425
+-------------------------------
+
+Log Entry : 15:30:01 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 425período 08/2021
+-------------------------------
+
+Log Entry : 15:30:01 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:01 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 426
+-------------------------------
+
+Log Entry : 15:30:01 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 426período 08/2021
+-------------------------------
+
+Log Entry : 15:30:02 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:02 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 427
+-------------------------------
+
+Log Entry : 15:30:02 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 427período 08/2021
+-------------------------------
+
+Log Entry : 15:30:02 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:02 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 428
+-------------------------------
+
+Log Entry : 15:30:02 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 428período 08/2021
+-------------------------------
+
+Log Entry : 15:30:02 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:02 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 429
+-------------------------------
+
+Log Entry : 15:30:02 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 429período 08/2021
+-------------------------------
+
+Log Entry : 15:30:02 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:02 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 430
+-------------------------------
+
+Log Entry : 15:30:02 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 430período 08/2021
+-------------------------------
+
+Log Entry : 15:30:02 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:02 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 431
+-------------------------------
+
+Log Entry : 15:30:02 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 431período 08/2021
+-------------------------------
+
+Log Entry : 15:30:02 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:02 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 432
+-------------------------------
+
+Log Entry : 15:30:02 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 432período 08/2021
+-------------------------------
+
+Log Entry : 15:30:02 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:02 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 433
+-------------------------------
+
+Log Entry : 15:30:02 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 433período 08/2021
+-------------------------------
+
+Log Entry : 15:30:04 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:04 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 434
+-------------------------------
+
+Log Entry : 15:30:04 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 434período 08/2021
+-------------------------------
+
+Log Entry : 15:30:05 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:05 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 435
+-------------------------------
+
+Log Entry : 15:30:05 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 435período 08/2021
+-------------------------------
+
+Log Entry : 15:30:05 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:05 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 436
+-------------------------------
+
+Log Entry : 15:30:05 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 436período 08/2021
+-------------------------------
+
+Log Entry : 15:30:05 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:05 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 437
+-------------------------------
+
+Log Entry : 15:30:05 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 437período 08/2021
+-------------------------------
+
+Log Entry : 15:30:05 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:05 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 438
+-------------------------------
+
+Log Entry : 15:30:05 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 438período 08/2021
+-------------------------------
+
+Log Entry : 15:30:05 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:05 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 439
+-------------------------------
+
+Log Entry : 15:30:05 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:05 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 440
+-------------------------------
+
+Log Entry : 15:30:05 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:05 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 441
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 442
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 443
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8039
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8039período 08/2021
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8040
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8040período 08/2021
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8041
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8041período 08/2021
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8052
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8052período 08/2021
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8053
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8053período 08/2021
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8054
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8054período 08/2021
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8056
+-------------------------------
+
+Log Entry : 15:30:06 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8056período 08/2021
+-------------------------------
+
+Log Entry : 15:30:08 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:08 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8062
+-------------------------------
+
+Log Entry : 15:30:08 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8062período 08/2021
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8066
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8066período 08/2021
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8616
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8616período 08/2021
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8618
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8618período 08/2021
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8947
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8947período 08/2021
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8948
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8948período 08/2021
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 9026
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 9026período 08/2021
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 9027
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 9027período 08/2021
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 9030
+-------------------------------
+
+Log Entry : 15:30:09 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 9030período 08/2021
+-------------------------------
+
+Log Entry : 15:31:23 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:23 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 1
+-------------------------------
+
+Log Entry : 15:31:23 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:23 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 2
+-------------------------------
+
+Log Entry : 15:31:23 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 2período 08/2021
+-------------------------------
+
+Log Entry : 15:31:24 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:24 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 7
+-------------------------------
+
+Log Entry : 15:31:24 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:24 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8
+-------------------------------
+
+Log Entry : 15:31:24 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:24 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 17
+-------------------------------
+
+Log Entry : 15:31:24 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:24 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 29
+-------------------------------
+
+Log Entry : 15:31:24 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:24 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 30
+-------------------------------
+
+Log Entry : 15:31:24 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:24 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 31
+-------------------------------
+
+Log Entry : 15:31:24 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:24 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 32
+-------------------------------
+
+Log Entry : 15:31:24 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:24 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 33
+-------------------------------
+
+Log Entry : 15:31:24 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:24 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 34
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 44
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 53
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 55
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 56
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 63
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 63período 08/2021
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 66
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 67
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 68
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 69
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 70
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:25 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 71
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 127
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 128
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 134
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 135
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 137
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 137período 08/2021
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 138
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 269
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 269período 08/2021
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 273
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 273período 08/2021
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 337
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 337período 08/2021
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 338
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 339
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 340
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 340período 08/2021
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:26 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 341
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 342
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 342período 08/2021
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 343
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 344
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 344período 08/2021
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 345
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 345período 08/2021
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 346
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 346período 08/2021
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 347
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 347período 08/2021
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 348
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 348período 08/2021
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 349
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 349período 08/2021
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 350
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 350período 08/2021
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 351
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 351período 08/2021
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 352
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 352período 08/2021
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 353
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 353período 08/2021
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 354
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 354período 08/2021
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 355
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 355período 08/2021
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 356
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 356período 08/2021
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 357
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 357período 08/2021
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 358
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 358período 08/2021
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 359
+-------------------------------
+
+Log Entry : 15:31:27 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 359período 08/2021
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 360
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 360período 08/2021
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 361
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 361período 08/2021
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 362
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 362período 08/2021
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 363
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 363período 08/2021
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 364
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 364período 08/2021
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 365
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 365período 08/2021
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 366
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 366período 08/2021
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 367
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 367período 08/2021
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 368
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 368período 08/2021
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 369
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 369período 08/2021
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 370
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 370período 08/2021
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 371
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 371período 08/2021
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 372
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 372período 08/2021
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 373
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 373período 08/2021
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 374
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 374período 08/2021
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 375
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 375período 08/2021
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 376
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 376período 08/2021
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 377
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 377período 08/2021
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 378
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 379
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 379período 08/2021
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 380
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:28 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 381
+-------------------------------
+
+Log Entry : 15:31:29 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:29 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 382
+-------------------------------
+
+Log Entry : 15:31:29 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:29 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 383
+-------------------------------
+
+Log Entry : 15:31:29 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:29 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 384
+-------------------------------
+
+Log Entry : 15:31:29 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:29 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 385
+-------------------------------
+
+Log Entry : 15:31:29 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:29 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 386
+-------------------------------
+
+Log Entry : 15:31:29 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:29 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 387
+-------------------------------
+
+Log Entry : 15:31:29 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:29 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 388
+-------------------------------
+
+Log Entry : 15:31:29 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:29 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 389
+-------------------------------
+
+Log Entry : 15:31:29 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:29 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 390
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 391
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 392
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 393
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 394
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 395
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 395período 08/2021
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 396
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 397
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 398
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 398período 08/2021
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 399
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 400
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 400período 08/2021
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 401
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 401período 08/2021
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:30 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 402
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 402período 08/2021
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 403
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 403período 08/2021
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 404
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 404período 08/2021
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 405
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 405período 08/2021
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 406
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 406período 08/2021
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 407
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 408
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 409
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 410
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 411
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 412
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 412período 08/2021
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 413
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 414
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:31 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 415
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 416
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 417
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 418
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 418período 08/2021
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 419
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 419período 08/2021
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 420
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 420período 08/2021
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 421
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 421período 08/2021
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 422
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 422período 08/2021
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 423
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 423período 08/2021
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 424
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 424período 08/2021
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 425
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 425período 08/2021
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 426
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 426período 08/2021
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 427
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 427período 08/2021
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 428
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 428período 08/2021
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 429
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 429período 08/2021
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:32 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 430
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 430período 08/2021
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 431
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 431período 08/2021
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 432
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 432período 08/2021
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 433
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 433período 08/2021
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 434
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 434período 08/2021
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 435
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 435período 08/2021
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 436
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 436período 08/2021
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 437
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 437período 08/2021
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 438
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 438período 08/2021
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 439
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 440
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 441
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 442
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 443
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8039
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8039período 08/2021
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8040
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8040período 08/2021
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:33 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8041
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8041período 08/2021
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8052
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8052período 08/2021
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8053
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8053período 08/2021
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8054
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8054período 08/2021
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8056
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8056período 08/2021
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8062
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8062período 08/2021
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8066
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8066período 08/2021
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8616
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8616período 08/2021
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8618
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8618período 08/2021
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8947
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8947período 08/2021
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 8948
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 8948período 08/2021
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 9026
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 9026período 08/2021
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 9027
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 9027período 08/2021
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Integração GL - API : Solicitação enviada para a URL https://10.16.40.9:50001/RESTAdapter/nesta/v1/accdocumentpost/, com usuário CARTAS_HR e senha fcgebGtO4.
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Solicitação para o OPIDCONT: 9030
+-------------------------------
+
+Log Entry : 15:31:34 terça-feira, 21 de setembro de 2021
+  :
+  :Não foi possível encontrar dados para integração do contrato 9030período 08/2021
+-------------------------------

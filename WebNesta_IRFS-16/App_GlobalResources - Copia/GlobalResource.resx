@@ -1,0 +1,635 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btn4.1" xml:space="preserve">
+    <value>Contract Registration</value>
+  </data>
+  <data name="btn4.2" xml:space="preserve">
+    <value>Lump Sum</value>
+  </data>
+  <data name="btn_alterar" xml:space="preserve">
+    <value>Edit</value>
+    <comment>Botão Alterar localizado em todas as páginas</comment>
+  </data>
+  <data name="btn_alterar_qg" xml:space="preserve">
+    <value>When clicking on the CHANGE button, the system enables the registration fields to edit the selected record. Follow the instructions contained in the Quick Guide to complete the content of each available field. By clicking on the OK button, the system validates the data entry and displays inconsistencies if found in a separate window. If there are no inconsistencies, the system updates the record in the database. By clicking on the CANCEL button the system discards all modifications and returns to the query and navigation mode.</value>
+  </data>
+  <data name="btn_cancelar" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>Botão Cancelar localizado em todas as páginas</comment>
+  </data>
+  <data name="btn_cancelar2_qg" xml:space="preserve">
+    <value>When you click on the CANCEL button, the system discards all bookings and returns to the query and navigation mode.</value>
+  </data>
+  <data name="btn_cancelar_qg" xml:space="preserve">
+    <value>When you click on the CANCEL button, the system discards all editions and returns to the query and navigation mode.</value>
+  </data>
+  <data name="btn_consultar" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="btn_excluir" xml:space="preserve">
+    <value>Delete</value>
+    <comment>Botão Excluir localizado em todas as páginas</comment>
+  </data>
+  <data name="btn_excluir2_qg" xml:space="preserve">
+    <value>When clicking on the DELETE button, the system enables the grid to select the records to be deleted from the database. By clicking on the OK button, the system checks if there are any dependencies linked to the record marked for deletion and presents integrity violations if found in a separate window. If there are no dependencies, the system deletes the records from the database. When you click on the CANCEL button the system discards all bookings and returns to the query and navigation mode.</value>
+  </data>
+  <data name="btn_excluir_qg" xml:space="preserve">
+    <value>When you click the DELETE button, the system marks the record selected for deletion. By clicking on the OK button, the system checks if there are any dependencies linked to the record marked for deletion and presents integrity violations if found in a separate window. If there are no dependencies, the system deletes the records from the database. When clicking on the CANCEL button the system discards the marking and returns to the query and navigation mode.</value>
+  </data>
+  <data name="btn_fechar" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="btn_grid_batch_cancel" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>Botão Cancelar dos Grids</comment>
+  </data>
+  <data name="btn_grid_batch_deletevalues" xml:space="preserve">
+    <value>Deleted Values</value>
+    <comment>Texto de confirmação de exclusão dos grids</comment>
+  </data>
+  <data name="btn_grid_batch_hide" xml:space="preserve">
+    <value>Hide Values</value>
+    <comment>Botão Ocultar visualização dos Grids</comment>
+  </data>
+  <data name="btn_grid_batch_insertvalues" xml:space="preserve">
+    <value>New Values</value>
+    <comment>Texto de confirmação de inserção dos grids</comment>
+  </data>
+  <data name="btn_grid_batch_preview" xml:space="preserve">
+    <value>Preview</value>
+    <comment>Botão Validar dos Grids</comment>
+  </data>
+  <data name="btn_grid_batch_save" xml:space="preserve">
+    <value>Save</value>
+    <comment>Botão Salvar dos Grids</comment>
+  </data>
+  <data name="btn_grid_batch_updatevalues" xml:space="preserve">
+    <value>Updated Values</value>
+    <comment>Texto de confirmação de alteração dos grids</comment>
+  </data>
+  <data name="btn_historico" xml:space="preserve">
+    <value>Historic</value>
+  </data>
+  <data name="btn_inserir" xml:space="preserve">
+    <value>Create</value>
+    <comment>Botão Inserir localizado em todas as páginas</comment>
+  </data>
+  <data name="btn_inserir2_qg" xml:space="preserve">
+    <value>When clicking on the CREATE button, the system enables the registration fields in the grid to edit a new record. Follow the instructions contained in the Quick Guide to complete the content of each available field. By clicking on the SAVE button, the system validates the data entry and displays inconsistencies if found in a separate window. If there are no inconsistencies, the system inserts a new record in the database. By clicking on the DISCARD button the system discards all modifications and returns to the query and navigation mode</value>
+  </data>
+  <data name="btn_inserir_qg" xml:space="preserve">
+    <value>When clicking on the CREATE button, the system enables the registration fields to edit a new record. Follow the instructions contained in the Quick Guide to complete the content of each available field. By clicking on the OK button, the system validates the data entry and displays inconsistencies if found in a separate window. If there are no inconsistencies, the system inserts a new record in the database. By clicking on the CANCEL button the system discards all modifications and returns to the query and navigation mode.</value>
+  </data>
+  <data name="btn_integrar" xml:space="preserve">
+    <value>Integrate</value>
+  </data>
+  <data name="btn_ok" xml:space="preserve">
+    <value>OK</value>
+    <comment>Botão OK localizado em todas as páginas</comment>
+  </data>
+  <data name="btn_ok2_qg" xml:space="preserve">
+    <value>By clicking on the OK button, if in Inclusion or Change mode, the system validates the data entry and displays inconsistencies if found in a separate window. If there are no inconsistencies, the system inserts / updates the record in the database. If in Exclusion mode, the system checks if there are dependencies linked to the record and presents integrity violations if found in a separate window. In the absence of dependencies, the system deletes the record from the database.</value>
+  </data>
+  <data name="btn_ok_qg" xml:space="preserve">
+    <value>By clicking on the OK button, if in Inclusion or Change mode, the system validates the data entry and displays inconsistencies if found in a separate window. If there are no inconsistencies, the system inserts / updates the record in the database. If in Exclusion mode, the system checks if there are dependencies linked to the record and presents integrity violations if found in a separate window. In the absence of dependencies, the system deletes the record from the database.</value>
+  </data>
+  <data name="btn_processar" xml:space="preserve">
+    <value>Process</value>
+    <comment>Botão Processar localizado em todas as páginas</comment>
+  </data>
+  <data name="btn_readmore" xml:space="preserve">
+    <value>Read More</value>
+  </data>
+  <data name="btn_replicar" xml:space="preserve">
+    <value>Duplicate</value>
+  </data>
+  <data name="btn_selecionar" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="btn_selecione_loja_fechar" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="btn_selecione_loja_limpar" xml:space="preserve">
+    <value>Clean</value>
+  </data>
+  <data name="btn_selecione_loja_selecione" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="feriado_grid_col1" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="feriado_grid_col2" xml:space="preserve">
+    <value>Holiday</value>
+  </data>
+  <data name="feriado_grid_col3" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="feriado_right_lbl1" xml:space="preserve">
+    <value>Select Country:</value>
+    <comment>Página Feriado coluna à direita</comment>
+  </data>
+  <data name="feriado_tituloPag" xml:space="preserve">
+    <value>Holidays</value>
+    <comment>Página Feriado título geral</comment>
+  </data>
+  <data name="footer_link1" xml:space="preserve">
+    <value>+ Supplier</value>
+    <comment>Links localizados no Rodapé</comment>
+  </data>
+  <data name="footer_link10" xml:space="preserve">
+    <value>+ Documents</value>
+    <comment>Links localizados no Rodapé</comment>
+  </data>
+  <data name="footer_link11" xml:space="preserve">
+    <value>+ Cloud OCR Tools</value>
+    <comment>Links localizados no Rodapé</comment>
+  </data>
+  <data name="footer_link11.1" xml:space="preserve">
+    <value>Parameterization of OCR Layouts</value>
+  </data>
+  <data name="footer_link11.2" xml:space="preserve">
+    <value>Tracking OCR Readings</value>
+  </data>
+  <data name="footer_link12" xml:space="preserve">
+    <value>+ Monitoring</value>
+    <comment>Links localizados no Rodapé</comment>
+  </data>
+  <data name="footer_link13" xml:space="preserve">
+    <value>+ Funds</value>
+  </data>
+  <data name="footer_link14" xml:space="preserve">
+    <value>+ Book</value>
+  </data>
+  <data name="footer_link15" xml:space="preserve">
+    <value>+ Uploader</value>
+  </data>
+  <data name="footer_link16" xml:space="preserve">
+    <value>+ Appendix 1</value>
+  </data>
+  <data name="footer_link2" xml:space="preserve">
+    <value>+ Accounting Class</value>
+    <comment>Links localizados no Rodapé</comment>
+  </data>
+  <data name="footer_link3" xml:space="preserve">
+    <value>+ Portfolio</value>
+    <comment>Links localizados no Rodapé</comment>
+  </data>
+  <data name="footer_link4" xml:space="preserve">
+    <value>+ Formula</value>
+    <comment>Links localizados no Rodapé</comment>
+  </data>
+  <data name="footer_link5" xml:space="preserve">
+    <value>+ Indexers</value>
+    <comment>Links localizados no Rodapé</comment>
+  </data>
+  <data name="footer_link6" xml:space="preserve">
+    <value>+ ETTJ Curve</value>
+    <comment>Links localizados no Rodapé</comment>
+  </data>
+  <data name="footer_link7" xml:space="preserve">
+    <value>+ Product</value>
+    <comment>Links localizados no Rodapé</comment>
+  </data>
+  <data name="footer_link8" xml:space="preserve">
+    <value>+ Payment</value>
+    <comment>Links localizados no Rodapé</comment>
+  </data>
+  <data name="footer_link9" xml:space="preserve">
+    <value>+ Chart of Accounts</value>
+    <comment>Links localizados no Rodapé</comment>
+  </data>
+  <data name="footer_titulo" xml:space="preserve">
+    <value>Action</value>
+    <comment>Título dos links localizados no Rodapé</comment>
+  </data>
+  <data name="geral_selecione_loja_header" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="guide_grid_edit" xml:space="preserve">
+    <value>To change the data it is possible to double-click on the desired line. To insert, click on the + icon and fill in the fields. To delete it is necessary to click on the trash can icon. After any of these operations it is necessary to Save or Discard.</value>
+  </data>
+  <data name="header_desde" xml:space="preserve">
+    <value>In use since</value>
+    <comment>Cabeçalho informação sobre empresa cliente</comment>
+  </data>
+  <data name="header_nome_aplicacao" xml:space="preserve">
+    <value>IFRS.16</value>
+  </data>
+  <data name="header_subtitulo" xml:space="preserve">
+    <value>Real estate system to comply with IFRS 16.</value>
+    <comment>Cabeçalho do sistema</comment>
+  </data>
+  <data name="header_titulo" xml:space="preserve">
+    <value>Nesta cloud suites</value>
+    <comment>Cabeçalho do sistema</comment>
+  </data>
+  <data name="header_top1" xml:space="preserve">
+    <value>Nesta Cloud</value>
+    <comment>Cabeçalho do sistema</comment>
+  </data>
+  <data name="header_top2" xml:space="preserve">
+    <value>Expert System for Financial Management</value>
+    <comment>Cabeçalho do sistema</comment>
+  </data>
+  <data name="inicial_card_1_texto1" xml:space="preserve">
+    <value>Hi</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_card_1_texto2" xml:space="preserve">
+    <value>, welcome!</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_card_1_texto3" xml:space="preserve">
+    <value>Consult the activity and pending information boards!</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_card_1_titulo" xml:space="preserve">
+    <value>Opening of Works</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_card_2_texto1" xml:space="preserve">
+    <value>Total</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_card_2_texto2" xml:space="preserve">
+    <value>Active</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_card_2_texto3" xml:space="preserve">
+    <value>Closed</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_card_2_texto4" xml:space="preserve">
+    <value>Expire 90 days</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_card_2_texto5" xml:space="preserve">
+    <value>Suspend</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_card_2_texto6" xml:space="preserve">
+    <value>Judiciary</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_card_2_titulo" xml:space="preserve">
+    <value>Contract Administration</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_card_3_titulo" xml:space="preserve">
+    <value>Documents</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_card_4_titulo" xml:space="preserve">
+    <value>Appendices</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_card_5_titulo" xml:space="preserve">
+    <value>Currency Exchange</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_card_6_texto1" xml:space="preserve">
+    <value>Elaboration</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_card_6_texto2" xml:space="preserve">
+    <value>Check</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_card_6_texto3" xml:space="preserve">
+    <value>Approval</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_card_6_texto4" xml:space="preserve">
+    <value>Signature</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_card_6_texto5" xml:space="preserve">
+    <value>Register</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_card_6_texto6" xml:space="preserve">
+    <value>Agreed</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_card_6_titulo" xml:space="preserve">
+    <value>Contract Request</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_card_7_texto1" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="inicial_card_7_texto2" xml:space="preserve">
+    <value>Closing</value>
+  </data>
+  <data name="inicial_card_7_texto3" xml:space="preserve">
+    <value>Updates</value>
+  </data>
+  <data name="inicial_card_7_texto4" xml:space="preserve">
+    <value>Quotation</value>
+  </data>
+  <data name="inicial_guide_texto1" xml:space="preserve">
+    <value>Application for the management of contracts reached by IFRS 16, with resources for:</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_guide_texto11" xml:space="preserve">
+    <value>Hello, in your first access we strongly recommend that you consult the Tutorial IFRS 16.</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_guide_texto2" xml:space="preserve">
+    <value>.Registration</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_guide_texto21" xml:space="preserve">
+    <value>We have prepared a website with guidelines to help start using it.</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_guide_texto3" xml:space="preserve">
+    <value>.Additions</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_guide_texto31" xml:space="preserve">
+    <value>Access: @ webnestaifrs16.</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_guide_texto4" xml:space="preserve">
+    <value>.Movements</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_guide_texto41" xml:space="preserve">
+    <value>#</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_guide_texto5" xml:space="preserve">
+    <value>.Accounts</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_guide_texto6" xml:space="preserve">
+    <value>.Budget</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="inicial_guide_texto7" xml:space="preserve">
+    <value>.Results analysis</value>
+    <comment>Página Inicial</comment>
+  </data>
+  <data name="interface_right_titulo" xml:space="preserve">
+    <value>Process Pending</value>
+    <comment>Página Interface título coluna à direita</comment>
+  </data>
+  <data name="interface_titulo1" xml:space="preserve">
+    <value>Pending Integrations - Contract Creation</value>
+    <comment>Página Interface.aspx título grupo</comment>
+  </data>
+  <data name="lbl_grid_batch_duplicated" xml:space="preserve">
+    <value>Duplicate record</value>
+  </data>
+  <data name="login_date" xml:space="preserve">
+    <value>Since:</value>
+  </data>
+  <data name="login_language" xml:space="preserve">
+    <value>Current Language:</value>
+  </data>
+  <data name="login_user" xml:space="preserve">
+    <value>User Logged:</value>
+  </data>
+  <data name="menu_botao1" xml:space="preserve">
+    <value>Home Page</value>
+    <comment>Menu Navegação Botões</comment>
+  </data>
+  <data name="menu_botao10" xml:space="preserve">
+    <value>About Nesta</value>
+    <comment>Menu Navegação Botões</comment>
+  </data>
+  <data name="menu_botao11" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="menu_botao2" xml:space="preserve">
+    <value>Agreement Request</value>
+    <comment>Menu Navegação Botões</comment>
+  </data>
+  <data name="menu_botao3" xml:space="preserve">
+    <value>Real Estate</value>
+    <comment>Menu Navegação Botões</comment>
+  </data>
+  <data name="menu_botao4" xml:space="preserve">
+    <value>Contract Registration</value>
+    <comment>Menu Navegação Botões</comment>
+  </data>
+  <data name="menu_botao5" xml:space="preserve">
+    <value>Payments Flow</value>
+    <comment>Menu Navegação Botões</comment>
+  </data>
+  <data name="menu_botao6" xml:space="preserve">
+    <value>IFRS Cash Flow</value>
+    <comment>Menu Navegação Botões</comment>
+  </data>
+  <data name="menu_botao7" xml:space="preserve">
+    <value>Workflow</value>
+    <comment>Menu Navegação Botões</comment>
+  </data>
+  <data name="menu_botao8" xml:space="preserve">
+    <value>Facilities</value>
+    <comment>Menu Navegação Botões</comment>
+  </data>
+  <data name="menu_botao9" xml:space="preserve">
+    <value>User Profile</value>
+    <comment>Menu Navegação Botões</comment>
+  </data>
+  <data name="menu_botaoSair" xml:space="preserve">
+    <value>Logout</value>
+    <comment>Menu Navegação Botões</comment>
+  </data>
+  <data name="menu_botaoSobre" xml:space="preserve">
+    <value>About</value>
+    <comment>Menu Navegação Botões</comment>
+  </data>
+  <data name="menu_idioma" xml:space="preserve">
+    <value>Current Language:</value>
+    <comment>Menu Navegação Labels</comment>
+  </data>
+  <data name="menu_usuario" xml:space="preserve">
+    <value>Logged as:</value>
+    <comment>Menu Navegação Labels</comment>
+  </data>
+  <data name="menu_validade" xml:space="preserve">
+    <value>Password expire date:</value>
+    <comment>Menu Navegação Labels</comment>
+  </data>
+  <data name="MsgExc_delete_item_using" xml:space="preserve">
+    <value>Not allowed to delete item in use.</value>
+  </data>
+  <data name="msg_alert_exception" xml:space="preserve">
+    <value>Exception:</value>
+    <comment>Mensagem de Alerta pop-up para erros</comment>
+  </data>
+  <data name="msg_alert_success" xml:space="preserve">
+    <value>Your action was successfull completed.</value>
+    <comment>Mensagem de Alerta pop-up para sucesso</comment>
+  </data>
+  <data name="popup_exception" xml:space="preserve">
+    <value>Alert Message:</value>
+  </data>
+  <data name="popup_language_choose" xml:space="preserve">
+    <value>To use the Multi-language option, it is necessary to open a ticket to enable the feature.</value>
+  </data>
+  <data name="popup_session_btnNo" xml:space="preserve">
+    <value>No</value>
+    <comment>Botão pop-up Session</comment>
+  </data>
+  <data name="popup_session_btnYes" xml:space="preserve">
+    <value>Yes</value>
+    <comment>Botão pop-up Session</comment>
+  </data>
+  <data name="popup_session_texto1" xml:space="preserve">
+    <value>Your current session will expire in</value>
+    <comment>Label pop-up Session</comment>
+  </data>
+  <data name="popup_session_texto2" xml:space="preserve">
+    <value>seconds.</value>
+    <comment>Label pop-up Session</comment>
+  </data>
+  <data name="popup_session_texto3" xml:space="preserve">
+    <value>Do you want to reset it?</value>
+    <comment>Label pop-up Session</comment>
+  </data>
+  <data name="popup_session_titulo" xml:space="preserve">
+    <value>Session Expiring.</value>
+    <comment>Label pop-up Session</comment>
+  </data>
+  <data name="quickguide_inicial" xml:space="preserve">
+    <value>Mouse over some systems field where the information related will be shown in this board.</value>
+    <comment>Texto inicial Quick Guide para todas as páginas</comment>
+  </data>
+  <data name="required" xml:space="preserve">
+    <value>is required.</value>
+    <comment>Texto para campos obrigatórios</comment>
+  </data>
+  <data name="sel_contrato_guide" xml:space="preserve">
+    <value>Use the filters to manipulate the sample data. Click on the column title to sort the data in ascending ↑ or descending ↓ order. Double click on the grid line to load the form with all the properties of the selected contract.</value>
+  </data>
+  <data name="sel_imovel_guide" xml:space="preserve">
+    <value>Select the desired property to load the data</value>
+  </data>
+  <data name="sel_loja_guide" xml:space="preserve">
+    <value>Choose the structure of the economic GROUP, the COMPANY or the branch you intend to subordinate to the contract you are going to register.</value>
+  </data>
+  <data name="tip_guide_label" xml:space="preserve">
+    <value>Click to see all tips about this field.</value>
+  </data>
+</root>

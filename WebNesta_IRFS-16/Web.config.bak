@@ -1,0 +1,164 @@
+﻿<!--
+  Para obter mais informações sobre como configurar seu aplicativo ASP.NET, visite
+  https://go.microsoft.com/fwlink/?LinkId=169433
+  -->
+<configuration>
+  <configSections>
+    <sectionGroup name="devExpress">
+      <section name="themes" type="DevExpress.Web.ThemesConfigurationSection, DevExpress.Web.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" requirePermission="false" />
+      <section name="compression" type="DevExpress.Web.CompressionConfigurationSection, DevExpress.Web.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" requirePermission="false" />
+      <section name="settings" type="DevExpress.Web.SettingsConfigurationSection, DevExpress.Web.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" requirePermission="false" />
+      <section name="errors" type="DevExpress.Web.ErrorsConfigurationSection, DevExpress.Web.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" requirePermission="false" />
+      <section name="resources" type="DevExpress.Web.ResourcesConfigurationSection, DevExpress.Web.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" requirePermission="false" />
+    </sectionGroup>
+    <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+  </configSections>
+  <connectionStrings>
+    <!--<add name="bd_app" connectionString="Provider=SQLOLEDB.1;Data Source=DSV-WEB\SQLEXPRESS;Initial Catalog=COFCO_QAS;User ID=COFCO_QAS;Password=c0fc0_QAS;Connect Timeout=600" />
+    <add name="ConnectionString" connectionString="Provider=SQLNCLI11;Data Source=DSV-WEB\SQLEXPRESS;Password=c0fc0_QAS;User ID=COFCO_QAS;Initial Catalog=COFCO_QAS;Connect Timeout=600" providerName="System.Data.OleDb" />-->
+    <!--<add name="XPOdatabase" connectionString="XpoProvider=MSSqlServer;Data Source=191.252.61.229;User ID=COFCO_DEV;Password=%c0fc0_DEV#;Initial Catalog=COFCO_DEV;Persist Security Info=true" />
+    <add name="bd_app" connectionString="Provider=SQLOLEDB.1;Data Source=191.252.61.229;Initial Catalog=COFCO_DEV;User ID=COFCO_DEV;Password=%c0fc0_DEV#;Connect Timeout=600" />
+    <add name="ConnectionString" connectionString="Provider=SQLNCLI11;Data Source=191.252.61.229;Password=%c0fc0_DEV#;User ID=COFCO_DEV;Initial Catalog=COFCO_DEV;Connect Timeout=600" providerName="System.Data.OleDb" />-->
+    <remove name="XPOdatabase" />
+    <add name="XPOdatabase" connectionString="XpoProvider=MSSqlServer;Data Source=191.252.61.229;User ID=bk_DEV;Password=%bk_DEV#;Initial Catalog=bk_DEV;Persist Security Info=true" />
+    <remove name="bd_app" />
+    <add name="bd_app" connectionString="Provider=SQLOLEDB.1;Data Source=191.252.61.229;Initial Catalog=bk_DEV;User ID=bk_DEV;Password=%bk_DEV#;Connect Timeout=600" />
+    <remove name="ConnectionString" />
+    <add name="ConnectionString" connectionString="Provider=SQLOLEDB.1;Data Source=191.252.61.229;Password=%bk_DEV#;User ID=bk_DEV;Initial Catalog=bk_DEV;Connect Timeout=600" providerName="System.Data.OleDb" />  
+  </connectionStrings>
+  <system.web>
+    <compilation debug="true" targetFramework="4.7.2">
+      <assemblies>
+        <add assembly="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.Web.ASPxThemes.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.RichEdit.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.RichEdit.v20.1.Export, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.Web.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.Web.ASPxPivotGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.PivotGrid.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />
+        <add assembly="System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A" />
+        <add assembly="DevExpress.Dashboard.v20.1.Web.WebForms, Version=20.1.3.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.Dashboard.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.Dashboard.v20.1.Web, Version=20.1.3.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.DataAccess.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.Web.Bootstrap.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.Web.ASPxRichEdit.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.Web.ASPxSpreadsheet.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.Spreadsheet.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.Web.ASPxScheduler.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.XtraScheduler.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.Web.ASPxTreeList.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.XtraReports.v20.1.Web.WebForms, Version=20.1.3.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.XtraReports.v20.1.Web, Version=20.1.3.0, Culture=neutral, PublicKeyToken=B88D1754D700E49A" />
+        <add assembly="DevExpress.Xpo.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.CodeParser.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+      </assemblies>
+    </compilation>
+    <httpRuntime targetFramework="4.7.2" maxRequestLength="4096" requestValidationMode="4.0" executionTimeout="110" />
+    <pages validateRequest="true" clientIDMode="Predictable">
+      <namespaces>
+        <add namespace="System.Web.Optimization" />
+      </namespaces>
+      <controls>
+        <add assembly="Microsoft.AspNet.Web.Optimization.WebForms" namespace="Microsoft.AspNet.Web.Optimization.WebForms" tagPrefix="webopt" />
+        <add tagPrefix="ajaxToolkit" assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" />
+        <add tagPrefix="dx" namespace="DevExpress.Web" assembly="DevExpress.Web.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+      </controls>
+    </pages>
+    <httpHandlers>
+      <add type="DevExpress.Web.ASPxUploadProgressHttpHandler, DevExpress.Web.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" verb="GET,POST" path="ASPxUploadProgressHandlerPage.ashx" validate="false" />
+      <add type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" verb="GET,POST" path="DX.ashx" validate="false" />
+      <add type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" verb="GET,POST" path="DXQB.axd" validate="false" />
+      <add type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" verb="GET,POST" path="DXXRDV.axd" validate="false" />
+    </httpHandlers>
+    <httpModules>
+      <add type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" name="ASPxHttpHandlerModule" />
+    </httpModules>
+    <globalization culture="" uiCulture="" enableClientBasedCulture="false" />
+    <sessionState timeout="60" />
+    <customErrors mode="Off" defaultRedirect="Oops.aspx" />
+  </system.web>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Antlr3.Runtime" publicKeyToken="eb42632606e9261f" />
+        <bindingRedirect oldVersion="0.0.0.0-3.5.0.2" newVersion="3.5.0.2" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" />
+        <bindingRedirect oldVersion="0.0.0.0-12.0.0.0" newVersion="12.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="WebGrease" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="0.0.0.0-1.6.5135.21930" newVersion="1.6.5135.21930" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+  <system.codedom>
+    <compilers>
+      <compiler language="c#;cs;csharp" extension=".cs" type="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider, Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" warningLevel="4" compilerOptions="/langversion:default /nowarn:1659;1699;1701" />
+      <compiler language="vb;vbs;visualbasic;vbscript" extension=".vb" type="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider, Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" warningLevel="4" compilerOptions="/langversion:default /nowarn:41008 /define:_MYTYPE=\&quot;Web\&quot; /optionInfer+" />
+    </compilers>
+  </system.codedom>
+  <system.webServer>
+    <handlers>
+      <add type="DevExpress.Web.ASPxUploadProgressHttpHandler, DevExpress.Web.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" verb="GET,POST" path="ASPxUploadProgressHandlerPage.ashx" name="ASPxUploadProgressHandler" preCondition="integratedMode" />
+      <add type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" verb="GET,POST" path="DX.ashx" name="ASPxHttpHandlerModule" preCondition="integratedMode" />
+      <add type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" verb="GET,POST" path="DXQB.axd" name="ASPxQueryBuilderDesignerHandlerModule" preCondition="integratedMode" />
+      <add type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" verb="GET,POST" path="DXXRDV.axd" name="ASPxWebDocumentViewerHandlerModule" preCondition="integratedMode" />
+    </handlers>
+    <modules>
+      <add type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" name="ASPxHttpHandlerModule" />
+    </modules>
+    <validation validateIntegratedModeConfiguration="false" />
+    <security>
+      <requestFiltering>
+        <requestLimits maxAllowedContentLength="30000000" />
+      </requestFiltering>
+    </security>
+    <defaultDocument>
+      <files>
+        <add value="Default.aspx" />
+      </files>
+    </defaultDocument>
+  </system.webServer>
+  <devExpress>
+    <themes enableThemesAssembly="true" theme="Metropolis" customThemeAssemblies="" styleSheetTheme="" baseColor="" font="" />
+    <compression enableHtmlCompression="false" enableCallbackCompression="true" enableResourceCompression="true" enableResourceMerging="true" />
+    <settings rightToLeft="false" checkReferencesToExternalScripts="true" doctypeMode="Html5" accessibilityCompliant="false" bootstrapMode="" protectControlState="false" ieCompatibilityVersion="edge" />
+    <errors callbackErrorRedirectUrl="" />
+    <resources>
+      <add type="ThirdParty" />
+      <add type="DevExtreme" />
+    </resources>
+  </devExpress>
+  <appSettings>
+    <add key="owin:AutomaticAppStartup" value="false" />
+    <add key="vs:EnableBrowserLink" value="false" />
+    <add key="langDefault" value="pt-BR" />
+    <add key="sgbd" value="sql" />
+    <add key="chaveCript" value="YG5M5GHUJH4HJGGX" />
+    <add key="vetorCript" value="JWEIGJF23JGIFJ3I" />
+    <add key="debug" value="1" />
+    <add key="debugUser" value="MASTER" />
+    <add key="AcessoInternet" value="false" />
+    <add key="hostDB" value="191.252.61.229" />
+    <add key="nameDB" value="bk_DEV" />
+    <add key="userDB" value="bk_DEV" />
+    <add key="passDB" value="%bk_DEV#" />
+    <add key="AnoFeriado" value="2020" />
+    <add key="APIFeriado" value="https://api.calendario.com.br/?" />
+    <add key="KeyFeriado" value="amVzc2Uub2xpdmVpcmFham9AZ21haWwuY29tJmhhc2g9OTU2OTcyMzA" />
+    <add key="PathContratos" value="upload/contracts/" />
+    <add key="timeoutWarning" value="2" />
+    <add key="login" value="http://192.168.27.8:8002/login.aspx" />
+  </appSettings>
+  <entityFramework>
+    <defaultConnectionFactory type="System.Data.Entity.Infrastructure.SqlConnectionFactory, EntityFramework" />
+    <providers>
+      <provider invariantName="System.Data.SqlClient" type="System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer" />
+    </providers>
+  </entityFramework>
+</configuration>

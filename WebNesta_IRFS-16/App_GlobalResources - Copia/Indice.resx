@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="indexador_combo1_item1" xml:space="preserve">
+    <value>Rate</value>
+    <comment>Página Indice.aspx conteúdo combo</comment>
+  </data>
+  <data name="indexador_combo1_item2" xml:space="preserve">
+    <value>Index</value>
+    <comment>Página Indice.aspx conteúdo combo</comment>
+  </data>
+  <data name="indexador_combo1_item3" xml:space="preserve">
+    <value>Currency Parity</value>
+    <comment>Página Indice.aspx conteúdo combo</comment>
+  </data>
+  <data name="indexador_combo1_item4" xml:space="preserve">
+    <value>Future Stock Exchange</value>
+    <comment>Página Indice.aspx conteúdo combo</comment>
+  </data>
+  <data name="indexador_combo1_item5" xml:space="preserve">
+    <value>PUT Stock Exchange</value>
+    <comment>Página Indice.aspx conteúdo combo</comment>
+  </data>
+  <data name="indexador_combo1_item6" xml:space="preserve">
+    <value>CALL Stock Exchange</value>
+    <comment>Página Indice.aspx conteúdo combo</comment>
+  </data>
+  <data name="indexador_combo2_item1" xml:space="preserve">
+    <value>Daily</value>
+    <comment>Página Indice.aspx conteúdo combo</comment>
+  </data>
+  <data name="indexador_combo2_item2" xml:space="preserve">
+    <value>Monthly</value>
+    <comment>Página Indice.aspx conteúdo combo</comment>
+  </data>
+  <data name="indexador_grid_col1" xml:space="preserve">
+    <value>Date</value>
+    <comment>Página Indice.aspx grid cotação</comment>
+  </data>
+  <data name="indexador_grid_col2" xml:space="preserve">
+    <value>Quotation</value>
+    <comment>Página Indice.aspx grid cotação</comment>
+  </data>
+  <data name="indexador_grid_col3" xml:space="preserve">
+    <value>Provisional</value>
+  </data>
+  <data name="indexador_lbl1" xml:space="preserve">
+    <value>Description</value>
+    <comment>Página Indice.aspx labels</comment>
+  </data>
+  <data name="indexador_lbl2" xml:space="preserve">
+    <value>Initials</value>
+    <comment>Página Indice.aspx labels</comment>
+  </data>
+  <data name="indexador_lbl3" xml:space="preserve">
+    <value>Label</value>
+    <comment>Página Indice.aspx labels</comment>
+  </data>
+  <data name="indexador_lbl4" xml:space="preserve">
+    <value>Type</value>
+    <comment>Página Indice.aspx labels</comment>
+  </data>
+  <data name="indexador_lbl5" xml:space="preserve">
+    <value>Frequency</value>
+    <comment>Página Indice.aspx labels</comment>
+  </data>
+  <data name="indexador_lbl6" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="indexador_lbl6.1" xml:space="preserve">
+    <value>Direct</value>
+  </data>
+  <data name="indexador_lbl6.2" xml:space="preserve">
+    <value>Accumulated</value>
+  </data>
+  <data name="indexador_lbl7" xml:space="preserve">
+    <value>Feeder Number</value>
+  </data>
+  <data name="indexador_modelo" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="indexador_right_titulo1" xml:space="preserve">
+    <value>User Action</value>
+    <comment>Página Indice.aspx título coluna à direita</comment>
+  </data>
+  <data name="indexador_right_titulo2" xml:space="preserve">
+    <value>Select Entity</value>
+  </data>
+  <data name="indexador_right_titulo3" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="indexador_titulo1" xml:space="preserve">
+    <value>Details</value>
+    <comment>Página Indice.aspx grupo</comment>
+  </data>
+  <data name="indexador_titulo2" xml:space="preserve">
+    <value>Quotation</value>
+    <comment>Página Indice.aspx grupo</comment>
+  </data>
+  <data name="indexador_titulo2-1" xml:space="preserve">
+    <value>Future</value>
+  </data>
+  <data name="indexador_tituloPag" xml:space="preserve">
+    <value>Indexers</value>
+    <comment>Titulo Geral da Página Indexadores</comment>
+  </data>
+  <data name="indice_acao" xml:space="preserve">
+    <value>Indexers and Currencies are necessary for contracts to be updated correctly according to the contractual guidelines, for this to happen correctly, indexers and currencies must be properly registered and updated.</value>
+  </data>
+  <data name="indice_content_tutorial" xml:space="preserve">
+    <value>https://cloud3.webnesta.com/tutorial/ifrs/indexadores/en-US</value>
+  </data>
+  <data name="indice_cotacao" xml:space="preserve">
+    <value>Up-to-date quotes for the Indexer or Currency searched, To change the data, you can double-click on the desired line. To insert, click on the + icon and fill in the fields. To delete it is necessary to click on the trash can icon. After any of these operations it is necessary to Save or Discard.</value>
+    <comment>Quick Guide Indice.aspx</comment>
+  </data>
+  <data name="indice_descrição" xml:space="preserve">
+    <value>Name given to the Index to facilitate localization and management.</value>
+    <comment>Quick Guide Indice.aspx</comment>
+  </data>
+  <data name="indice_detalhes" xml:space="preserve">
+    <value>Details</value>
+    <comment>Quick Guide Indice.aspx</comment>
+  </data>
+  <data name="indice_freq" xml:space="preserve">
+    <value>Select whether the frequency of quote publication happens daily or monthly.</value>
+    <comment>Quick Guide Indice.aspx</comment>
+  </data>
+  <data name="indice_modelo" xml:space="preserve">
+    <value>Type of Indexer registration &lt;br /&gt; Location: Indexer or Currency used exclusively by the Company where quotations and updates are the responsibility of the user. &lt;br /&gt; Global: Indexer or Global Currency where all companies use, the accounts and the management are the responsibility of Nesta.</value>
+  </data>
+  <data name="indice_pesquisa" xml:space="preserve">
+    <value>Select the Indexer according to the selected Store to have access to detailed information.</value>
+  </data>
+  <data name="indice_rotulo" xml:space="preserve">
+    <value>Label used to identify the Indexer</value>
+    <comment>Quick Guide Indice.aspx</comment>
+  </data>
+  <data name="indice_selecione" xml:space="preserve">
+    <value>Select</value>
+    <comment>Quick Guide Indice.aspx</comment>
+  </data>
+  <data name="indice_sigla" xml:space="preserve">
+    <value>Acronym used to identify the Indexer</value>
+    <comment>Quick Guide Indice.aspx</comment>
+  </data>
+  <data name="indice_tipo" xml:space="preserve">
+    <value>Select the best option that fits the Indexer.</value>
+    <comment>Quick Guide Indice.aspx</comment>
+  </data>
+  <data name="indice_titulo" xml:space="preserve">
+    <value>Indexers and Currencies are necessary for contracts to be updated correctly according to the contractual guidelines, for this to happen correctly, indexers and currencies must be properly registered and updated.</value>
+  </data>
+</root>

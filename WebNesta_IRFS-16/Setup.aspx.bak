@@ -1,0 +1,289 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Setup.aspx.cs" Inherits="WebNesta_IRFS_16.Setup" %>
+
+<%@ Register Assembly="DevExpress.XtraReports.v20.1.Web.WebForms, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.XtraReports.Web" TagPrefix="dx" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        function isQueryNameValid(name) {
+            return !name || name.length < 15;
+        }
+        function queryBuilder_Initialize(s, e) {
+            var queryNameInfo = DevExpress.QueryBuilder.Elements.Metadata.querySerializationsInfo.filter(function (item) {
+                return item.displayName === "Name";
+            })[0];
+            queryNameInfo.validationRules = [{
+                type: 'custom',
+                validationCallback: function (options) {
+                    var queryName = options.value;
+                    if (!isQueryNameValid(queryName)) {
+                        options.rule.message = "Query name is invalid!";
+                    }
+                    return isQueryNameValid(queryName);
+                }
+            }];
+
+            var filterStringProperty = DevExpress.QueryBuilder.Elements.Metadata.querySerializationsInfo.filter(function (p) { return p.propertyName === "filterString"; })[0];
+            filterStringProperty.visible = false;
+
+            var groupFilterStringProperty = DevExpress.QueryBuilder.Elements.Metadata.querySerializationsInfo.filter(function (p) { return p.propertyName === "groupFilterString"; })[0];
+            groupFilterStringProperty.visible = false;
+
+            s.GetQueryBuilderModel().model.valueHasMutated();
+        }
+        function queryBuilder_CustomizeMenuActions(s, e) {
+
+            var saveAction = e.Actions.filter(function (action) { return action.id === "dxqb-save" })[0];
+            saveAction.clickAction = function () {
+                var queryName = queryBuilder.designerModel.model().name();
+                if (listTipoQuery.GetSelectedIndex() < 0) {
+                    listTipoQuery.GetMainElement().style.border = "1px solid Red";
+                    return;
+                }
+                else {
+                    listTipoQuery.GetMainElement().style.border = "0px solid Red";
+                }
+                DevExpress.ui.dialog.confirm("Are you sure?", "Save Query")
+                    .done(function (dialogResult) {
+                        if (dialogResult) {
+                            queryBuilder.Save()
+                        }
+                    });
+            };
+            var dataPreviewAction = e.GetById(DevExpress.Designer.QueryBuilder.ActionId.DataPreview);
+            dataPreviewAction.visible = false;
+            var selectStatementPreviewAction = e.GetById(DevExpress.Designer.QueryBuilder.ActionId.SelectStatementPreview);
+            selectStatementPreviewAction.visible = false;
+        }
+        function queryBuilder2_Initialize(s, e) {
+            var queryNameInfo = DevExpress.QueryBuilder.Elements.Metadata.querySerializationsInfo.filter(function (item) {
+                return item.displayName === "Name";
+            })[0];
+            queryNameInfo.validationRules = [{
+                type: 'custom',
+                validationCallback: function (options) {
+                    var queryName = options.value;
+                    if (!isQueryNameValid(queryName)) {
+                        options.rule.message = "Query name is invalid!";
+                    }
+                    return isQueryNameValid(queryName);
+                }
+            }];
+            var filterStringProperty = DevExpress.QueryBuilder.Elements.Metadata.querySerializationsInfo.filter(function (p) { return p.propertyName === "filterString"; })[0];
+            filterStringProperty.visible = false;
+
+            var groupFilterStringProperty = DevExpress.QueryBuilder.Elements.Metadata.querySerializationsInfo.filter(function (p) { return p.propertyName === "groupFilterString"; })[0];
+            groupFilterStringProperty.visible = false;
+
+            s.GetQueryBuilderModel().model.valueHasMutated();
+        }
+        function queryBuilder2_CustomizeMenuActions(s, e) {
+            var saveAction = e.Actions.filter(function (action) { return action.id === "dxqb-save" })[0];
+            saveAction.clickAction = function () {
+                var queryName = queryBuilder2.designerModel.model().name();
+                if (listTipoQuery2.GetSelectedIndex() < 0) {
+                    listTipoQuery2.GetMainElement().style.border = "1px solid Red";
+                    return;
+                }
+                else {
+                    listTipoQuery2.GetMainElement().style.border = "0px solid Red";
+                }
+                //if (txtNameQuery2.GetText() == "") {
+                //    document.getElementById('divNameQuery2').style.border = "1px solid Red";
+                //    return;
+                //}
+                //else {
+                //    document.getElementById('divNameQuery2').style.border = "0px solid Red";
+                //}
+                DevExpress.ui.dialog.confirm("Are you sure?", "Save Query")
+                    .done(function (dialogResult) {
+                        if (dialogResult) {
+                            queryBuilder2.Save()
+                        }
+                    });
+            };
+            var dataPreviewAction = e.GetById(DevExpress.Designer.QueryBuilder.ActionId.DataPreview);
+            dataPreviewAction.visible = false;
+            var selectStatementPreviewAction = e.GetById(DevExpress.Designer.QueryBuilder.ActionId.SelectStatementPreview);
+            selectStatementPreviewAction.visible = false;
+        }
+    </script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:HiddenField ID="hfUser" runat="server" />
+    <asp:HiddenField ID="hfOper" runat="server" />
+    <asp:HiddenField ID="hfQuery" runat="server" />
+    <asp:HiddenField ID="hfTipoView" runat="server" />
+    <asp:HiddenField ID="hfTipoQuery" ClientIDMode="Static" runat="server" />
+    <asp:HiddenField ID="hfNameQuery" runat="server" />
+    <asp:HiddenField ID="hfPerfilQuery" runat="server" />
+    <asp:HiddenField ID="hfIDQuery" runat="server" />
+    <div class="container-fluid">
+        <div class="row">
+            <dx:ASPxMenu ID="ASPxMenu1" ClientInstanceName="ASPxMenu1" runat="server" ItemLinkMode="ContentBounds" Theme="MaterialCompact"
+                ItemAutoWidth="true" ShowPopOutImages="True" AllowSelectItem="true" OnItemClick="ASPxMenu1_ItemClick">
+                <RootItemSubMenuOffset LastItemX="8" />
+                <SettingsAdaptivity Enabled="true" EnableAutoHideRootItems="true"
+                    EnableCollapseToSideMenu="true" CollapseToSideMenuAtWindowInnerWidth="300"
+                    EnableCollapseRootItemsToIcons="true" CollapseRootItemsToIconsAtWindowInnerWidth="700" />
+                <Items>
+                    <dx:MenuItem Name="1" Text="Criar Relatório">
+                    </dx:MenuItem>
+                    <dx:MenuItem Name="2" Text="Geral" Enabled="false">
+                    </dx:MenuItem>                    
+                </Items>
+            </dx:ASPxMenu>
+        </div>
+        <div class="row">
+            <asp:MultiView ID="PanelView" runat="server">
+                <asp:View ID="tela0" runat="server">Selecione a navegação acima:</asp:View>
+                <asp:View ID="tela1" runat="server">
+                    <div class="container-fluid">
+                        <div class="row pt-2">
+                            <div class="col-lg-3">
+                                <dx:ASPxGridView ID="gridQueries" KeyFieldName="QUEIDPVT" Width="330px" ClientInstanceName="gridQueries" runat="server" Theme="MaterialCompact" EnableCallBacks="false"
+                                    OnDataBound="gridQueries_DataBound" OnCustomButtonCallback="gridQueries_CustomButtonCallback" OnLoad="gridQueries_Load" AutoGenerateColumns="False">
+                                    <Columns>
+                                        <dx:GridViewCommandColumn Name="CommandColumn" MaxWidth="30" Width="30px" Visible="false" ShowSelectCheckbox="True" SelectAllCheckboxMode="Page" VisibleIndex="0"></dx:GridViewCommandColumn>
+                                        <dx:GridViewDataTextColumn FieldName="QUENMPVT" Caption="Nome Relatório" MaxWidth="100" Width="100px" VisibleIndex="1"></dx:GridViewDataTextColumn>
+                                        <dx:GridViewDataComboBoxColumn FieldName="QUETPPVT" Caption="Tipo Relatório" MaxWidth="100" Width="100px" VisibleIndex="2">
+                                            <PropertiesComboBox DataSourceID="SqlDataSource1" TextField="TPNMVIEW" ValueField="TPIDVIEW"></PropertiesComboBox>
+                                        </dx:GridViewDataComboBoxColumn>
+                                        <dx:GridViewDataButtonEditColumn FieldName="QUEBBPVT" MaxWidth="100" Visible="false" Width="100px" VisibleIndex="3"></dx:GridViewDataButtonEditColumn>
+                                        <dx:GridViewCommandColumn Name="detail" Caption="Query" VisibleIndex="4">
+                                            <CustomButtons>
+                                                <dx:GridViewCommandColumnCustomButton ID="detail" Text="Detalhe"></dx:GridViewCommandColumnCustomButton>
+                                            </CustomButtons>
+                                        </dx:GridViewCommandColumn>
+                                    </Columns>
+                                </dx:ASPxGridView>
+                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' ProviderName='<%$ ConnectionStrings:ConnectionString.ProviderName %>' SelectCommand="SELECT TPNMVIEW,TPIDVIEW FROM TPTPVIEW"></asp:SqlDataSource>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="row" style="margin: 0 auto; margin-top: 2px">
+                                    <div class="col-lg-6 pl-0" style="text-align: center;">
+                                        <asp:Button ID="btn_inserir" runat="server" CommandArgument="inserir" OnCommand="Button1_Command" CssClass="Loading btn-using" Text="<%$Resources:GlobalResource, btn_inserir %>" />
+                                    </div>
+                                    <div class="col-lg-6 pl-0" style="text-align: center;">
+                                        <asp:Button ID="btn_excluir" Enabled="false" runat="server" CommandArgument="excluir" OnCommand="Button1_Command" CssClass="Loading btn-using" Text="<%$Resources:GlobalResource, btn_excluir %>" />
+                                    </div>
+                                </div>
+                                <div class="row" style="margin: 0 auto; margin-top: 5px">
+                                    <div class="col-lg-6 pl-0" style="text-align: center;">
+                                        <asp:Button ID="btn_ok" Enabled="false" runat="server" CommandArgument="ok" OnCommand="Button1_Command" CssClass="Loading btn-using ok" Text="<%$Resources:GlobalResource, btn_ok %>" />
+                                    </div>
+                                    <div class="col-lg-6 pl-0" style="text-align: center;">
+                                        <asp:Button ID="btn_cancelar" runat="server" CommandArgument="cancelar" OnCommand="Button1_Command" CssClass="Loading btn-using cancelar" Text="<%$Resources:GlobalResource, btn_cancelar %>" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-header"></div>
+                                    <div class="card-body"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </asp:View>
+
+                <asp:View ID="tela2" runat="server">Menu Geral selecionado</asp:View>
+            </asp:MultiView>
+        </div>
+    </div>
+
+    <dx:ASPxPopupControl ID="popupControle" Width="1200px" Height="630px" runat="server"
+        PopupHorizontalAlign="WindowCenter" ShowHeader="false" HeaderText="" PopupVerticalAlign="WindowCenter"
+        AllowResize="true" CloseAction="OuterMouseClick" CssClass="rounding" ShowCloseButton="true" CloseOnEscape="false" PopupAnimationType="Fade"
+        Modal="true" ScrollBars="Auto" RenderIFrameForPopupElements="True">
+        <ContentCollection>
+            <dx:PopupControlContentControl runat="server">
+                <asp:MultiView ID="mvQueryBuilder" runat="server">
+                    <asp:View ID="viewQueryBuilderInsert" runat="server">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <dx:ASPxRadioButtonList ID="listTipoQuery" ClientInstanceName="listTipoQuery" ForeColor="dimgray" Width="100%" CssClass="m-0 p-0" Theme="Moderno" runat="server" RepeatDirection="Horizontal" Border-BorderStyle="None" FocusedStyle-Wrap="Default" ValueField="TPIDVIEW" ValueType="System.Int32" TextField="TPNMVIEW" DataSourceID="sqlTipoView">
+                                        </dx:ASPxRadioButtonList>
+                                        <asp:SqlDataSource runat="server" ID="sqlTipoView" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' ProviderName='<%$ ConnectionStrings:ConnectionString.ProviderName %>' SelectCommand="SELECT TPIDVIEW,TPNMVIEW FROM TPTPVIEW ORDER BY 2"></asp:SqlDataSource>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <dx:ASPxQueryBuilder ID="queryBuilder" ClientInstanceName="queryBuilder" runat="server"
+                                    OnSaveQuery="queryBuilder_SaveQuery" Width="1150px" Height="630px"
+                                    ClientSideEvents-Init="queryBuilder_Initialize"
+                                    ClientSideEvents-CustomizeToolbarActions="queryBuilder_CustomizeMenuActions"
+                                    ParametersMode="Read" DisableHttpHandlerValidation="False" HandlerUri="DXQB.axd">
+                                    <ClientSideEvents CustomizeToolbarActions="queryBuilder_CustomizeMenuActions" Init="function (s, e) {
+            var queryNameInfo = DevExpress.QueryBuilder.Elements.Metadata.querySerializationsInfo.filter(function (item) {
+                return item.displayName === &quot;Name&quot;;
+            })[0];
+            queryNameInfo.validationRules = [{
+                type: &#39;custom&#39;,
+                validationCallback: function (options) {
+                    var queryName = options.value;
+                    if (!isQueryNameValid(queryName)) {
+                        options.rule.message = &quot;Query name is invalid!&quot;;
+                    }
+                    return isQueryNameValid(queryName);
+                }
+            }];
+            var filterStringProperty = DevExpress.QueryBuilder.Elements.Metadata.querySerializationsInfo.filter(function (p) { return p.propertyName === &quot;filterString&quot;; })[0];
+            filterStringProperty.visible = false;
+            var groupFilterStringProperty = DevExpress.QueryBuilder.Elements.Metadata.querySerializationsInfo.filter(function (p) { return p.propertyName === &quot;groupFilterString&quot;; })[0];
+            groupFilterStringProperty.visible = false;
+            s.GetQueryBuilderModel().model.valueHasMutated();
+        }"></ClientSideEvents>
+                                </dx:ASPxQueryBuilder>
+                            </div>
+                        </div>
+                    </asp:View>
+                    <asp:View ID="viewQueryBuilderAlterar" runat="server">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <dx:ASPxRadioButtonList ID="listTipoQuery2" ClientInstanceName="listTipoQuery2" ForeColor="dimgray" Width="100%" CssClass="m-0 p-0" Theme="Moderno" runat="server" RepeatDirection="Horizontal" Border-BorderStyle="None" FocusedStyle-Wrap="Default" ValueField="TPIDVIEW" ValueType="System.Int32" TextField="TPNMVIEW" DataSourceID="SqlDataSource2">
+                                        </dx:ASPxRadioButtonList>
+                                        <asp:SqlDataSource runat="server" ID="SqlDataSource2" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' ProviderName='<%$ ConnectionStrings:ConnectionString.ProviderName %>' SelectCommand="SELECT TPIDVIEW,TPNMVIEW FROM TPTPVIEW ORDER BY 2"></asp:SqlDataSource>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <dx:ASPxQueryBuilder ID="queryBuilder2" ClientInstanceName="queryBuilder2" runat="server"
+                                    OnSaveQuery="queryBuilder2_SaveQuery" Width="1150px" Height="630px"
+                                    ClientSideEvents-Init="queryBuilder2_Initialize"
+                                    ClientSideEvents-CustomizeToolbarActions="queryBuilder2_CustomizeMenuActions"
+                                    ParametersMode="Read" DisableHttpHandlerValidation="False" HandlerUri="DXQB.axd">
+                                    <ClientSideEvents CustomizeToolbarActions="queryBuilder2_CustomizeMenuActions" Init="function (s, e) {
+            var queryNameInfo = DevExpress.QueryBuilder.Elements.Metadata.querySerializationsInfo.filter(function (item) {
+                return item.displayName === &quot;Name&quot;;
+            })[0];
+            queryNameInfo.validationRules = [{
+                type: &#39;custom&#39;,
+                validationCallback: function (options) {
+                    var queryName = options.value;
+                    if (!isQueryNameValid(queryName)) {
+                        options.rule.message = &quot;Query name is invalid!&quot;;
+                    }
+                    return isQueryNameValid(queryName);
+                }
+            }];
+            var filterStringProperty = DevExpress.QueryBuilder.Elements.Metadata.querySerializationsInfo.filter(function (p) { return p.propertyName === &quot;filterString&quot;; })[0];
+            filterStringProperty.visible = false;
+            var groupFilterStringProperty = DevExpress.QueryBuilder.Elements.Metadata.querySerializationsInfo.filter(function (p) { return p.propertyName === &quot;groupFilterString&quot;; })[0];
+            groupFilterStringProperty.visible = false;
+            s.GetQueryBuilderModel().model.valueHasMutated();
+        }"></ClientSideEvents>
+                                </dx:ASPxQueryBuilder>
+                            </div>
+                        </div>
+                    </asp:View>
+                </asp:MultiView>
+            </dx:PopupControlContentControl>
+        </ContentCollection>
+    </dx:ASPxPopupControl>
+
+</asp:Content>

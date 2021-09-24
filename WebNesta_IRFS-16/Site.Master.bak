@@ -1,0 +1,559 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebNesta_IRFS_16.SiteMaster" %>
+
+<%@ Register Assembly="DevExpress.Web.Bootstrap.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.Bootstrap" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Dashboard.v20.1.Web.WebForms, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.DashboardWeb" TagPrefix="dx" %>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nesta Cloud - <%: Page.Title %></title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+        <%: Scripts.Render("~/bundles/jquery") %>
+        <%: Styles.Render("~/Content") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <style type="text/css">
+        .modalPopup {
+            background-color: #fff;
+            width: 300px;
+            border: 1px solid dimgray;
+            padding: 0;
+        }
+
+            .modalPopup .header {
+                background-color: #db9c99;
+                height: 30px;
+                font-family: Calibri;
+                font-size: 14pt;
+                color: lightgray;
+                line-height: 30px;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .modalPopup .body {
+                padding: 10px;
+                min-height: 50px;
+                text-align: center;
+                font-weight: 300;
+                font-family: Calibri;
+                font-size: 12pt;
+                color: dimgray;
+            }
+
+            .modalPopup .footer {
+                padding: 6px;
+            }
+
+            .modalPopup .yes, .modalPopup .no {
+                height: 23px;
+                color: White;
+                line-height: 23px;
+                text-align: center;
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+
+            .modalPopup .yes {
+                background-color: #529862;
+                border: 1px solid #669966;
+                height: 30px;
+                line-height: 15px;
+            }
+
+            .modalPopup .no {
+                background-color: #9F9F9F;
+                border: 1px solid #669966;
+                height: 30px;
+                line-height: 15px;
+            }
+    </style>
+
+    <script type="text/javascript">
+        function openModal() {
+            $('#myModal').modal('show');
+        };
+        $(window).on('load', function () {
+            $("#coverScreen").hide();
+        });
+        $(document).ready(function () {
+            $(".Loading").click(function () {
+                $("#coverScreen").show();
+            });
+        });
+        $(document).ready(function () {
+            //Disable cut copy paste
+            $('#gridPopupAbout').bind('cut copy paste', function (e) {
+                e.preventDefault();
+            });
+
+            //Disable mouse right click
+            $("#gridPopupAbout").on("contextmenu", function (e) {
+                return false;
+            });
+        });
+        function SessionExpireAlert(timeout) {
+            var myHidden = document.getElementById("hftimeoutWarning");
+            var seconds = timeout / 1000;
+            //document.getElementsByName("secondsIdle").innerHTML = seconds;
+            document.getElementsByName("seconds").innerHTML = seconds;
+            setInterval(function () {
+                seconds--;
+                document.getElementById("seconds").innerHTML = seconds;
+                //document.getElementById("secondsIdle").innerHTML = seconds;
+            }, 1000);
+            setTimeout(function () {
+                //Show Popup before 60 seconds of timeout.
+                var audio = new Audio('Ding-ding-ding.mp3');
+                audio.play();
+                $find("mpeTimeout").show();
+            }, timeout - parseInt(myHidden.value) * 60 * 1000);
+            setTimeout(function () {
+                var audio = new Audio('Ding-ding-ding.mp3');
+                audio.play();
+                window.location = "Default.aspx?expired=true";
+            }, timeout);
+        };
+        function ResetSession() {
+            //Redirect to refresh Session.
+            window.location = window.location.href;
+        }
+    </script>
+    <link href="Content/style.css" rel="stylesheet" />
+    <link href="Content/all.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="coverScreen" class="LockOn">
+    </div>
+    <form runat="server">
+
+        <%--<h3>Session Idle:&nbsp;<span id="secondsIdle"></span>&nbsp;seconds.</h3>--%>
+        <asp:LinkButton ID="lnkFake" runat="server" />
+        <ajaxToolkit:ModalPopupExtender ID="mpeTimeout" BehaviorID="mpeTimeout" runat="server" PopupControlID="popupSession" TargetControlID="lnkFake"
+            OkControlID="btnYes" CancelControlID="btnNo" BackgroundCssClass="modalBackground" OnOkScript="ResetSession()">
+        </ajaxToolkit:ModalPopupExtender>
+        <asp:Panel ID="popupSession" CssClass="modalPopup" runat="server" Style="display: none">
+            <div class="header">
+                <span><%=Resources.GlobalResource.popup_session_titulo %></span>
+            </div>
+            <div class="body">
+                <span><%=Resources.GlobalResource.popup_session_texto1 %></span>
+                <span id="seconds" style="color: red"></span>
+                <span><%=Resources.GlobalResource.popup_session_texto2 %></span><br />
+                <span><%=Resources.GlobalResource.popup_session_texto3 %></span>
+            </div>
+            <div class="footer" align="right">
+                <asp:Button ID="btnYes" runat="server" Text="<%$Resources:GlobalResource, popup_session_btnYes %>" CssClass="btn yes" />
+                <asp:Button ID="btnNo" runat="server" Text="<%$Resources:GlobalResource, popup_session_btnNo %>" CssClass="btn no" />
+            </div>
+        </asp:Panel>
+        <asp:ScriptManager runat="server" EnableScriptGlobalization="True">
+            <Scripts>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+            </Scripts>
+        </asp:ScriptManager>
+        <asp:HiddenField ID="hfPaisUser" runat="server" />
+        <asp:HiddenField ID="hftimeoutWarning" ClientIDMode="Static" runat="server" Value="<%$ appSettings:timeoutWarning %>" />
+        <asp:HiddenField ID="hfControle" runat="server" />
+        <asp:HiddenField ID="hfCurrentPage" runat="server" />
+        <asp:HiddenField ID="hfOperacao" runat="server" />
+        <asp:HiddenField ID="hfLoginPage" runat="server" />
+        <asp:HiddenField ID="hf2sides" Value="0" runat="server" />
+        <!--Bootstrap Modal (Dialog Box / Pop-up window) Example-->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content" style="background-color: white; background-image: url('img/fnd_about.png'); background-repeat: no-repeat; background-position: 70% center; background-size: 85%">
+                    <asp:Image ID="Image8" ImageUrl="~/img/lamp.png" runat="server" Style="width: 4%; opacity: 0.5; position: absolute; z-index: 10; top: 78%; right: 3%;" />
+                    <div class="modal-header p-2">
+                        <div class="col-8 p-0">
+                            <asp:Image ID="Image4" ImageUrl="~/img/fnd_about_nesta.png" runat="server" Width="55%" Style="padding-left: 20px; padding-top: 5px;" />
+                        </div>
+                        <div class="col-4 p-0 titulo2 text-right">
+                            <asp:Image ID="Image5" ImageUrl="~/img/engrenagem.png" runat="server" Width="30%" Style="padding-right: 10px; margin-bottom: 5px;" /><asp:Label ID="Label4" runat="server" Text="IFRS.16"></asp:Label>
+                        </div>
+                    </div>
+                    <div class="modal-body row p-2">
+                        <div class="col-3 p-0 card" style="background-color: transparent">
+                            <div class="card-header border-bottom-0" style="background-color: transparent">
+                                <asp:Label ID="lblTitulo" runat="server" Font-Names="Calibri" ForeColor="#4E01D4" Font-Size="14pt" CssClass="labels" Text="Mensagem Alerta:"></asp:Label>
+                            </div>
+                            <div class="card-body" style="background-color: transparent">
+                                <asp:Button ID="Button11" runat="server" CssClass="btn-saiba-mais" Text="Saiba mais" Enabled="false" />
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <asp:Image ID="Image9" ImageUrl="~/img/etc.png" runat="server" Width="30%" Style="padding-right: 10px" />
+                            </div>
+                        </div>
+                        <div class="col-8 pl-2 p-0" style="background-color: transparent; border: 2px solid #BA9BC9; border-radius: 5px; padding-right: 15px; word-break: break-word; height: 260px; overflow: auto;">
+                            <asp:Label ID="lblMsgException" runat="server" Text="Label"></asp:Label>
+                        </div>
+                    </div>
+                    <div class="modal-footer p-2">
+                        <table style="width: 100%">
+                            <tr>
+                                <td style="width: 60%"></td>
+                                <td style="width: 20%; text-align: center">
+                                    <asp:Button ID="btnOK" runat="server" CssClass="btn btn-sm btn-ok" Visible="False" Text="OK" OnClick="btnOK_Click" /></td>
+                                <td style="width: 20%; text-align: center">
+                                    <asp:Button ID="btnClose" runat="server" CssClass="close btn btn-sm btn-cancelar" Text="FECHAR" /></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mySidebar" class="sidebar" style="display: none">
+            <div class="container" style="display: block">
+                <div class="row" style="margin-bottom: 2px">
+                    <div class="col-lg-6 pl-2 p-0">
+                        <asp:Button ID="Button3" CssClass="Loading btn-app" runat="server" Text="<%$Resources:GlobalResource, menu_botao1 %>" CausesValidation="False" CommandArgument="Default" OnClick="btn_app_Click" Style="background-image: url(icons/homepage.png); background-repeat: no-repeat; background-size: 30%; background-position-x: center; background-position-y: 15px;" />
+
+                    </div>
+                    <div class="col-lg-6 p-0">
+                        <asp:Button ID="Button9" CssClass="Loading btn-app" runat="server" Text="<%$Resources:GlobalResource, menu_botao2 %>" Enabled="False" CausesValidation="False" CommandArgument="#" OnClick="btn_app_Click" Style="background-image: url(icons/ORCAMENTO.png); background-repeat: no-repeat; background-size: 30%; background-position-x: center; background-position-y: 15px;" />
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 2px">
+                    <div class="col-lg-6 pl-2 p-0">
+                        <asp:Button ID="Button1" CssClass="Loading btn-app" runat="server" Text="<%$Resources:GlobalResource, menu_botao3 %>" CausesValidation="False" CommandArgument="Aquisicao" OnClick="btn_app_Click" Style="background-image: url(icons/contrato.png); background-repeat: no-repeat; background-size: 25%; background-position-x: center; background-position-y: 15px;" />
+
+                    </div>
+                    <div class="col-lg-6 p-0">
+                        <asp:Button ID="Button6" CssClass="Loading btn-app" runat="server" Text="<%$Resources:GlobalResource, menu_botao8 %>" CausesValidation="False" CommandArgument="Relatorios" OnClick="btn_app_Click" Style="background-image: url(icons/relatorios.png); background-repeat: no-repeat; background-size: 30%; background-position-x: center; background-position-y: 15px;" />
+
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 2px">
+                    <div class="col-lg-6 pl-2 p-0">
+                        <asp:Button ID="Button8" CssClass="Loading btn-app" runat="server" Text="<%$Resources:GlobalResource, menu_botao10 %>" CausesValidation="False" CommandArgument="Setup" OnClick="btn_app_Click" Style="background-image: url(icons/setup.png); background-repeat: no-repeat; background-size: 30%; background-position-x: center; background-position-y: 15px;" />
+                    </div>
+                    <div class="col-lg-6 p-0">
+                        <asp:Button ID="Button4" CssClass="Loading btn-app" runat="server" Text="<%$Resources:GlobalResource, menu_botao6 %>" CausesValidation="False" CommandArgument="PassivosAquisicao" OnClick="btn_app_Click" Style="background-image: url(icons/fech_contabil.png); background-repeat: no-repeat; background-size: 20%; background-position-x: center; background-position-y: 15px;" />
+                    </div>
+                </div>
+                <div class="row " style="margin-bottom: 2px">
+                    <div class="col-lg-6 pl-2 p-0">
+                        <asp:Button ID="Button5" CssClass="Loading btn-app" runat="server" Text="<%$Resources:GlobalResource, menu_botao7 %>" CausesValidation="False" CommandArgument="http://portaldocliente.itctreasury.com" OnClick="btn_app_Click" Style="background-image: url(icons/help.png); background-repeat: no-repeat; background-size: 30%; background-position-x: center; background-position-y: 15px;" />
+                    </div>
+                    <div class="col-lg-6 p-0">
+                        <asp:Button ID="Button10" CssClass="Loading btn-app" runat="server" Text="<%$Resources:GlobalResource, menu_botao5 %>" CausesValidation="False" CommandArgument="PassivosAquisicao2" OnClick="btn_app_Click" Style="background-image: url(icons/fluxo_oper.png); background-repeat: no-repeat; background-size: 20%; background-position-x: center; background-position-y: 15px;" />
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 2px">
+                    <div class="col-lg-6 pl-2 p-0">
+                        <asp:Button ID="Button7" CssClass="Loading btn-app" runat="server" Text="<%$Resources:GlobalResource, menu_botao9 %>" Enabled="False" CausesValidation="False" CommandArgument="#" OnClick="btn_app_Click" Style="background-image: url(icons/tutorial.png); background-repeat: no-repeat; background-size: 30%; background-position-x: center; background-position-y: 15px;" />
+                    </div>
+                    <div class="col-lg-6 p-0">
+                        <asp:Button ID="Button2" CssClass="Loading btn-app" runat="server" Text="<%$Resources:GlobalResource, menu_botao4 %>" Enabled="False" CausesValidation="False" CommandArgument="#" OnClick="btn_app_Click" Style="background-image: url(icons/manual.png); background-repeat: no-repeat; background-size: 30%; background-position-x: center; background-position-y: 15px;" />
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 2px">
+                    <div class="col-lg-6 pl-2 p-0">
+                        <asp:Button ID="btnAbout" CausesValidation="False" CssClass="btn-app" runat="server" Style="text-transform: uppercase; height: 40px; padding: 0px 0px 0px 0px;" Text="<%$Resources:GlobalResource,  menu_botaoSobre %>" OnClick="lnkAbout_Click" />
+                    </div>
+                    <div class="col-lg-6 p-0">
+                        <asp:Button ID="btnSair" CausesValidation="False" CssClass="btn-app" runat="server" Style="text-transform: uppercase; height: 40px; padding: 0px 0px 0px 0px;" Text="<%$Resources:GlobalResource,menu_botaoSair %>" OnClick="lnkSair_Click" />
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 2px">
+                    <div class="col-lg-12 pl-2 pr-0">
+                        <asp:ImageButton ID="btn_pt_BR" CausesValidation="false" CssClass="btn-lang" Visible="true" runat="server" ImageUrl="~/icons/brasil.png" CommandArgument="pt-BR" OnClick="RequestLanguageChange_Click" />
+
+                        <asp:ImageButton ID="btn_en_US" CausesValidation="false" CssClass="btn-lang" Visible="true" runat="server" ImageUrl="~/icons/usa.png" CommandArgument="en-US" OnClick="RequestLanguageChange_Click" />
+
+                        <asp:ImageButton ID="btn_es_ES" CausesValidation="false" CssClass="btn-lang" Visible="true" runat="server" ImageUrl="~/icons/espanha.png" CommandArgument="es-ES" OnClick="RequestLanguageChange_Click" />
+                    </div>
+                </div>
+            </div>
+            <div class=" container">
+                <div class="row card">
+                    <div class="card-body mt-2 pb-0 mb-0" style="padding-top: 5px">
+                        <p class="col-10 p-0 m-0 mb-2" style="line-height: 18px;">
+                            <asp:Label ID="Label5" Style="font-size: 13pt; font-weight: 500;" CssClass="labels text-left" runat="server" Text="<%$Resources:GlobalResource, menu_idioma %>"></asp:Label>
+                            <asp:Label ID="lblCulture" Style="font-size: 12pt; font-weight: 400;" runat="server" CssClass=" labels text-left"></asp:Label>
+                        </p>
+                        <p class="col-10 p-0 m-0 mb-2" style="line-height: 18px;">
+                            <asp:Label ID="Label3" Style="font-size: 13pt; font-weight: 500;" CssClass="labels text-left" runat="server" Text="<%$Resources:GlobalResource, menu_usuario %>"></asp:Label>
+                            <asp:Label ID="txtUser" ClientIDMode="Static" Style="font-size: 12pt; font-weight: 400;" runat="server" CssClass="labels text-left"></asp:Label>
+                        </p>
+                        <p class="col-10 p-0 m-0" style="line-height: 18px;">
+                            <%--<asp:Label ID="Label14" Style="font-size: 13pt; font-weight: 500;" CssClass="labels text-left" runat="server" Text="<%$Resources:GlobalResource, menu_validade %>"></asp:Label>
+                            <asp:Label ID="lblValidadeSenha" Style="font-size: 12pt; font-weight: 400;" Text="dd/mm/yyyy" runat="server" CssClass="labels text-left"></asp:Label>--%>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div id="site">
+                <div id="header">
+                    <asp:Panel ID="Panel1" runat="server" Width="100%" BackColor="#db9c99">
+                        <table style="width: 100%; line-height: 25px; vertical-align: middle">
+                            <tr>
+                                <td style="width: 250px; text-align: center; border-right: 4px solid #666460">
+                                    <button type="button" id="btnNavi" class="openbtn" data-effect="st-effect-1" onclick="openNav()" style="color: #666460">
+                                        <i class="fas fa-align-left"></i>
+                                    </button>
+                                    <asp:Label ID="Label8" runat="server" Text="<%$Resources:GlobalResource, header_top1 %>" Font-Size="14pt" Style="font-weight: 400; color: #666460" Font-Names="Calibri"></asp:Label>
+                                </td>
+                                <td style="text-align: left">
+                                    <asp:Label ID="Label11" runat="server" Text="<%$Resources:GlobalResource, header_top2 %>" Font-Size="14pt" Font-Names="Calibri" Style="font-weight: 100; text-align: left; margin-left: 60px; color: #666460"></asp:Label>
+                                </td>
+                            </tr>
+                        </table>
+                    </asp:Panel>
+                    <asp:Panel ID="Panel5" runat="server" Width="100%">
+                        <div class="container-fluid">
+                            <div class="row" style="border-bottom: 2px solid #669999; margin-left: 20px; margin-right: 20px;">
+                                <div class="col-sm-6 text-left" style="line-height: 16px; margin-top: 23px">
+                                    <p class="mb-0">
+                                        <asp:Label ID="Label12" CssClass="labels mb-0" Font-Size="14pt" runat="server" Font-Names="Calibri" Style="font-weight: 600" Text="<%$Resources:GlobalResource, header_titulo %>"></asp:Label>
+                                    </p>
+                                    <p class="mt-0">
+                                        <asp:Label ID="Label13" CssClass="labels mt-0" Font-Size="12pt" runat="server" Font-Names="Calibri" Text="<%$Resources:GlobalResource, header_subtitulo %>"></asp:Label>
+                                    </p>
+                                </div>
+                                <div class="col-sm-6 titulo text-right">
+                                    <asp:Label ID="Label1" runat="server" Text="Adm Contratos Aluguel"></asp:Label>
+                                </div>
+                            </div>
+                            <div class="row" style="line-height: 50px; height: 50px; margin-left: 20px; margin-right: 20px">
+                                <div class="col-sm-3">
+                                    <asp:HiddenField ID="hfEstruturaCorporativa" runat="server" />
+                                    <asp:Label ID="lblEstruturaCorporativa" CssClass="labels" runat="server" Text="" Style="font-size: 16pt; font-weight: 600; color: #666666"></asp:Label>
+                                </div>
+                                <div class="col-sm-3 text-left">
+                                    <asp:Label ID="Label16" CssClass="labels" runat="server" Text="<%$Resources:GlobalResource, header_desde %>" Style="font-size: 15pt; color: #666666"></asp:Label>
+                                    <asp:Label ID="lblClientedesde" CssClass="labels" runat="server" Text="dd/mm/yyyy" Style="font-size: 15pt; color: #666666"></asp:Label>
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                                <div class="col-sm-2 text-right" style="">
+                                    <div>
+                                        <img src="icons/instagram.png" />
+                                        <img src="icons/facebook.png" />
+                                        <img src="icons/twitter.png" />
+                                        <img src="icons/whatsapp.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </asp:Panel>
+                </div>
+                <div id="conteudo" class="container-fluid p-0" style="background-image:url(img/fundo_engrenagens.png);background-size:70%;background-repeat:no-repeat;background-position-x:center">
+                    <div class="row p-0">
+
+                        <%if (hf2sides.Value == "1")
+                            { %>
+                        <div class="col-10 w-100 left_side p-0">
+                            <%}
+                                else
+                                { %>
+                            <div class="col-12 w-100 p-0">
+                                <%}%>
+                                <asp:Panel ID="Panel3" Height="445px" Width="100%" runat="server" Wrap="False" ScrollBars="Auto">
+                                    <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+                                </asp:Panel>
+                            </div>
+                            <%if (hf2sides.Value == "1")
+                                { %>
+                            <div class="col-2 w-100 text-center">
+                                <asp:ContentPlaceHolder ID="MainContentSide" runat="server"></asp:ContentPlaceHolder>
+                            </div>
+                            <%} %>
+                        </div>
+                    </div>
+                    <div id="footer">
+                        <div class="container-fluid">
+                            <div class="row pl-5">
+                                <div class="card col-lg-6 p-0 pr-5" style="line-height: 15px;">
+                                    <div class="card-header p-0 " style="padding-bottom: 0px; padding-top: 20px !important;">
+                                        <h6>
+                                            <asp:Label ID="lblSuporteFooter" runat="server" Text="<%$Resources:GlobalResource, footer_titulo %>"></asp:Label></h6>
+                                    </div>
+                                    <div class="card-body p-0" style="padding-top: 0px; padding-bottom: 0px;">
+                                        <div class="row p-0">
+                                            <div class="col-lg-3 p-0">
+                                                <ul style="list-style-type: none" class="p-2 pl-3 mb-0">
+                                                    <li style="margin-bottom: 2px;">
+                                                        <asp:LinkButton ID="LinkButton4" runat="server" CausesValidation="False" CommandArgument="Tipologia" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link7 %></asp:LinkButton>
+                                                    </li>
+                                                    <li style="margin-bottom: 2px;">
+                                                        <asp:LinkButton ID="lnkFornecedores" runat="server" CausesValidation="False" CommandArgument="Fornecedores" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link1 %></asp:LinkButton></li>
+                                                    <li style="margin-bottom: 2px;">
+                                                        <asp:LinkButton ID="lnkClasseCont" runat="server" CausesValidation="False" CommandArgument="ClasseContabil" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link2 %></asp:LinkButton></li>
+                                                    <li style="margin-bottom: 0px;">
+                                                        <asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" CommandArgument="Carteira" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link3 %></asp:LinkButton></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 p-0">
+                                                <ul style="list-style-type: none" class="p-2 pl-3 mb-0">
+                                                    <li style="margin-bottom: 2px;">
+                                                        <asp:LinkButton ID="lnkIndex" runat="server" CausesValidation="False" CommandArgument="Indice" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link5 %></asp:LinkButton></li>
+                                                    <li style="margin-bottom: 2px;">
+                                                        <asp:LinkButton ID="LinkButton6" runat="server" CausesValidation="False" CommandArgument="Verbas" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link13 %></asp:LinkButton>
+                                                        
+                                                    </li>
+                                                    <li style="margin-bottom: 0px;">
+                                                        <asp:LinkButton ID="LinkButton5" runat="server" CausesValidation="False" CommandArgument="Formula" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link4 %></asp:LinkButton>
+
+                                                    </li>
+                                                    <li style="margin-bottom: 2px;">
+                                                        <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandArgument="PlanoContas" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link9 %></asp:LinkButton></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 p-0 ">
+                                                <ul style="list-style-type: none" class="p-2 pl-3 mb-0 ">
+                                                    <li style="margin-bottom: 0px;">
+                                                        <asp:LinkButton ID="LinkButton3" runat="server" CausesValidation="False" CommandArgument="DadosVerba" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link8 %></asp:LinkButton>
+                                                        </li>
+                                                    <li style="margin-bottom: 2px;"><asp:LinkButton ID="LinkButton7" runat="server" CausesValidation="False" CommandArgument="Monitoramento" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link12 %></asp:LinkButton></li>
+                                                    
+                                                    <li style="margin-bottom: 2px;"><a href="http://191.252.61.229:8081/cloud_ocr">
+                                                        <asp:Label ID="Label6" runat="server" Text="<%$Resources:GlobalResource, footer_link11 %>" CausesValidation="false" CommandArgument="#" OnClick="lnk_Navi_footer"></asp:Label></a>
+                                                    </li>
+                                                    <li style="margin-bottom: 2px;">
+                                                        <a href="#">
+                                                        <asp:Label ID="Label7" runat="server" Text="<%$Resources:GlobalResource, footer_link10 %>" CausesValidation="false" CommandArgument="#" OnClick="lnk_Navi_footer"></asp:Label></a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 w-100 text-right p-0">
+                                    <asp:Image ID="Image1" runat="server" ImageUrl="~/img/img_footer.png" Style="width: 100%" />
+                                </div>
+
+                            </div>
+                            <div class="row" style="background-color: #cc0000">
+                                <div class="col-lg-12 text-center p-0" style="line-height: 25px">
+                                    <a href="https://www.webnesta.com/" target="_blank">
+                                        <asp:Label ID="Label15" CssClass="labels" Style="font-size: 20pt; color: #fff" runat="server" Text="www.webnesta.com"></asp:Label></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <asp:XmlDataSource ID="xmlPopupAbout" runat="server" DataFile="~/xmlVersion/versionDb.xml"></asp:XmlDataSource>
+        <dx:ASPxPopupControl ID="popupAbout" ClientInstanceName="popupAbout" Width="750px" ShowHeader="false" Height="400px" CloseAction="OuterMouseClick" Modal="true"
+            PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" CssClass="rounding" Theme="Moderno" AllowDragging="True"
+            PopupAnimationType="Fade" AutoUpdatePosition="True" runat="server">
+            <ContentCollection>
+                <dx:PopupControlContentControl>
+                    <div class="container p-0" style="background-color: transparent; background-image: url('img/fnd_about.png'); background-repeat: no-repeat; background-position: 70% center; background-size: 85%">
+                        <asp:Image ID="Image7" ImageUrl="~/img/lamp.png" runat="server" Style="width: 4%; opacity: 0.5; position: absolute; z-index: 10; top: 78%; right: 5%;" />
+                        <div class="row">
+                            <div class="col-8 p-0">
+                                <asp:Image ID="Image2" ImageUrl="~/img/fnd_about_nesta.png" runat="server" Width="55%" Style="padding-left: 20px; padding-top: 5px;" />
+                            </div>
+                            <div class="col-4 p-0 titulo2 text-right">
+                                <asp:Image ID="Image3" ImageUrl="~/img/engrenagem.png" runat="server" Width="30%" Style="padding-right: 10px; margin-bottom: 5px;" /><asp:Label ID="Label18" runat="server" Text="IFRS.16"></asp:Label>
+                            </div>
+                        </div>
+                        <div class="row pt-1" style="height: 300px; padding-right: 15px;">
+
+                            <div class="col-4 p-0 card" style="background-color: transparent">
+                                <div class="card-header border-bottom-0" style="background-color: transparent">
+                                    <asp:Label ID="Label2" runat="server" Visible="false" Font-Names="Calibri" ForeColor="#4E01D4" Font-Size="14pt" CssClass="labels" Text="AVISO..."></asp:Label>
+                                </div>
+                                <div class="card-body" style="background-color: transparent">
+                                </div>
+                                <div class="card-footer bg-transparent border-top-0">
+                                    <asp:Image ID="Image6" ImageUrl="~/img/etc.png" runat="server" Width="30%" Style="padding-right: 10px" />
+                                </div>
+                            </div>
+                            <div class="col-8 pl-2 p-0" style="background-color: transparent; border: 2px solid #BA9BC9; border-radius: 5px">
+                                <dx:ASPxGridView ID="gridPopupAbout" ClientInstanceName="gridPopupAbout" Settings-ShowTitlePanel="true" SettingsText-Title="Versões" runat="server" AutoGenerateColumns="False" DataSourceID="xmlPopupAbout" Theme="Material" Width="460px" Style="background-color: transparent;">
+                                    <SettingsPager Visible="False">
+                                    </SettingsPager>
+
+                                    <Settings VerticalScrollBarMode="Auto" VerticalScrollableHeight="220" VerticalScrollBarStyle="Standard" />
+                                    <Columns>
+                                        <dx:GridViewDataTextColumn Caption="# Code" FieldName="code" MaxWidth="60" ShowInCustomizationForm="True" VisibleIndex="0" Width="60px">
+                                            <CellStyle Wrap="True">
+                                            </CellStyle>
+                                        </dx:GridViewDataTextColumn>
+                                        <dx:GridViewDataTextColumn Caption="Description" FieldName="describe" MaxWidth="160" ShowInCustomizationForm="True" VisibleIndex="1" Width="240px">
+                                            <CellStyle Wrap="True">
+                                            </CellStyle>
+                                        </dx:GridViewDataTextColumn>
+                                        <dx:GridViewDataTextColumn Caption="Request" FieldName="source" MaxWidth="60" ShowInCustomizationForm="True" VisibleIndex="2" Width="60px">
+                                            <CellStyle Wrap="True">
+                                            </CellStyle>
+                                        </dx:GridViewDataTextColumn>
+                                    </Columns>
+                                    <Border BorderStyle="None" />
+                                    <Styles>
+                                        <TitlePanel BackColor="Transparent" Font-Names="Calibri" Font-Size="14pt" CssClass="labels"></TitlePanel>
+                                        <Header BackColor="Transparent" Font-Size="8pt" Paddings-Padding="2px"></Header>
+                                        <Row BackColor="Transparent" Font-Size="8pt"></Row>
+                                        <Cell Paddings-Padding="2px" BackColor="Transparent" Border-BorderWidth="0px"></Cell>
+                                        <Table BackColor="Transparent" Paddings-Padding="2px"></Table>
+
+                                    </Styles>
+
+                                </dx:ASPxGridView>
+                            </div>
+                        </div>
+                        <div class="row pt-1" style="padding-right: 15px;">
+                            <div class="col-12 text-right">
+                                <dx:ASPxButton ID="ASPxButton1" runat="server" CssClass="btn btn-sm btn-cancelar" AutoPostBack="false" Text="FECHAR">
+                                    <ClientSideEvents Click="function (s, e) {popupAbout.Hide(); }" />
+                                </dx:ASPxButton>
+                            </div>
+                        </div>
+                    </div>
+                </dx:PopupControlContentControl>
+            </ContentCollection>
+        </dx:ASPxPopupControl>
+        <dx:ASPxPopupControl ID="popupSaibaMais" ClientInstanceName="popupSaibaMais" Width="1100px" ShowHeader="true" HeaderText="Saiba Mais" Height="600px" CloseAction="OuterMouseClick" Modal="true"
+            PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" AllowResize="true" CssClass="rounding" Theme="Material" AllowDragging="True"
+            PopupAnimationType="Fade" AutoUpdatePosition="True" runat="server"></dx:ASPxPopupControl>
+    </form>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("mySidebar").style.display = "block";
+            //document.getElementById("main").style.marginLeft = "0px";
+            document.getElementById("btnNavi").setAttribute("onclick", "closeNav()");
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("mySidebar").style.display = "none";
+            //document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("btnNavi").setAttribute("onclick", "openNav()");
+        }
+    </script>
+</body>
+</html>

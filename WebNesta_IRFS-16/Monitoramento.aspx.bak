@@ -1,0 +1,382 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Monitoramento.aspx.cs" Inherits="WebNesta_IRFS_16.Monitoramento" %>
+
+<%@ Register Assembly="DevExpress.Web.ASPxTreeList.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxTreeList" TagPrefix="dx" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        function UpdateInfo() {
+            var daysTotal = txtDtFinal.GetRangeDayCount();
+            txtQtdDias.SetText(daysTotal !== -1 ? daysTotal : '');
+        }
+        function ClearSelection() {
+            TreeList.SetFocusedNodeKey("");
+            UpdateControls(null, "");
+            document.getElementById('hfDropEstr').value = "";
+            document.getElementById('hfDropEstr2').value = "";
+        }
+        function UpdateSelection() {
+            var employeeName = "";
+            var focusedNodeKey = TreeList.GetFocusedNodeKey();
+            document.getElementById('hfDropEstr').value = TreeList.GetFocusedNodeKey();
+            document.getElementById('hfDropEstr2').value = TreeList.GetFocusedNodeKey();
+            if (focusedNodeKey != "")
+                employeeName = TreeList.cpEmployeeNames[focusedNodeKey];
+            UpdateControls(focusedNodeKey, employeeName);
+        }
+        function UpdateControls(key, text) {
+            DropDownEdit.SetText(text);
+            DropDownEdit.SetKeyValue(key);
+            DropDownEdit.HideDropDown();
+            UpdateButtons();
+        }
+        function UpdateButtons() {
+            clearButton.SetEnabled(DropDownEdit.GetText() != "");
+            selectButton.SetEnabled(TreeList.GetFocusedNodeKey() != "");
+
+        }
+        function OnDropDown() {
+            TreeList.SetFocusedNodeKey(DropDownEdit.GetKeyValue());
+            TreeList.MakeNodeVisible(TreeList.GetFocusedNodeKey());
+        }
+    </script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+
+    <asp:HiddenField ID="hfDropEstr2" ClientIDMode="Static" runat="server" />
+    <div class="container-fluid">
+        <div class="row ml-0 mr-0 mt-0 w-100">
+            <div class="col-sm-2">
+                <div class="container-fluid">
+                    <div class="row mt-2">
+                        <div class="col-12 text-left p-0">
+                            <div class="card pr-2 pl-2 quickGuide">
+                                <div class="card-header quickGuide-header">
+                                    <label>Quick Guide</label>
+                                </div>
+                                <div class="card-body p-0 pt-2 quickGuide-body">
+                                    <label id="lblquickGuide"><%=Resources.Monitoramento.monitoramento_guide_ini %></label>
+                                </div>
+                                <div class="card-footer bg-transparent quickGuide-footer">
+                                    <asp:HiddenField ID="hfContentPage" ClientIDMode="Static" runat="server" Value="<%$Resources:Fornecedores, fornecedor_content_tutorial %>" />
+                                    <dx:ASPxButton ID="btnAjuda" runat="server" AutoPostBack="false" CssClass="btn-saiba-mais" CausesValidation="false" Text="SAIBA MAIS">
+                                        <ClientSideEvents Click="function (s,e){
+                                            popupSaibaMais.RefreshContentUrl();
+                                            popupSaibaMais.SetContentUrl(document.getElementById('hfContentPage').value);
+                                            setTimeout('popupSaibaMais.Show();', 500);
+                                            }" />
+                                    </dx:ASPxButton>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-10 pl-4 pr-0">
+                <div class="row w-100 m-0">
+                    <div class="card w-100 bg-transparent">
+                        <div class="card-header bg-transparent">
+                            <h4>
+                                <asp:Label ID="Label1" runat="server" onmouseover="QuickGuide('titulo');" onmouseout="QuickGuide('ini');" Text="<%$Resources:Monitoramento, monitoramento_tituloPag %>"></asp:Label></h4>
+                        </div>
+                        <div class="card-body bg-transparent">
+                            <dx:ASPxGridView ID="gridMonit" CssClass="bg-transparent" ClientInstanceName="gridMonit" EnableViewState="false" ClientIDMode="Static" Width="100%" Settings-ShowTitlePanel="true" Theme="Material" runat="server" EnableRowsCache="False" AutoGenerateColumns="False"
+                                KeyFieldName="ID"
+                                OnCustomCallback="gridMonit_CustomCallback" >
+                                <ClientSideEvents SelectionChanged="function (s,e) {
+                                        btnProcessarGrid.SetEnabled(gridMonit.GetSelectedRowCount() &gt; 0);
+                                    }"
+                                    ColumnMoving="function OnColumnMoving(s, e) {
+            e.allow = e.isGroupPanel;
+        }" />
+                                <SettingsPopup>
+                                    <HeaderFilter MinHeight="140px">
+                                    </HeaderFilter>
+                                </SettingsPopup>
+                                <SettingsText GroupPanel="Arraste uma coluna para realizar agrupamento" ContextMenuSortAscending="Crescente" ContextMenuUngroupColumn="Cancelar" ContextMenuFullCollapse="Fechar todos" ContextMenuFullExpand="Expandir todos" ContextMenuSortDescending="Decrescente" ContextMenuShowGroupPanel="Painel" ContextMenuShowFilterRow="Filtrar" ContextMenuGroupByColumn="Agrupado por essa coluna" BatchEditChangesPreviewUpdatedValues="<%$Resources:GlobalResource, btn_grid_batch_updatevalues %>" BatchEditChangesPreviewInsertedValues="<%$Resources:GlobalResource, btn_grid_batch_insertvalues %>" BatchEditChangesPreviewDeletedValues="<%$Resources:GlobalResource, btn_grid_batch_deletevalues %>" CommandBatchEditUpdate="<%$Resources:GlobalResource, btn_grid_batch_save %>" CommandBatchEditCancel="<%$Resources:GlobalResource, btn_grid_batch_cancel %>" CommandBatchEditHidePreview="<%$Resources:GlobalResource, btn_grid_batch_hide %>" CommandBatchEditPreviewChanges="<%$Resources:GlobalResource, btn_grid_batch_preview %>" />
+                                <Settings ShowGroupPanel="true" VerticalScrollableHeight="594" />
+                                <SettingsBehavior AllowFocusedRow="true" />
+                                <SettingsPager NumericButtonCount="20" PageSize="20">
+                                </SettingsPager>
+                                <SettingsEditing Mode="Batch" BatchEditSettings-EditMode="Row" BatchEditSettings-ShowConfirmOnLosingChanges="true" />
+                                <SettingsCommandButton>
+                                    <NewButton Image-ToolTip="New" Image-Url="img/icons8-plus-20.png" Image-Width="15px">
+                                        <Image ToolTip="New" Url="img/icons8-plus-20.png" Width="15px">
+                                        </Image>
+                                    </NewButton>
+                                    <DeleteButton Image-ToolTip="Delete" Image-Url="img/icons8-delete-bin-32.png" Image-Width="15px">
+                                        <Image ToolTip="Delete" Url="img/icons8-delete-bin-32.png" Width="15px">
+                                        </Image>
+                                    </DeleteButton>
+                                    <RecoverButton Image-ToolTip="Cancel" Image-Url="img/icons8-recyle-32.png" Image-Width="15px">
+                                        <Image ToolTip="Cancel" Url="img/icons8-recyle-32.png" Width="15px">
+                                        </Image>
+                                    </RecoverButton>
+                                </SettingsCommandButton>
+                                <SettingsContextMenu Enabled="true">
+                                    <RowMenuItemVisibility NewRow="false" EditRow="false" DeleteRow="false"></RowMenuItemVisibility>
+                                    <ColumnMenuItemVisibility ShowFooter="false" ShowSearchPanel="false" />
+                                </SettingsContextMenu>
+                                <Columns>
+                                    <dx:GridViewCommandColumn ShowSelectCheckbox="True" SelectAllCheckboxMode="AllPages" VisibleIndex="0"></dx:GridViewCommandColumn>
+                                    <dx:GridViewDataDateColumn FieldName="DATA" ReadOnly="True" VisibleIndex="1" Caption="Data"></dx:GridViewDataDateColumn>
+                                    <dx:GridViewDataTextColumn FieldName="COD" VisibleIndex="2" Caption="N&#250;mero Processo"></dx:GridViewDataTextColumn>
+                                    <dx:GridViewDataTextColumn FieldName="FAV" VisibleIndex="3" Caption="Favorecido"></dx:GridViewDataTextColumn>
+                                    <dx:GridViewDataTextColumn FieldName="BEN" VisibleIndex="4" Caption="Benefici&#225;rio"></dx:GridViewDataTextColumn>
+                                    <dx:GridViewDataDateColumn FieldName="MES" ReadOnly="True" VisibleIndex="5" Caption="M&#234;s Compet&#234;ncia">
+                                        <PropertiesDateEdit DisplayFormatString="MMM/yyyy"></PropertiesDateEdit>
+                                    </dx:GridViewDataDateColumn>
+
+                                    <dx:GridViewDataTextColumn FieldName="VALOR" VisibleIndex="7" Caption="Valor">
+                                        <PropertiesTextEdit DisplayFormatString="N2"></PropertiesTextEdit>
+                                    </dx:GridViewDataTextColumn>
+                                    <dx:GridViewDataTextColumn FieldName="MOD" Caption="Verba" VisibleIndex="6"></dx:GridViewDataTextColumn>
+                                    <dx:GridViewDataTextColumn FieldName="ID" Visible="false" VisibleIndex="7"></dx:GridViewDataTextColumn>
+                                </Columns>
+                                <Templates>
+                                    <StatusBar>
+                                        <div style="text-align: left">
+                                            <br />
+                                            <%--<dx:ASPxButton ID="btnSave" runat="server" AutoPostBack="false" CssClass="btn-using" Text="<%$Resources:GlobalResource, btn_grid_batch_save %>" ClientSideEvents-Click="function(s, e){ gridVerbas.UpdateEdit(); }">
+                                                <DisabledStyle CssClass="btn-using"></DisabledStyle>
+                                            </dx:ASPxButton>
+                                            <dx:ASPxButton ID="btnCancel" runat="server" AutoPostBack="false" CssClass="btn-using" Text="<%$Resources:GlobalResource, btn_grid_batch_cancel %>" ClientSideEvents-Click="function(s, e){ gridVerbas.CancelEdit(); }">
+                                                <DisabledStyle CssClass="btn-using"></DisabledStyle>
+                                            </dx:ASPxButton>--%>
+                                            <dx:ASPxButton ID="btnProcessarGrid" ClientInstanceName="btnProcessarGrid" ClientEnabled="false" runat="server" AutoPostBack="false" CssClass="btn-using" Text="Processar" ClientSideEvents-Click="function(s, e){ gridMonit.PerformCallback('processar'); }">
+                                                <DisabledStyle CssClass="btn-using"></DisabledStyle>
+                                            </dx:ASPxButton>
+                                        </div>
+                                    </StatusBar>
+                                </Templates>
+                                <Styles>
+                                    <TitlePanel HorizontalAlign="Left"></TitlePanel>
+                                    <Header Font-Names="Arial" Font-Size="10pt" ForeColor="DimGray" Paddings-Padding="3px">
+                                    </Header>
+                                    <Row Font-Names="Arial" Font-Size="8pt" ForeColor="DimGray">
+                                    </Row>
+                                    <AlternatingRow Font-Names="Arial" Font-Size="8pt" ForeColor="DimGray" BackColor="LightGray"></AlternatingRow>
+                                    <BatchEditCell Font-Names="Arial" Font-Size="8pt" ForeColor="DimGray">
+                                        <Paddings Padding="0px" />
+                                    </BatchEditCell>
+                                    <FocusedCell Font-Names="Arial" Font-Size="8pt" ForeColor="DimGray" Paddings-Padding="0px"></FocusedCell>
+                                    <FocusedRow BackColor="#99bbbb"></FocusedRow>
+                                    <EditForm Paddings-Padding="0px"></EditForm>
+                                    <EditFormCell Paddings-Padding="0px"></EditFormCell>
+                                    <Table></Table>
+                                    <Cell Paddings-Padding="5px"></Cell>
+                                    <CommandColumn Paddings-Padding="5px"></CommandColumn>
+                                </Styles>
+                            </dx:ASPxGridView>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <asp:SqlDataSource ID="sqlMonitor" runat="server" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' ProviderName='<%$ ConnectionStrings:ConnectionString.ProviderName %>'></asp:SqlDataSource>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContentSide" runat="server">
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>
+            <asp:HiddenField ID="hfDropEstr" ClientIDMode="Static" runat="server" />
+            <asp:HiddenField ID="hfUser" runat="server" />
+            <div class="container p-0">
+                <div class="row mt-3 card" style="margin: 0 auto">
+                    <div class="card-header p-1 text-left">
+                        <h5>
+                            <asp:Label ID="Label33" runat="server" onmouseover="QuickGuide('acao');" onmouseout="QuickGuide('ini');" Text="<%$ Resources:Monitoramento, monitoramento_tituloRight %>" CssClass="labels text-left"></asp:Label></h5>
+                    </div>
+                </div>
+                <asp:Button ID="btnMonitSelEmp" runat="server" CssClass="d-none" ClientIDMode="Static" Text="Button" OnClick="btnMonitSelEmp_Click" />
+                <div class="row mt-3" style="margin: 0 auto">
+                    <h6>
+                        <asp:Label ID="Label9" runat="server" Text="<%$ Resources:Monitoramento, monitoramento_right_titulo2 %>" CssClass="labels text-left"></asp:Label></h6>
+                    <div class="input-group mb-auto drop-down-div">
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' ProviderName='<%$ ConnectionStrings:ConnectionString.ProviderName %>' SelectCommand="SELECT B.TVIDESTR, B.TVDSESTR, B.TVCDPAIE, B.TVNVESTR,
+                                   A.FOCDXCGC, A.FOCDLICE
+                            FROM TVESTRUT B, FOFORNEC A
+                            WHERE B.TVIDESTR = A.TVIDESTR
+                            AND A.FOTPIDTP = 6
+                            AND A.FOCDLICE IS NOT NULL
+                            AND B.TVIDESTR IN(SELECT DISTINCT TVIDESTR 
+                                               FROM VIFSFUSU 
+                                               WHERE USIDUSUA = ?)
+ORDER BY B.TVNVESTR, B.TVCDPAIE, B.TVIDESTR">
+                            <SelectParameters>
+                                <asp:ControlParameter ControlID="hfUser" PropertyName="Value" Name="?"></asp:ControlParameter>
+                            </SelectParameters>
+                        </asp:SqlDataSource>
+                        <dx:ASPxCallbackPanel ID="ASPxCallbackPanel1" runat="server" Width="350px">
+                            <PanelCollection>
+                                <dx:PanelContent>
+                                    <dx:ASPxDropDownEdit ID="ddeEstruturaInsert" Visible="true" CssClass="dropDownEdit text-left" ClientIDMode="Static" ClientInstanceName="DropDownEdit" Theme="Material"
+                                        Width="100%" runat="server" AnimationType="Slide" AllowUserInput="false">
+                                        <ClientSideEvents
+                                            Init="UpdateSelection"
+                                            DropDown="OnDropDown" />
+                                        <Border BorderColor="#529862" BorderStyle="Solid" BorderWidth="1px" />
+                                        <ButtonStyle Border-BorderStyle="Solid" Border-BorderWidth="0" Border-BorderColor="#529862">
+                                            <HoverStyle BackColor="#529862"></HoverStyle>
+                                            <Paddings PaddingBottom="4px" PaddingTop="4px" />
+                                        </ButtonStyle>
+                                        <Paddings PaddingBottom="4px" PaddingTop="4px" />
+                                        <DisabledStyle BackColor="#E1DFDF"></DisabledStyle>
+                                        <DropDownWindowTemplate>
+                                            <div>
+                                                <dx:ASPxTreeList ID="TreeList" CssClass="text-left" DataSourceID="SqlDataSource1" ClientInstanceName="TreeList" runat="server"
+                                                    Width="350px" OnCustomJSProperties="TreeList_CustomJSProperties" Theme="Material"
+                                                    KeyFieldName="TVIDESTR" ParentFieldName="TVCDPAIE">
+                                                    <Settings VerticalScrollBarMode="Auto" ScrollableHeight="150" />
+                                                    <ClientSideEvents FocusedNodeChanged="function(s,e){ selectButton.SetEnabled(true); }" />
+                                                    <BorderBottom BorderStyle="Solid" />
+                                                    <SettingsBehavior AllowFocusedNode="true" AutoExpandAllNodes="false" FocusNodeOnLoad="false" />
+                                                    <SettingsPager Mode="ShowAllNodes">
+                                                    </SettingsPager>
+                                                    <Styles>
+                                                        <SelectedNode BackColor="#529862"></SelectedNode>
+                                                        <FocusedNode BackColor="#529862"></FocusedNode>
+                                                        <Node Cursor="pointer">
+                                                        </Node>
+                                                        <Indent Cursor="default">
+                                                        </Indent>
+                                                    </Styles>
+                                                    <Columns>
+                                                        <dx:TreeListTextColumn FieldName="TVDSESTR" Caption="Descrição" AutoFilterCondition="Default" ShowInFilterControl="Default" VisibleIndex="0"></dx:TreeListTextColumn>
+                                                    </Columns>
+                                                </dx:ASPxTreeList>
+                                            </div>
+                                            <table style="background-color: White; width: 100%;">
+                                                <tr>
+                                                    <td style="padding: 10px;">
+                                                        <dx:ASPxButton ID="clearButton" ClientEnabled="false" Theme="Material" ClientInstanceName="clearButton"
+                                                            runat="server" AutoPostBack="false" Text="Clear" BackColor="#529862">
+                                                            <ClientSideEvents Click="ClearSelection" />
+                                                            <HoverStyle BackColor="#669999"></HoverStyle>
+                                                            <DisabledStyle BackColor="White"></DisabledStyle>
+                                                        </dx:ASPxButton>
+                                                    </td>
+                                                    <td style="text-align: right; padding: 10px;">
+                                                        <dx:ASPxButton ID="selectButton" ClientEnabled="false" Theme="Material" ClientInstanceName="selectButton"
+                                                            runat="server" AutoPostBack="false" Text="Select" BackColor="#529862">
+                                                            <ClientSideEvents Click=" function(s,e) {
+                                                            UpdateSelection();
+                                                            if (document.getElementById('hfDropEstr').value != '') {
+                                                                document.getElementById('btnMonitSelEmp').click();
+                                                            }
+                                                            } " />
+                                                            <HoverStyle BackColor="#669999"></HoverStyle>
+                                                            <DisabledStyle BackColor="White"></DisabledStyle>
+                                                        </dx:ASPxButton>
+                                                        <dx:ASPxButton ID="closeButton" runat="server" Theme="Material" AutoPostBack="false" Text="Close" BackColor="#529862">
+                                                            <ClientSideEvents Click="function(s,e) { DropDownEdit.HideDropDown(); }" />
+                                                            <HoverStyle BackColor="#669999"></HoverStyle>
+                                                            <DisabledStyle BackColor="White"></DisabledStyle>
+                                                        </dx:ASPxButton>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </DropDownWindowTemplate>
+                                    </dx:ASPxDropDownEdit>
+                                </dx:PanelContent>
+                            </PanelCollection>
+                        </dx:ASPxCallbackPanel>
+                    </div>
+                </div>
+                <div class="row mt-1" style="margin: 0 auto">
+                    <h6>
+                        <asp:Label ID="Label4" runat="server" Text="<%$ Resources:Monitoramento, monitoramento_lbl2 %>" CssClass="labels text-left"></asp:Label></h6>
+                    <div class="input-group mb-auto drop-down-div">
+                        <dx:ASPxTextBox ID="txtQtdDias" Enabled="false" ClientInstanceName="txtQtdDias" MaxLength="5" runat="server" CssClass="text-boxes" Width="100%">
+                            <ClientSideEvents TextChanged="function (s,e) {
+                                var date = txtDtInicial.GetDate(); 
+                                date.setDate(date.getDate() + parseInt(txtQtdDias.GetText()));  
+                                txtDtFinal.SetDate(date); 
+                        }" />
+                            <ValidationSettings RegularExpression-ValidationExpression="^([1-9]|[1-9][0-9]|[1-9][0-9][0-9]|[1-9][0-9][0-9][0-9]|[1-9][0-9][0-9][0-9][0-9])$" Display="Dynamic" ErrorTextPosition="Bottom" RegularExpression-ErrorText="Apenas números."></ValidationSettings>
+                        </dx:ASPxTextBox>
+                    </div>
+                </div>
+                <div class="row mt-1" style="margin: 0 auto">
+                    <h6>
+                        <asp:Label ID="Label2" runat="server" Text="<%$ Resources:Monitoramento, monitoramento_lbl3 %>" CssClass="labels text-left"></asp:Label></h6>
+                    <div class="input-group mb-auto drop-down-div">
+                        <dx:ASPxDateEdit ID="txtDtInicial" Enabled="false" ClientInstanceName="txtDtInicial" ForeColor="dimgray" CssClass="drop-down" Theme="Material" Width="100%" runat="server" PickerType="Days" PopupVerticalAlign="Above">
+                            <ClientSideEvents DateChanged="UpdateInfo"></ClientSideEvents>
+                            <Border BorderColor="#529862" BorderStyle="Solid" BorderWidth="1px" />
+                            <ButtonStyle Border-BorderStyle="Solid" Border-BorderWidth="0" Border-BorderColor="#669999">
+                                <HoverStyle BackColor="#669999"></HoverStyle>
+                                <Paddings PaddingBottom="3px" PaddingTop="4px" />
+                            </ButtonStyle>
+                            <Paddings PaddingBottom="3px" PaddingTop="4px" />
+                            <DisabledStyle BackColor="#E1DFDF"></DisabledStyle>
+                            <CalendarProperties ShowClearButton="false" ShowDayHeaders="false" ShowTodayButton="false" ShowWeekNumbers="false">
+                                <MonthGridPaddings Padding="0px" />
+                                <DayStyle Font-Size="11pt" Paddings-Padding="0px" />
+                                <HeaderStyle BackColor="#669999" />
+                                <CellSelectedStyle BackColor="#669999"></CellSelectedStyle>
+                                <FastNavProperties DisplayMode="Inline" />
+                            </CalendarProperties>
+                        </dx:ASPxDateEdit>
+                    </div>
+                </div>
+                <div class="row mt-1" style="margin: 0 auto">
+                    <h6>
+                        <asp:Label ID="Label3" runat="server" Text="<%$ Resources:Monitoramento, monitoramento_lbl4 %>" CssClass="labels text-left"></asp:Label></h6>
+                    <div class="input-group mb-auto drop-down-div">
+                        <dx:ASPxDateEdit ID="txtDtFinal" Enabled="false" ClientInstanceName="txtDtFinal" ForeColor="dimgray" CssClass="drop-down" Theme="Material" Width="100%" runat="server" PickerType="Days" PopupVerticalAlign="Above">
+                            <ClientSideEvents DateChanged="UpdateInfo"></ClientSideEvents>
+                            <Border BorderColor="#529862" BorderStyle="Solid" BorderWidth="1px" />
+                            <ButtonStyle Border-BorderStyle="Solid" Border-BorderWidth="0" Border-BorderColor="#669999">
+                                <HoverStyle BackColor="#669999"></HoverStyle>
+                                <Paddings PaddingBottom="3px" PaddingTop="4px" />
+                            </ButtonStyle>
+                            <Paddings PaddingBottom="3px" PaddingTop="4px" />
+                            <DisabledStyle BackColor="#E1DFDF"></DisabledStyle>
+                            <DateRangeSettings StartDateEditID="txtDtInicial"></DateRangeSettings>
+                            <CalendarProperties ShowClearButton="false" ShowDayHeaders="false" ShowTodayButton="false" ShowWeekNumbers="false">
+                                <MonthGridPaddings Padding="0px" />
+                                <DayStyle Font-Size="11pt" Paddings-Padding="0px" />
+                                <HeaderStyle BackColor="#669999" />
+                                <CellSelectedStyle BackColor="#669999"></CellSelectedStyle>
+                                <FastNavProperties DisplayMode="Inline" />
+                            </CalendarProperties>
+                        </dx:ASPxDateEdit>
+                    </div>
+                </div>
+                <div class="row mt-1" style="margin: 0 auto">
+                    <h6>
+                        <asp:Label ID="Label5" runat="server" Text="<%$ Resources:Monitoramento, monitoramento_lbl5 %>" CssClass="labels text-left"></asp:Label></h6>
+                    <asp:RequiredFieldValidator ID="reqSitua" runat="server" ValidationGroup="Pesquisa" ControlToValidate="dropSitua" InitialValue="-1" ForeColor="Red" ErrorMessage="*"></asp:RequiredFieldValidator>
+                    <div class="input-group mb-auto drop-down-div">
+                        <dx:ASPxComboBox ID="dropSitua" Enabled="false" ForeColor="dimgray" AllowInputUser="false" runat="server" CssClass="drop-down" Theme="Material" Width="100%">
+                            <Border BorderColor="#529862" BorderStyle="Solid" BorderWidth="1px" />
+                            <ButtonStyle Border-BorderStyle="Solid" Border-BorderWidth="0" Border-BorderColor="#529862">
+                                <HoverStyle BackColor="#529862"></HoverStyle>
+                                <Paddings PaddingBottom="3px" PaddingTop="4px" />
+                            </ButtonStyle>
+                            <Paddings PaddingBottom="3px" PaddingTop="4px" />
+                            <DisabledStyle BackColor="#E1DFDF"></DisabledStyle>
+                            <Items>
+                                <dx:ListEditItem Text="  " Value="-1" Selected="true" />
+                                <dx:ListEditItem Text="Vencido" Value="0" />
+                                <dx:ListEditItem Text="a Vencer" Value="1" />
+                            </Items>
+                        </dx:ASPxComboBox>
+                    </div>
+                </div>
+                <div class="row mt-3" style="margin: 0 auto">
+                    <div class="col-lg-6 pl-0" style="text-align: center;">
+                        <asp:Button ID="btnProcessar" Enabled="false" runat="server" ValidationGroup="Pesquisa" CssClass="btn-using" Text="Pesquisar" OnClick="btnProcessar_Click" />
+                    </div>
+                    <div class="col-lg-6 pl-1" style="text-align: center;">
+                        <asp:TextBox ID="TextBox10" CssClass="btn-using field_empty" Enabled="false" runat="server"></asp:TextBox>
+                    </div>
+                </div>
+            </div>
+        </ContentTemplate>
+        <Triggers>
+            <asp:AsyncPostBackTrigger ControlID="btnMonitSelEmp" />
+            <asp:PostBackTrigger ControlID="btnProcessar" />
+        </Triggers>
+    </asp:UpdatePanel>
+</asp:Content>

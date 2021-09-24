@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ocrtools2_btn1" xml:space="preserve">
+    <value>Ler Arquivos</value>
+  </data>
+  <data name="ocrtools2_btn1_guide" xml:space="preserve">
+    <value>Processar a leitura dos arquivos de PDF disponíveis para o sistema e posteriormente o preenchimentos dos registros de Boletos sem Layout, Boletos Lidos e Boletos Discrepantes.</value>
+  </data>
+  <data name="ocrtools2_guia1" xml:space="preserve">
+    <value>Boletos sem Layout</value>
+  </data>
+  <data name="ocrtools2_guia1_guide" xml:space="preserve">
+    <value>Exibição dos boletos disponibilizados que não possuem layouts associados, nesse momento é permitido ao usuário associar um Layout ao arquivo PDF ou então criar um novo Layout a partir da tela.&lt;br/&gt;Para alterar os dados é possível clicando duas vezes na linha desejada, Para Inserir deve-se clicar no ícone + e preencher os campos. Para Excluir é necessário clicar no ícone da lixeira. Após qualquer dessas operações é necessário Salvar ou então Descartar.</value>
+  </data>
+  <data name="ocrtools2_guia2" xml:space="preserve">
+    <value>Boletos Lidos</value>
+  </data>
+  <data name="ocrtools2_guia2_btn1" xml:space="preserve">
+    <value>Processar</value>
+  </data>
+  <data name="ocrtools2_guia2_btn1_guide" xml:space="preserve">
+    <value>Processar</value>
+  </data>
+  <data name="ocrtools2_guia2_guide" xml:space="preserve">
+    <value>Exibição dos boletos que foram Lidos corretamente e não possuem divergência entre valores descritivos e total do boletos, estes boletos estão prontos para serem processados e enviados ao boletagem.&lt;br/&gt;Para alterar os dados é possível clicando duas vezes na linha desejada, Para Inserir deve-se clicar no ícone + e preencher os campos. Para Excluir é necessário clicar no ícone da lixeira. Após qualquer dessas operações é necessário Salvar ou então Descartar.&lt;br/&gt;Processar: função que irá enviar os registros selecionados para o sistema de boletagem e então entrar no processo de contas a pagar.</value>
+  </data>
+  <data name="ocrtools2_guia3" xml:space="preserve">
+    <value>Boletos Discrepantes</value>
+  </data>
+  <data name="ocrtools2_guia3_guide" xml:space="preserve">
+    <value>Exibição dos boletos que foram lidos porém existem diferenças entre os valores descritivos e o total do boleto, desta forma o sistema separa o registro para avaliação do layout criado.&lt;br/&gt;Para alterar os dados é possível clicando duas vezes na linha desejada. Para Inserir deve-se clicar no ícone + e preencher os campos. Para Excluir é necessário clicar no ícone da lixeira. Após qualquer dessas operações é necessário Salvar ou então Descartar.</value>
+  </data>
+  <data name="ocrtools_btn1" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="ocrtools_content_tutorial" xml:space="preserve">
+    <value>https://cloud3.webnesta.com/tutorial/ifrs/ocrtools/pt-BR</value>
+  </data>
+  <data name="ocrtools_guia1" xml:space="preserve">
+    <value>Parametros</value>
+  </data>
+  <data name="ocrtools_guia1_btn1" xml:space="preserve">
+    <value>Validar</value>
+  </data>
+  <data name="ocrtools_guia1_btn1_guide" xml:space="preserve">
+    <value>Validar</value>
+  </data>
+  <data name="ocrtools_guia1_btn2" xml:space="preserve">
+    <value>Gravar</value>
+  </data>
+  <data name="ocrtools_guia1_btn2_guide" xml:space="preserve">
+    <value>Gravar</value>
+  </data>
+  <data name="ocrtools_guia1_btn3" xml:space="preserve">
+    <value>Deletar</value>
+  </data>
+  <data name="ocrtools_guia1_btn3_guide" xml:space="preserve">
+    <value>Deletar</value>
+  </data>
+  <data name="ocrtools_guia1_lbl1" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="ocrtools_guia1_lbl10" xml:space="preserve">
+    <value>Verba?</value>
+  </data>
+  <data name="ocrtools_guia1_lbl10_guide" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ocrtools_guia1_lbl11" xml:space="preserve">
+    <value>Classificador</value>
+  </data>
+  <data name="ocrtools_guia1_lbl11_guide" xml:space="preserve">
+    <value>Classificador que servirá como filtro dos dados e organização das informações coletadas pelo OCR, importante que os classificadores Código de Barras, Contrato, Data Vencimento e Total sejam anotadas para controle dos dados capturados pelo OCR.</value>
+  </data>
+  <data name="ocrtools_guia1_lbl12" xml:space="preserve">
+    <value>Tipo Dados</value>
+  </data>
+  <data name="ocrtools_guia1_lbl12_guide" xml:space="preserve">
+    <value>Classificar se o dado coleto é um número, uma data ou um texto comum.</value>
+  </data>
+  <data name="ocrtools_guia1_lbl13" xml:space="preserve">
+    <value>Verba</value>
+  </data>
+  <data name="ocrtools_guia1_lbl13_guide" xml:space="preserve">
+    <value>Associar o dado coletado por OCR à uma Verba previamente cadastrada no sistema.</value>
+  </data>
+  <data name="ocrtools_guia1_lbl1_guide" xml:space="preserve">
+    <value>Texto que servirá como guia para encontrar as coordenadas do alvo buscado no arquivo PDF</value>
+  </data>
+  <data name="ocrtools_guia1_lbl2" xml:space="preserve">
+    <value>Ocorrência</value>
+  </data>
+  <data name="ocrtools_guia1_lbl2_guide" xml:space="preserve">
+    <value>Campo responsável por definir em qual ocorrência de repetição se dará o resultado final, ou seja, caso esse campo seja preenchido com o numeral 2 o sistema irá pesquisar o texto inserido e, ao encontrar a segunda ocorrência, este será anotado como resultado.</value>
+  </data>
+  <data name="ocrtools_guia1_lbl3" xml:space="preserve">
+    <value>Posicionamento</value>
+  </data>
+  <data name="ocrtools_guia1_lbl3_guide" xml:space="preserve">
+    <value>Selecionar qual a posição do resultado pretendido com relação ao texto pesquisado, se o resultado estará a esquerda do texto, ou acima, ou a direita ou abaixo.</value>
+  </data>
+  <data name="ocrtools_guia1_lbl4" xml:space="preserve">
+    <value>Apenas Cordenadas?</value>
+  </data>
+  <data name="ocrtools_guia1_lbl4_guide" xml:space="preserve">
+    <value>Este recurso ignora as informações de texto, ocorrência e posicionamento e consulta apenas com os dados inseridos como coordenadas.</value>
+  </data>
+  <data name="ocrtools_guia1_lbl5" xml:space="preserve">
+    <value>Acima</value>
+  </data>
+  <data name="ocrtools_guia1_lbl5_guide" xml:space="preserve">
+    <value>Possibilita ao usuário ajustar as coordenadas conforme o desejado para atingir o resultado esperado.</value>
+  </data>
+  <data name="ocrtools_guia1_lbl6" xml:space="preserve">
+    <value>Esquerda</value>
+  </data>
+  <data name="ocrtools_guia1_lbl6_guide" xml:space="preserve">
+    <value>Possibilita ao usuário ajustar as coordenadas conforme o desejado para atingir o resultado esperado.</value>
+  </data>
+  <data name="ocrtools_guia1_lbl7" xml:space="preserve">
+    <value>Direita</value>
+  </data>
+  <data name="ocrtools_guia1_lbl7_guide" xml:space="preserve">
+    <value>Possibilita ao usuário ajustar as coordenadas conforme o desejado para atingir o resultado esperado.</value>
+  </data>
+  <data name="ocrtools_guia1_lbl8" xml:space="preserve">
+    <value>Abaixo</value>
+  </data>
+  <data name="ocrtools_guia1_lbl8_guide" xml:space="preserve">
+    <value>Possibilita ao usuário ajustar as coordenadas conforme o desejado para atingir o resultado esperado.</value>
+  </data>
+  <data name="ocrtools_guia1_lbl9" xml:space="preserve">
+    <value>Resultado</value>
+  </data>
+  <data name="ocrtools_guia1_lbl9_guide" xml:space="preserve">
+    <value>Campo que irá exibir o resultado da consulta no arquivo PDF.</value>
+  </data>
+  <data name="ocrtools_guia2" xml:space="preserve">
+    <value>Plano Verbas</value>
+  </data>
+  <data name="ocrtools_guia2_grid_col1" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="ocrtools_guia2_grid_col2" xml:space="preserve">
+    <value>Classficador</value>
+  </data>
+  <data name="ocrtools_guia2_grid_col3" xml:space="preserve">
+    <value>Verba</value>
+  </data>
+  <data name="ocrtools_lbl1" xml:space="preserve">
+    <value>Carregar PDF</value>
+  </data>
+  <data name="ocrtools_lbl1_guide" xml:space="preserve">
+    <value>Carregar um arquivo PDF para servir como referência para criação dos layouts e parâmetros de pesquisa.</value>
+  </data>
+  <data name="ocrtools_lbl2" xml:space="preserve">
+    <value>Arquivo Carregado:</value>
+  </data>
+  <data name="ocrtools_lbl2_guide" xml:space="preserve">
+    <value>Nome do Arquivo Carregado, é possível abrir o arquivo em janela popup.</value>
+  </data>
+  <data name="ocrtools_lbl3" xml:space="preserve">
+    <value>Novo Layout</value>
+  </data>
+  <data name="ocrtools_lbl3_guide" xml:space="preserve">
+    <value>Nome do nome Layout de leitura OCR.</value>
+  </data>
+  <data name="ocrtools_lbl4" xml:space="preserve">
+    <value>Selecionar Layout</value>
+  </data>
+  <data name="ocrtools_lbl4_guide" xml:space="preserve">
+    <value>Selecione um Layout existente para visualizar os parametros criados e assim gerenciar os dados necessários.</value>
+  </data>
+</root>

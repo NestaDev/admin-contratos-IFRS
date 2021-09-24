@@ -1,0 +1,5 @@
+bin\Release\PdfViewer.dll
+bin\Release\PdfViewer.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\PdfViewer.dll
+obj\Release\PdfViewer.pdb

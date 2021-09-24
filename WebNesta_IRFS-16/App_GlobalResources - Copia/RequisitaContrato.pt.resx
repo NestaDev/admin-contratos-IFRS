@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="label_grp1_01" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="label_grp1_011" xml:space="preserve">
+    <value>Imóvel</value>
+  </data>
+  <data name="label_grp1_011_guide" xml:space="preserve">
+    <value>Selecione o imóvel que já foi previamente cadastrado, e então o sistema preencherá as informações básicas do imóvel</value>
+  </data>
+  <data name="label_grp1_01_guide" xml:space="preserve">
+    <value>Escolha a estrutura do GRUPO econômico, da EMPRESA ou da FILIAL que você pretende subordinar o contrato que irá cadastrar</value>
+  </data>
+  <data name="label_grp1_02" xml:space="preserve">
+    <value>Tipo Imóvel</value>
+  </data>
+  <data name="label_grp1_02_guide" xml:space="preserve">
+    <value>Escolha o tipo de imóvel que se enquadra melhor</value>
+  </data>
+  <data name="label_grp1_03" xml:space="preserve">
+    <value>Região Administrativa</value>
+  </data>
+  <data name="label_grp1_03_guide" xml:space="preserve">
+    <value>Informação que servirá como objeto de localização do imóvel</value>
+  </data>
+  <data name="label_grp1_04" xml:space="preserve">
+    <value>No. Contribuinte</value>
+  </data>
+  <data name="label_grp1_04_guide" xml:space="preserve">
+    <value>Informação relativa ao cadastro do imóvel na prefeitura correspondente</value>
+  </data>
+  <data name="label_grp1_05" xml:space="preserve">
+    <value>Endereço Completo</value>
+  </data>
+  <data name="label_grp1_05_guide" xml:space="preserve">
+    <value>Endereço relativo ao CEP preenchido, caso seja necessário a correção poderá ser feita diretamente nesse campo.</value>
+  </data>
+  <data name="label_grp1_06" xml:space="preserve">
+    <value>CEP</value>
+  </data>
+  <data name="label_grp1_06_guide" xml:space="preserve">
+    <value>Ao inserir o CEP o sistema irá preencher o campo Endereço Completo com as informações extraídas do Google Maps</value>
+  </data>
+  <data name="label_grp1_07" xml:space="preserve">
+    <value>Cod Logradouro</value>
+  </data>
+  <data name="label_grp1_07_guide" xml:space="preserve">
+    <value>Selecione o tipo de Logradouro referente ao endereço do imóvel</value>
+  </data>
+  <data name="label_grp1_08" xml:space="preserve">
+    <value>Ano Construção</value>
+  </data>
+  <data name="label_grp1_08_guide" xml:space="preserve">
+    <value>Ano de construção do imóvel referenciado</value>
+  </data>
+  <data name="label_grp1_09" xml:space="preserve">
+    <value>Situação Legal</value>
+  </data>
+  <data name="label_grp1_09_guide" xml:space="preserve">
+    <value>Situação Legal que melhor se enquadre ao imóvel</value>
+  </data>
+  <data name="label_grp1_10" xml:space="preserve">
+    <value>No. Processo de Registro</value>
+  </data>
+  <data name="label_grp1_10_guide" xml:space="preserve">
+    <value>Número referente ao processo de registro do imóvel junto ao cartório</value>
+  </data>
+  <data name="label_grp1_11" xml:space="preserve">
+    <value>Testada Principal</value>
+  </data>
+  <data name="label_grp1_11_guide" xml:space="preserve">
+    <value>Informação da largura do terreno do imóvel, caso seja em esquina deve-se somar a testada da frente (principal) e a testada lateral (secundária)</value>
+  </data>
+  <data name="label_grp1_12" xml:space="preserve">
+    <value>Área do Terreno</value>
+  </data>
+  <data name="label_grp1_12_guide" xml:space="preserve">
+    <value>Informação da área em metros quadrados do terreno do imóvel</value>
+  </data>
+  <data name="label_grp1_13" xml:space="preserve">
+    <value>Área Edificada</value>
+  </data>
+  <data name="label_grp1_13_guide" xml:space="preserve">
+    <value>Informação da área total coberta do imóvel em metros quadrados</value>
+  </data>
+  <data name="label_grp1_14" xml:space="preserve">
+    <value>Área Comum</value>
+  </data>
+  <data name="label_grp1_14_guide" xml:space="preserve">
+    <value>Informação em metros quadrados que compreende à área comum do imóvel</value>
+  </data>
+  <data name="label_grp1_15" xml:space="preserve">
+    <value>Fração Ideal</value>
+  </data>
+  <data name="label_grp1_15_guide" xml:space="preserve">
+    <value>Anote a fração ideal de terreno correspondente ao imóvel alugado</value>
+  </data>
+  <data name="label_grp1_16" xml:space="preserve">
+    <value>Data do Registro</value>
+  </data>
+  <data name="label_grp1_16_guide" xml:space="preserve">
+    <value>Data em que o imóvel foi registrado em cartório</value>
+  </data>
+  <data name="label_grp1_17" xml:space="preserve">
+    <value>Valor Venal</value>
+  </data>
+  <data name="label_grp1_17_guide" xml:space="preserve">
+    <value>Valor venal informado pela prefeitura que serve como base para cálculos de impostos e taxas</value>
+  </data>
+  <data name="label_grp2_01" xml:space="preserve">
+    <value>Vistoria</value>
+  </data>
+  <data name="label_grp2_01_guide" xml:space="preserve">
+    <value>Data em que será realizada a vistoria de entrega do imóvel</value>
+  </data>
+  <data name="label_grp2_02" xml:space="preserve">
+    <value>Recebimento Chaves</value>
+  </data>
+  <data name="label_grp2_02_guide" xml:space="preserve">
+    <value>Data em que será realizado a entrega das chaves do locador para o locatário. Essa data servirá como deadline para as tarefas de workflow</value>
+  </data>
+  <data name="label_grp2_03" xml:space="preserve">
+    <value>Devolução Chaves</value>
+  </data>
+  <data name="label_grp2_03_guide" xml:space="preserve">
+    <value>Data em que é prevista a devolução das chaves do locatário para o locador.</value>
+  </data>
+  <data name="label_grp2_04" xml:space="preserve">
+    <value>Inauguração</value>
+  </data>
+  <data name="label_grp2_04_guide" xml:space="preserve">
+    <value>Data em que é prevista a inauguração do imóvel</value>
+  </data>
+  <data name="label_grp3_01" xml:space="preserve">
+    <value>Usuário</value>
+  </data>
+  <data name="label_grp3_01_guide" xml:space="preserve">
+    <value>Usuário responsável (SPONSOR) do contrato a ser emitido</value>
+  </data>
+  <data name="label_grp3_02" xml:space="preserve">
+    <value>Número Processo</value>
+  </data>
+  <data name="label_grp3_02_guide" xml:space="preserve">
+    <value>Insira aqui o número do contrato. Este número é apenas um identificador que irá orientar o usuário em pesquisas. O controle numérico do contrato é interno e de responsabilidade do sistema.</value>
+  </data>
+  <data name="label_grp3_03" xml:space="preserve">
+    <value>Código Auxiliar</value>
+  </data>
+  <data name="label_grp3_03_guide" xml:space="preserve">
+    <value>Caso necessite complementar o Número do Processo, anote livremente um Código Auxiliar</value>
+  </data>
+  <data name="label_grp3_04" xml:space="preserve">
+    <value>Data Solicitação</value>
+  </data>
+  <data name="label_grp3_04_guide" xml:space="preserve">
+    <value>Data em que a emissão do contrato foi solicitada</value>
+  </data>
+  <data name="label_grp3_05" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="label_grp3_05_guide" xml:space="preserve">
+    <value>Dê um nome de referência ao contrato. Utilize uma referência que lhe indique a finalidade do contrato</value>
+  </data>
+  <data name="label_grp3_06" xml:space="preserve">
+    <value>Valor Contrato</value>
+  </data>
+  <data name="label_grp3_06_guide" xml:space="preserve">
+    <value>Informe o valor total do Contrato. O valor é sempre o valor total geral contratado anotado no contrato.</value>
+  </data>
+  <data name="label_grp3_07" xml:space="preserve">
+    <value>Locador</value>
+  </data>
+  <data name="label_grp3_07_guide" xml:space="preserve">
+    <value>Escolha o Locador do contrato, Ele deve estar cadastrado previamente. Para encontra-lo comece digitando palavras contidas em seu nome ou razão social e o sistema irá depurando a pesquisa até que você entre o registro correto</value>
+  </data>
+  <data name="label_grp3_08" xml:space="preserve">
+    <value>Propósito</value>
+  </data>
+  <data name="label_grp3_08_guide" xml:space="preserve">
+    <value>Propósito</value>
+  </data>
+  <data name="label_grp3_09" xml:space="preserve">
+    <value>Classe Produto</value>
+  </data>
+  <data name="label_grp3_09_guide" xml:space="preserve">
+    <value>Classe Produto</value>
+  </data>
+  <data name="label_grp3_10" xml:space="preserve">
+    <value>Modo</value>
+  </data>
+  <data name="label_grp3_10_guide" xml:space="preserve">
+    <value>Classificação ou status do contrato. Por default o sistema apresenta o campo preenchido como WORKFLOW</value>
+  </data>
+  <data name="label_grp4_guide" xml:space="preserve">
+    <value>A guia Bases Negociação mostra as propriedades e os critérios indispensáveis à geração dos cálculos dos fluxos de caixa, extratos financeiros e extratos contábeis dos contratos. Estas propriedades podem ser editadas mediante o aditamento do contrato, pois alteram os resultados dos cálculos executados pelo sistema.</value>
+  </data>
+  <data name="label_grp5_guide" xml:space="preserve">
+    <value>Workflow de tarefas compreendidas entre Em Elaboração e Contrato Emitido, onde o SPONSOR poderá realizar tarefas como aprovar ou rejeitar as entregas e também alterar os dados da tarefa como Responsável e Prazo.</value>
+  </data>
+  <data name="requisita_content_tutorial" xml:space="preserve">
+    <value>https://cloud3.webnesta.com/tutorial/ifrs/EmissaoContrato/pt-BR</value>
+  </data>
+</root>

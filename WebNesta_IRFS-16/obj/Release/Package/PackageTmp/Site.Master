@@ -1,0 +1,782 @@
+﻿<%@ Master Language="C#" AutoEventWireup="True" CodeBehind="Site.master.cs" Inherits="WebNesta_IRFS_16.Site" %>
+
+<%@ Register Assembly="DevExpress.Web.Bootstrap.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.Bootstrap" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Dashboard.v20.1.Web.WebForms, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.DashboardWeb" TagPrefix="dx" %>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nesta Cloud</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+        <%: Scripts.Render("~/bundles/jquery") %>
+        <%: Styles.Render("~/Content") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <style type="text/css">
+        .modalPopup {
+            background-color: #fff;
+            width: 300px;
+            border: 1px solid dimgray;
+            padding: 0;
+        }
+
+            .modalPopup .header {
+                background-color: #db9c99;
+                height: 30px;
+                font-family: Calibri;
+                font-size: 14pt;
+                color: lightgray;
+                line-height: 30px;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .modalPopup .body {
+                padding: 10px;
+                min-height: 50px;
+                text-align: center;
+                font-weight: 300;
+                font-family: Calibri;
+                font-size: 12pt;
+                color: dimgray;
+            }
+
+            .modalPopup .footer {
+                padding: 6px;
+            }
+
+            .modalPopup .yes, .modalPopup .no {
+                height: 23px;
+                color: White;
+                line-height: 23px;
+                text-align: center;
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+
+            .modalPopup .yes {
+                background-color: #669999;
+                border: 1px solid #669966;
+                height: 30px;
+                line-height: 15px;
+            }
+
+            .modalPopup .no {
+                background-color: #9F9F9F;
+                border: 1px solid #669966;
+                height: 30px;
+                line-height: 15px;
+            }
+    </style>
+
+    <script type="text/javascript">
+        function redirect(redirectUrl) {
+            location.href = redirectUrl;
+        }
+        var tutorial = 0;
+        var campoClick;
+        $(document).keyup(function (e) {
+            if (e.key === "Escape") { // escape key maps to keycode `27`
+                audioSource.src = "";
+                audio.load();
+                var els = document.getElementsByClassName("tutorial");
+                for (var i = 0; i < els.length; i++) {
+                    els[i].classList.remove("highlighted");
+                }
+                document.getElementById("fundoTutorial").classList.remove("d-block");
+                document.getElementById("fundoTutorial").classList.add("d-none");
+                audio.classList.remove("d-block");
+                audio.classList.add("d-none");
+                audioSource.src = "";
+                audio.load();
+                tutorial = 0;
+            }
+        });
+        function clicando(valor) {
+            campoClick = valor;
+        }
+        function CallTutorial() {
+            audioSource.src = "";
+            audio.load();
+            var els = document.getElementsByClassName("tutorial");
+            var interval = 2000;
+            if (els.length > 0) {
+                if (tutorial < els.length) {
+                    for (var i = 0; i < els.length; i++) {
+                        els[i].classList.remove("highlighted");
+                    }
+                    document.getElementById("fundoTutorial").classList.remove("d-none");
+                    document.getElementById("fundoTutorial").classList.add("d-block");
+                    els[tutorial].classList.add("highlighted");
+                    TextSpeech(els[tutorial].id);
+                    audio.classList.remove("d-none");
+                    audio.classList.add("d-block");
+                    tutorial++;
+                }
+                else if (tutorial == els.length) {
+                    document.getElementById("fundoTutorial").classList.remove("d-block");
+                    document.getElementById("fundoTutorial").classList.add("d-none");
+                    els[tutorial - 1].classList.remove("highlighted");
+                    audio.classList.remove("d-block");
+                    audio.classList.add("d-none");
+                    audioSource.src = "";
+                    audio.load();
+                    tutorial = 0;
+                }
+
+            }
+        }
+
+        function openModal() {
+            $('#myModal').modal('show');
+        };
+        function openLoading() {
+            $("#coverScreen").show();
+        };
+        function closeLoading() {
+            $("#coverScreen").hide();
+        };
+        $(window).on('load', function () {
+            $("#coverScreen").hide();
+        });
+        $(document).ready(function () {
+            $(".Loading").click(function () {
+                $("#coverScreen").show();
+            });
+        });
+        $(document).ready(function () {
+            //Disable cut copy paste
+            $('#gridPopupAbout').bind('cut copy paste', function (e) {
+                e.preventDefault();
+            });
+
+            //Disable mouse right click
+            $("#gridPopupAbout").on("contextmenu", function (e) {
+                return false;
+            });
+        });
+        function SessionExpireAlert(timeout) {
+            var myHidden = document.getElementById("hftimeoutWarning");
+            var seconds = timeout / 1000;
+            //document.getElementsByName("secondsIdle").innerHTML = seconds;
+            document.getElementsByName("seconds").innerHTML = seconds;
+            setInterval(function () {
+                seconds--;
+                document.getElementById("seconds").innerHTML = seconds;
+                //document.getElementById("secondsIdle").innerHTML = seconds;
+            }, 1000);
+            setTimeout(function () {
+                //Show Popup before 60 seconds of timeout.
+                var audio = new Audio('Ding-ding-ding.mp3');
+                audio.play();
+                $find("mpeTimeout").show();
+            }, timeout - parseInt(myHidden.value) * 60 * 1000);
+            setTimeout(function () {
+                var audio = new Audio('Ding-ding-ding.mp3');
+                audio.play();
+                window.location = "Default.aspx?expired=true";
+            }, timeout);
+        };
+        function ResetSession() {
+            //Redirect to refresh Session.
+            window.location = window.location.href;
+        }
+        function Navigate(Pagina) {
+            window.location.href = Pagina;
+        }
+    </script>
+    <link href="Content/style.css" rel="stylesheet" />
+    <link href="Content/all.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="coverScreen" class="LockOn">
+    </div>
+    <form runat="server">
+
+        <asp:HiddenField ID="hfText_Speech" ClientIDMode="Static" runat="server" />
+        <asp:HiddenField ID="hfText_SpeechAudio" ClientIDMode="Static" runat="server" />
+        <%--<h3>Session Idle:&nbsp;<span id="secondsIdle"></span>&nbsp;seconds.</h3>--%>
+        <asp:LinkButton ID="lnkFake" runat="server" />
+        <ajaxToolkit:ModalPopupExtender ID="mpeTimeout" BehaviorID="mpeTimeout" runat="server" PopupControlID="popupSession" TargetControlID="lnkFake"
+            OkControlID="btnYes" CancelControlID="btnNo" BackgroundCssClass="modalBackground" OnOkScript="ResetSession()">
+        </ajaxToolkit:ModalPopupExtender>
+        <asp:Panel ID="popupSession" CssClass="modalPopup" runat="server" Style="display: none">
+            <div class="header">
+                <span><%=Resources.GlobalResource.popup_session_titulo %></span>
+            </div>
+            <div class="body">
+                <span><%=Resources.GlobalResource.popup_session_texto1 %></span>
+                <span id="seconds" style="color: red"></span>
+                <span><%=Resources.GlobalResource.popup_session_texto2 %></span><br />
+                <span><%=Resources.GlobalResource.popup_session_texto3 %></span>
+            </div>
+            <div class="footer" align="right">
+                <asp:Button ID="btnYes" runat="server" Text="<%$Resources:GlobalResource, popup_session_btnYes %>" CssClass="btn yes" />
+                <asp:Button ID="btnNo" runat="server" Text="<%$Resources:GlobalResource, popup_session_btnNo %>" CssClass="btn no" />
+            </div>
+        </asp:Panel>
+        <asp:ScriptManager ID="ScriptManager" runat="server" EnableScriptGlobalization="True">
+            <Scripts>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+            </Scripts>
+        </asp:ScriptManager>
+        <asp:HiddenField ID="hfPaisUser" runat="server" />
+        <asp:HiddenField ID="hftimeoutWarning" ClientIDMode="Static" runat="server" Value="<%$ appSettings:timeoutWarning %>" />
+        <asp:HiddenField ID="hfControle" runat="server" />
+        <asp:HiddenField ID="hfCurrentPage" runat="server" />
+        <asp:HiddenField ID="hfOperacao" runat="server" />
+        <asp:HiddenField ID="hfLoginPage" runat="server" />
+        <asp:HiddenField ID="hf2sides" Value="0" runat="server" />
+        <!--Bootstrap Modal (Dialog Box / Pop-up window) Example-->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content" style="background-color: white; background-image: url('img/fnd_about.png'); background-repeat: no-repeat; background-position: 70% center; background-size: 85%">
+                    <asp:Image ID="Image8" ImageUrl="img/lamp.png" runat="server" Style="width: 4%; opacity: 0.5; position: absolute; z-index: 10; top: 78%; right: 3%;" />
+                    <div class="modal-header p-2">
+                        <div class="col-8 p-0">
+                            <asp:Image ID="Image4" ImageUrl="img/fnd_about_nesta.png" runat="server" Width="55%" Style="padding-left: 20px; padding-top: 5px;" />
+                        </div>
+                        <div class="col-4 p-0 titulo2 text-right">
+                            <asp:Image ID="Image5" ImageUrl="img/engrenagem.png" runat="server" Width="30%" Style="padding-right: 10px; margin-bottom: 5px;" /><asp:Label ID="Label4" runat="server" Text="IFRS.16"></asp:Label>
+                        </div>
+                    </div>
+                    <div class="modal-body row p-2">
+                        <div class="col-3 p-0 card" style="background-color: transparent">
+                            <div class="card-header border-bottom-0" style="background-color: transparent">
+                                <asp:Label ID="lblTitulo" runat="server" Font-Names="Calibri" ForeColor="#4E01D4" Font-Size="14pt" CssClass="labels" Text="<%$ Resources:GlobalResource, popup_exception %>"></asp:Label>
+                            </div>
+                            <div class="card-body" style="background-color: transparent">
+                                <asp:Button ID="Button11" runat="server" CssClass="btn-saiba-mais" Text="<%$ Resources:GlobalResource, btn_readmore %>" Enabled="false" />
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <asp:Image ID="Image9" ImageUrl="img/etc.png" runat="server" Width="30%" Style="padding-right: 10px" />
+                            </div>
+                        </div>
+                        <div class="col-8 pl-2 p-0" style="background-color: transparent; border: 2px solid #BA9BC9; border-radius: 5px; padding-right: 15px; word-break: break-word; height: 260px; overflow: auto;">
+                            <asp:Label ID="lblMsgException" ClientIDMode="Static" runat="server" Text="Label"></asp:Label>
+                        </div>
+                    </div>
+                    <div class="modal-footer p-2">
+                        <table style="width: 100%">
+                            <tr>
+                                <td style="width: 60%"></td>
+                                <td style="width: 20%; text-align: center">
+                                    <asp:Button ID="btnOK" runat="server" CssClass="btn btn-sm btn-ok" Visible="False" Text="<%$ Resources:GlobalResource, btn_ok %>" OnClick="btnOK_Click" /></td>
+                                <td style="width: 20%; text-align: center">
+                                    <asp:Button ID="btnClose" runat="server" CssClass="close btn btn-sm btn-cancelar" Text="<%$ Resources:GlobalResource, btn_fechar %>" /></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div id="fundoTutorial" class="d-none"></div>
+            <div id="mySidebar" class="sidebar" style="display: block">
+                <div class="container p-0" style="">
+                    <div class="row p-0 d-flex justify-content-around" style="background-image: url(icons/menu/fundo_menu.png); background-size: 80px; background-repeat: no-repeat; background-position: left 65%">
+                        <div class="col-12 text-center mt-4">
+                            <dx:ASPxButton ID="btn1" runat="server" CssClass="btnMenu p-0 Loading" Text="" RenderMode="Link" AutoPostBack="false" ImagePosition="Left" ToolTip="<%$Resources:GlobalResource, menu_botao1 %>" CausesValidation="false">
+                                <Image Url="~/icons/menu/home.png" Width="25px"></Image>
+                                <ClientSideEvents Click="function(s,e){ Navigate('Default'); }" />
+                                <DisabledStyle CssClass="btnMenu-disabled"></DisabledStyle>
+                            </dx:ASPxButton>
+                            <%--<asp:ImageButton ID="btn1" runat="server" ImageUrl="~/icons/menu/home.png" CssClass="btnMenu Loading" ImageAlign="Middle" Width="25px" ToolTip="<%$Resources:GlobalResource, menu_botao1 %>" CausesValidation="False" CommandArgument="Default" OnCommand="btnMenu_Command" />--%>
+                        </div>
+                        <div class="col-12 text-center mt-3">
+                            <dx:ASPxButton ID="btn2" runat="server" CssClass="btnMenu p-0 Loading" Text="" RenderMode="Link" AutoPostBack="false" ImagePosition="Left" ToolTip="<%$Resources:GlobalResource, menu_botao2 %>" CausesValidation="false">
+                                <Image Url="~/icons/menu/emissao.png" Width="25px"></Image>
+                                <ClientSideEvents Click="function(s,e){ Navigate('RequisitaContrato'); }" />
+                                <DisabledStyle CssClass="btnMenu-disabled"></DisabledStyle>
+                            </dx:ASPxButton>
+                            <%--<asp:ImageButton ID="btn2" runat="server" ImageUrl="~/icons/menu/emissao.png" CssClass="btnMenu Loading" ImageAlign="Middle" Width="25px" ToolTip="<%$Resources:GlobalResource, menu_botao2 %>" CausesValidation="False" CommandArgument="RequisitaContrato" OnCommand="btnMenu_Command" />--%>
+                        </div>
+                        <div class="col-12 text-center mt-3">
+                            <dx:ASPxButton ID="btn3" runat="server" CssClass="btnMenu p-0 Loading" Text="" RenderMode="Link" AutoPostBack="false" ImagePosition="Left" ToolTip="<%$Resources:GlobalResource, menu_botao3 %>" CausesValidation="false">
+                                <Image Url="~/icons/menu/realestate.png" Width="25px"></Image>
+                                <ClientSideEvents Click="function(s,e){ Navigate('RealEstate'); }" />
+                                <DisabledStyle CssClass="btnMenu-disabled"></DisabledStyle>
+                            </dx:ASPxButton>
+                            <%--<asp:ImageButton ID="btn3" runat="server" ImageUrl="~/icons/menu/realestate.png" CssClass="btnMenu Loading" ImageAlign="Middle" Width="25px" ToolTip="<%$Resources:GlobalResource, menu_botao3 %>" CausesValidation="False" CommandArgument="RealEstate" OnCommand="btnMenu_Command" />--%>
+                        </div>
+                        <div class="col-12 text-center mt-3">
+                            <dx:ASPxButton ID="btn4" runat="server" CssClass="btnMenu p-0" Text="" RenderMode="Link" AutoPostBack="false" ImagePosition="Left" ToolTip="<%$Resources:GlobalResource, menu_botao4 %>" CausesValidation="false">
+                                <Image Url="~/icons/menu/aquisicao.png" Width="25px"></Image>
+                                <ClientSideEvents Click="function(s,e){ popupContrato.Show(); popupContrato.BringToFront(popupContrato.GetWindow(1)); }" />
+                                <DisabledStyle CssClass="btnMenu-disabled"></DisabledStyle>
+                            </dx:ASPxButton>
+                            <%--<asp:ImageButton ID="btn4" runat="server" ImageUrl="~/icons/menu/aquisicao.png" CssClass="btnMenu Loading" ImageAlign="Middle" Width="25px" ToolTip="<%$Resources:GlobalResource, menu_botao4 %>" CausesValidation="False" CommandArgument="Aquisicao" OnCommand="btnMenu_Command" />--%>
+                        </div>
+                        <div class="col-12 text-center mt-3">
+                            <dx:ASPxButton ID="btn5" runat="server" CssClass="btnMenu p-0 Loading" Text="" RenderMode="Link" AutoPostBack="false" ImagePosition="Left" ToolTip="<%$Resources:GlobalResource, menu_botao5 %>" CausesValidation="false">
+                                <Image Url="~/icons/menu/operacional.png" Width="25px"></Image>
+                                <ClientSideEvents Click="function(s,e){ Navigate('PassivosAquisicao2'); }" />
+                                <DisabledStyle CssClass="btnMenu-disabled"></DisabledStyle>
+                            </dx:ASPxButton>
+                            <%--<asp:ImageButton ID="btn5" runat="server" ImageUrl="~/icons/menu/operacional.png" CssClass="btnMenu Loading" ImageAlign="Middle" Width="25px" ToolTip="<%$Resources:GlobalResource, menu_botao5 %>" CausesValidation="False" CommandArgument="PassivosAquisicao2" OnCommand="btnMenu_Command" />--%>
+                        </div>
+                        <div class="col-12 text-center mt-3">
+                            <dx:ASPxButton ID="btn6" runat="server" CssClass="btnMenu p-0 Loading" Text="" RenderMode="Link" AutoPostBack="false" ImagePosition="Left" ToolTip="<%$Resources:GlobalResource, menu_botao6 %>" CausesValidation="false">
+                                <Image Url="~/icons/menu/fluxo.png" Width="25px"></Image>
+                                <ClientSideEvents Click="function(s,e){ Navigate('PassivosAquisicao'); }" />
+                                <DisabledStyle CssClass="btnMenu-disabled"></DisabledStyle>
+                            </dx:ASPxButton>
+                            <%--<asp:ImageButton ID="btn6" runat="server" ImageUrl="~/icons/menu/fluxo.png" CssClass="btnMenu Loading" ImageAlign="Middle" Width="25px" ToolTip="<%$Resources:GlobalResource, menu_botao6 %>" CausesValidation="False" CommandArgument="PassivosAquisicao" OnCommand="btnMenu_Command" />--%>
+                        </div>
+                        <div class="col-12 text-center mt-3">
+                            <dx:ASPxButton ID="btn7" runat="server" CssClass="btnMenu p-0 Loading" Text="" RenderMode="Link" AutoPostBack="false" ImagePosition="Left" ToolTip="<%$Resources:GlobalResource, menu_botao7 %>" CausesValidation="false">
+                                <Image Url="~/icons/menu/workflow.png" Width="25px"></Image>
+                                <ClientSideEvents Click="function(s,e){ Navigate('Workflow'); }" />
+                                <DisabledStyle CssClass="btnMenu-disabled"></DisabledStyle>
+                            </dx:ASPxButton>
+                            <%--<asp:ImageButton ID="btn7" runat="server" ImageUrl="~/icons/menu/workflow.png" CssClass="btnMenu Loading" ImageAlign="Middle" Width="30px" ToolTip="<%$Resources:GlobalResource, menu_botao7 %>" CausesValidation="False" CommandArgument="Workflow" OnCommand="btnMenu_Command" />--%>
+                        </div>
+                        <div class="col-12 text-center mt-3">
+                            <dx:ASPxButton ID="btn8" runat="server" CssClass="btnMenu p-0 Loading" Text="" RenderMode="Link" AutoPostBack="false" ImagePosition="Left" ToolTip="<%$Resources:GlobalResource, menu_botao8 %>" CausesValidation="false">
+                                <Image Url="~/icons/menu/facilities.png" Width="25px"></Image>
+                                <ClientSideEvents Click="function(s,e){ Navigate('Setup'); }" />
+                                <DisabledStyle CssClass="btnMenu-disabled"></DisabledStyle>
+                            </dx:ASPxButton>
+                            <%--<asp:ImageButton ID="btn8" runat="server" ImageUrl="~/icons/menu/facilities.png" CssClass="btnMenu Loading" ImageAlign="Middle" Width="25px" ToolTip="<%$Resources:GlobalResource, menu_botao8 %>" CausesValidation="False" CommandArgument="Setup" OnCommand="btnMenu_Command" />--%>
+                        </div>
+                        <div class="col-12 text-center mt-3">
+                            <br />
+                        </div>
+                        <div class="col-12 text-center mt-3">
+                            <br />
+                        </div>
+                        <div class="col-12 text-center mt-3">
+                            <br />
+                        </div>
+                        <div class="col-12 text-center mt-3">
+                            <br />
+                        </div>
+                        <div class="col-12 text-center mt-3">
+                            <br />
+                        </div>
+                        <div class="col-12 text-center mt-3">
+                            <dx:ASPxButton ID="btn9" runat="server" CssClass="btnMenu p-0 Loading" Text="" RenderMode="Link" AutoPostBack="false" ImagePosition="Left" ToolTip="<%$Resources:GlobalResource, menu_botao9 %>" CausesValidation="false">
+                                <Image Url="~/icons/menu/usuarios.png" Width="25px"></Image>
+                                <ClientSideEvents Click="function(s,e){ Navigate('UserProfile'); }" />
+                            </dx:ASPxButton>
+                            <%--<asp:ImageButton ID="btn9" runat="server" CssClass="Loading" ImageUrl="~/icons/menu/usuarios.png" ImageAlign="Middle" Width="25px" ToolTip="<%$Resources:GlobalResource, menu_botao9 %>" CausesValidation="False" CommandArgument="UserProfile" OnCommand="btnMenu_Command" />--%>
+                            <asp:Label ID="lblNotifiesQtd" ClientIDMode="Static" runat="server" CssClass="badge badge-danger rounded-circle badge_menu" Text="" OnLoad="lblNotifiesQtd_Load"></asp:Label>
+                        </div>
+                        <div class="col-12 text-center mt-3">
+                            <%--<dx:ASPxButton ID="ASPxButton11" runat="server" CssClass="btnMenu p-0" Text="" RenderMode="Link" AutoPostBack="false" ImagePosition="Left" ToolTip="<%$Resources:GlobalResource, menu_botao10 %>" CausesValidation="false">
+                                <Image Url="~/icons/menu/operacional.png" Width="25px"></Image>
+                                <ClientSideEvents Click="function(s,e){ Navigate('PassivosAquisicao2'); }" />
+                            </dx:ASPxButton>--%>
+                            <asp:ImageButton ID="btn10" runat="server" ImageUrl="~/icons/menu/about.png" ImageAlign="Middle" Width="25px" ToolTip="<%$Resources:GlobalResource, menu_botao10 %>" CausesValidation="False" OnClick="lnkAbout_Click" />
+                        </div>
+                        <div class="col-12 text-center mt-3">
+                            <%--<dx:ASPxButton ID="ASPxButton12" runat="server" CssClass="btnMenu p-0" Text="" RenderMode="Link" AutoPostBack="false" ImagePosition="Left" ToolTip="<%$Resources:GlobalResource, menu_botao11 %>" CausesValidation="false">
+                                <Image Url="~/icons/menu/operacional.png" Width="25px"></Image>
+                                <ClientSideEvents Click="function(s,e){ Navigate('PassivosAquisicao2'); }" />
+                            </dx:ASPxButton>--%>
+                            <asp:ImageButton ID="btn11" runat="server" ImageUrl="~/icons/menu/logout.png" ImageAlign="Middle" Width="25px" ToolTip="<%$Resources:GlobalResource, menu_botao11 %>" CausesValidation="False" OnClick="lnkSair_Click" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="site">
+                <div id="header">
+                    <asp:Panel ID="Panel1" runat="server" Width="100%" BackColor="#808080" Height="38px">
+                        <table style="width: 100%; line-height: 35px; vertical-align: middle">
+                            <tr style="height: 38px">
+                                <td style="width: 250px; text-align: center; border-right: 2px solid #fff;">
+                                    <button type="button" id="btnNavi" class="openbtn d-none" data-effect="st-effect-1" onclick="openNav()" style="color: #666460">
+                                        <i class="fas fa-align-left"></i>
+                                    </button>
+                                    <asp:Label ID="Label8" runat="server" Text="<%$Resources:GlobalResource, header_top1 %>" Font-Size="15pt" Style="font-weight: 500; color: #c0c0c0" Font-Names="Calibri"></asp:Label>
+                                </td>
+                                <td style="text-align: left; padding-left: 250px !important">
+                                    <asp:Label ID="Label11" runat="server" Text="<%$Resources:GlobalResource, header_top2 %>" Font-Size="15pt" Font-Names="Calibri" Style="font-weight: 500; text-align: left; color: #c0c0c0"></asp:Label>
+                                </td>
+                                <td style="border-left: 2px solid #fff; width: 300px; padding-left: 5px">
+                                    <div class="row p-0">
+                                        <div class="col-8 pr-0">
+                                            <div class="row p-0 d-flex justify-content-center">
+                                                <div class="col-2 pl-2 pr-2" style="padding-top: 5px;">
+                                                    <asp:ImageButton ID="btn_pt_BR" CausesValidation="false" CssClass="btn-lang" Visible="true" runat="server" ImageUrl="~/icons/brasil.png" Width="25px" CommandArgument="pt-BR" OnClick="RequestLanguageChange_Click" />
+                                                </div>
+                                                <div class="col-2 pl-2 pr-2" style="padding-top: 5px;">
+                                                    <asp:ImageButton ID="btn_en_US" CausesValidation="false" CssClass="btn-lang" Visible="true" runat="server" ImageUrl="~/icons/usa.png" Width="25px" CommandArgument="en-US" OnClick="RequestLanguageChange_Click" />
+                                                </div>
+                                                <div class="col-2 pl-2 pr-2 mr-1" style="padding-top: 5px;">
+                                                    <asp:ImageButton ID="btn_en_GB" CausesValidation="false" CssClass="btn-lang" Visible="true" runat="server" ImageUrl="~/icons/england.png" Width="30px" CommandArgument="en-GB" OnClick="RequestLanguageChange_Click" Style="-webkit-transform: scaleX(-1); transform: scaleX(-1);" />
+                                                </div>
+                                                <div id="idioma" class="col-2 pl-2 pr-2" style="padding-top: 5px;">
+                                                    <asp:ImageButton ID="btn_es_ES" CausesValidation="false" CssClass="btn-lang" Enabled="false" Visible="true" runat="server" ImageUrl="~/icons/espanha.png" Width="25px" CommandArgument="es-ES" OnClick="RequestLanguageChange_Click" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 pl-0">
+                                            <div class="row p-0 d-flex justify-content-center">
+                                                <div class="col-4">
+                                                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="https://api.whatsapp.com/send?phone=551155049050" Target="_blank"><img src="icons/whatsapp.png" width="20px" /></asp:HyperLink>
+                                                </div>
+                                                <div class="col-4" style="z-index: 3">
+                                                    <a href="#" onclick="CallTutorial()" runat="server" id="btnTutorial">
+                                                        <img src="icons/chamado.png" width="20px" /></a>
+                                                    <dx:ASPxCallback ID="callTextSpeech" ClientInstanceName="callTextSpeech" OnCallback="ASPxCallback1_Callback" runat="server">
+                                                        <ClientSideEvents EndCallback="function(s,e){
+                                                            if (s.cptemarquivo=='true')
+                                                            {
+			                                                                audio.classList.remove(&quot;d-none&quot;);
+                                                                            audio.classList.add(&quot;d-block&quot;);
+                                                                            audioSource.src = s.cparquivo;
+                                                                            audio.load();                    
+                                                                            audio.play();
+                                                            }
+}" />
+                                                    </dx:ASPxCallback>
+                                                </div>
+                                                <div class="col-4"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <audio id="audio" class="TutorialSpeech d-none" controls="controls">
+                          <source id="audioSource" src=""></source>
+                          Your browser does not support the audio format.
+                        </audio>
+                        <div id="bordaCima"></div>
+                        <div id="bordaCima2"></div>
+                    </asp:Panel>
+                    <asp:Panel ID="Panel5" runat="server" Width="100%">
+                        <div class="container-fluid ">
+                            <div class="row" style="border-bottom: 2px solid #808080; margin-left: 20px; margin-right: 20px;">
+                                <div class="col-sm-6 text-left" style="line-height: 16px; margin-top: 23px">
+                                    <p class="mb-0">
+                                        <asp:Label ID="Label12" CssClass="labels mb-0" Font-Size="14pt" runat="server" Font-Names="Calibri" Style="font-weight: 600" Text="<%$Resources:GlobalResource, header_titulo %>"></asp:Label>
+                                    </p>
+                                    <p class="mt-0">
+                                        <asp:Label ID="Label13" CssClass="labels mt-0" Font-Size="12pt" runat="server" Font-Names="Calibri" Text="<%$Resources:GlobalResource, header_subtitulo %>"></asp:Label>
+                                    </p>
+                                </div>
+                                <div class="col-sm-6 titulo text-right">
+                                    <asp:Label ID="Label1" runat="server" Text="<%$Resources:GlobalResource, header_nome_aplicacao %>"></asp:Label>
+                                </div>
+                            </div>
+                            <div class="row" style="line-height: 50px; height: 50px; margin-left: 20px; margin-right: 20px">
+                                <div class="col-sm-3">
+                                    <asp:HiddenField ID="hfEstruturaCorporativa" runat="server" />
+                                    <asp:Label ID="lblEstruturaCorporativa" CssClass="labels" runat="server" Text="" Style="font-size: 16pt; font-weight: 600; color: #666666"></asp:Label>
+                                </div>
+                                <div class="col-sm-3 text-left">
+                                    <asp:Label ID="Label16" CssClass="labels" runat="server" Text="<%$Resources:GlobalResource, header_desde %>" Style="font-size: 15pt; color: #666666"></asp:Label>
+                                    <asp:Label ID="lblClientedesde" CssClass="labels" runat="server" Text="dd/mm/yyyy" Style="font-size: 15pt; color: #666666"></asp:Label>
+                                </div>
+                                <div class="col-sm-6">
+                                </div>
+                            </div>
+                        </div>
+                    </asp:Panel>
+                </div>
+                <div id="conteudo" class="container-fluid p-0">
+                    <div class="row p-0">
+
+                        <%if (hf2sides.Value == "1")
+                            { %>
+                        <div class="col-10 w-100 left_side p-0">
+                            <%}
+                                else
+                                { %>
+                            <div class="col-12 w-100 p-0">
+                                <%}%>
+                                <asp:Panel ID="Panel3" Height="445px" Width="100%" runat="server" Wrap="False">
+                                    <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+                                </asp:Panel>
+                            </div>
+                            <%if (hf2sides.Value == "1")
+                                { %>
+                            <div class="col-2 w-100 text-center pr-2 pl-2">
+                                <asp:ContentPlaceHolder ID="MainContentSide" runat="server"></asp:ContentPlaceHolder>
+                            </div>
+                            <%} %>
+                        </div>
+                    </div>
+                    <div id="footer">
+                        <div class="container-fluid">
+                            <div class="row pl-5" style="height: 138px">
+                                <div class="card bg-transparent col-lg-6 p-0 pr-5" style="line-height: 15px;">
+                                    <div class="card-header p-0 " style="padding-bottom: 0px; padding-top: 20px !important;">
+                                        <h6>
+                                            <asp:Label ID="lblSuporteFooter" runat="server" Text="<%$Resources:GlobalResource, footer_titulo %>"></asp:Label></h6>
+                                    </div>
+                                    <div class="card-body p-0" style="padding-top: 0px; padding-bottom: 0px;">
+                                        <div class="row p-0">
+                                            <div class="col-lg-3 p-0">
+                                                <ul style="list-style-type: none" class="p-2 pl-3 mb-0">
+                                                    <li style="margin-bottom: 2px;">
+                                                        <asp:LinkButton ID="link1" runat="server" CausesValidation="False" CommandArgument="Tipologia" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link7 %></asp:LinkButton>
+                                                    </li>
+                                                    <li style="margin-bottom: 2px;">
+                                                        <asp:LinkButton ID="link2" runat="server" CausesValidation="False" CommandArgument="Fornecedores" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link1 %></asp:LinkButton></li>
+                                                    <li style="margin-bottom: 2px;">
+                                                        <asp:LinkButton ID="link3" runat="server" CausesValidation="False" CommandArgument="ClasseContabil" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link2 %></asp:LinkButton></li>
+                                                    <li style="margin-bottom: 0px;">
+                                                        <asp:LinkButton ID="link4" runat="server" CausesValidation="False" CommandArgument="Carteira" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link3 %></asp:LinkButton></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 p-0">
+                                                <ul style="list-style-type: none" class="p-2 pl-3 mb-0">
+                                                    <li style="margin-bottom: 2px;">
+                                                        <asp:LinkButton ID="link5" runat="server" CausesValidation="False" CommandArgument="Indice" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link5 %></asp:LinkButton></li>
+                                                    <li style="margin-bottom: 2px;">
+                                                        <asp:LinkButton ID="link6" runat="server" CausesValidation="False" CommandArgument="Verbas" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link13 %></asp:LinkButton>
+
+                                                    </li>
+                                                    <li style="margin-bottom: 2px;">
+                                                        <asp:LinkButton ID="link7" runat="server" CausesValidation="False" CommandArgument="Formula" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link4 %></asp:LinkButton>
+
+                                                    </li>
+                                                    <li style="margin-bottom: 0px;">
+                                                        <asp:LinkButton ID="link8" runat="server" CausesValidation="False" CommandArgument="PlanoContas" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link9 %></asp:LinkButton></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 p-0 ">
+                                                <ul style="list-style-type: none" class="p-2 pl-3 mb-0 ">
+                                                    <li style="margin-bottom: 2px;">
+                                                        <asp:LinkButton ID="link9" runat="server" CausesValidation="False" CommandArgument="Boletagem" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link8 %></asp:LinkButton>
+                                                    </li>
+                                                    <li style="margin-bottom: 2px;">
+                                                        <asp:LinkButton ID="link10" runat="server" CausesValidation="False" CommandArgument="Monitoramento" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link12 %></asp:LinkButton></li>
+                                                    <li style="margin-bottom: 2px;">
+                                                        <asp:LinkButton ID="link11" runat="server" CausesValidation="False" OnClientClick="popupOCRTools.Show();return false;"><%=Resources.GlobalResource.footer_link11 %></asp:LinkButton>
+                                                    </li>
+                                                    <li style="margin-bottom: 2px;">
+                                                        <asp:LinkButton ID="link12" runat="server" CausesValidation="False" CommandArgument="Utilities" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link10 %></asp:LinkButton>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 p-0 ">
+                                                <ul style="list-style-type: none" class="p-2 pl-3 mb-0 ">
+                                                    <li style="margin-bottom: 2px;">
+                                                        <asp:LinkButton ID="link13" runat="server" CausesValidation="False" CommandArgument="JurosETTJ" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link6 %></asp:LinkButton>
+                                                    </li>
+                                                    <li style="margin-bottom: 2px;">
+                                                        <asp:LinkButton ID="link14" runat="server" CausesValidation="False" CommandArgument="Book" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link14 %></asp:LinkButton>
+                                                    </li>
+                                                    <li style="margin-bottom: 2px;">
+                                                        <asp:LinkButton ID="LinkButton3" runat="server" CausesValidation="False" CommandArgument="Importador" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link15 %></asp:LinkButton>
+                                                    </li>
+                                                    <li style="margin-bottom: 2px;">
+                                                        <asp:LinkButton ID="link16" runat="server" Enabled="false" CausesValidation="False" CommandArgument="#" OnClick="lnk_Navi_footer"><%=Resources.GlobalResource.footer_link16 %></asp:LinkButton>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 w-100 text-right p-0">
+                                    <asp:Image ID="Image1" runat="server" ImageUrl="~/img/rodape2.png" Style="width: 99%" />
+                                </div>
+                            </div>
+                            <div class="row" style="background-color: #808080; height: 30px">
+                                <div class="row" style="position: relative; bottom: 50px; left: 15px">
+                                    <div id="bordaBaixo">
+                                        <div id="bordaBaixo2"></div>
+                                    </div>
+                                </div>
+                                <div class="text-center p-0" style="width: 1030px; line-height: 25px; padding-left: 100px !important">
+                                    <a href="https://www.webnesta.com/" target="_blank">
+                                        <asp:Label ID="Label15" CssClass="labels" Style="font-size: 20pt; color: #c0c0c0" runat="server" Text="www.webnesta.com"></asp:Label></a>
+                                </div>
+                                <div class="text-center p-0" style="border-left: 2px solid #fff; width: 300px; line-height: 25px;">
+                                    <div class="row">
+                                        <div class="col-lg-2 p-0"></div>
+                                        <%--<div class="col-lg-2 p-0">
+                                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="http://www.google.com.br" Target="_blank"><img src="icons/whatsapp.png" width="20px" /></asp:HyperLink>
+                                        </div>--%>
+                                        <div class="col-lg-3 p-0">
+                                            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="http://www.google.com.br" Target="_blank"><img src="icons/facebook.png" width="20px" /></asp:HyperLink>
+                                        </div>
+                                        <div class="col-lg-2 p-0">
+                                            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="http://www.google.com.br" Target="_blank"><img src="icons/instagram.png" width="20px" /></asp:HyperLink>
+                                        </div>
+                                        <div class="col-lg-3 p-0">
+                                            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="http://www.google.com.br" Target="_blank"><img src="icons/twitter.png" width="20px" /></asp:HyperLink>
+                                        </div>
+                                        <div class="col-lg-2 p-0"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <dx:ASPxPopupControl ID="popupIdioma" ClientInstanceName="popupIdioma" PopupElementID="idioma" PopupHorizontalAlign="Center" PopupVerticalAlign="Below" runat="server"
+            ShowHeader="false" Width="280px">
+            <ClientSideEvents Shown="
+        function(s, e) { 
+           popupIdioma.BringWindowToFront();
+        }" />
+            <ContentCollection>
+                <dx:PopupControlContentControl>
+                    <div class="text-left">
+                        <asp:Label ID="Label3" CssClass="labels" runat="server" Text="<%$Resources:GlobalResource, popup_language_choose %>" Style="font-size: 13pt; font-weight: 600; color: #666666"></asp:Label>
+                    </div>
+                </dx:PopupControlContentControl>
+            </ContentCollection>
+        </dx:ASPxPopupControl>
+        <dx:ASPxPopupControl ID="popupContrato" ClientInstanceName="popupContrato" PopupElementID="btn4" PopupHorizontalAlign="OutsideRight" PopupVerticalAlign="Middle" runat="server"
+            ShowHeader="false" Modal="false" AutoUpdatePosition="true">
+            <ClientSideEvents Shown="
+        function(s, e) { 
+           popupContrato.BringWindowToFront(popupContrato.GetWindow(1));
+        }" />
+            <ContentStyle Paddings-Padding="0px"></ContentStyle>
+            <ContentCollection>
+                <dx:PopupControlContentControl>
+                    <div class="text-left p-2">
+                        <asp:LinkButton ID="LinkButton1" CssClass="Loading labels p-0" Text="<%$Resources:GlobalResource, btn4.1 %>" runat="server" OnCommand="btnMenu_Command" CommandArgument="Aquisicao"></asp:LinkButton>
+                        <br />
+                        <asp:LinkButton ID="LinkButton2" CssClass="Loading labels p-0" Text="<%$Resources:GlobalResource, btn4.2 %>" runat="server" OnCommand="btnMenu_Command" CommandArgument="Contrato_Umbrella"></asp:LinkButton>
+                    </div>
+                </dx:PopupControlContentControl>
+            </ContentCollection>
+        </dx:ASPxPopupControl>
+        <dx:ASPxPopupControl ID="popupOCRTools" ClientInstanceName="popupOCRTools" PopupElementID="link11" PopupHorizontalAlign="OutsideRight" PopupVerticalAlign="Middle" runat="server"
+            ShowHeader="false" Width="280px">
+            <ClientSideEvents Shown="
+        function(s, e) { 
+           popupOCRTools.BringWindowToFront();
+        }" />
+            <ContentCollection>
+                <dx:PopupControlContentControl>
+                    <div class="text-left">
+                        <asp:LinkButton ID="LinkButton9" CssClass="Loading labels" Text="<%$Resources:GlobalResource, footer_link11.1 %>" runat="server" OnCommand="btnMenu_Command" CommandArgument="LayoutOCR"></asp:LinkButton>
+                        <br />
+                        <asp:LinkButton ID="LinkButton10" CssClass="Loading labels" Text="<%$Resources:GlobalResource, footer_link11.2 %>" runat="server" OnCommand="btnMenu_Command" CommandArgument="LeituraOCR"></asp:LinkButton>
+                    </div>
+                </dx:PopupControlContentControl>
+            </ContentCollection>
+        </dx:ASPxPopupControl>
+        <asp:XmlDataSource ID="xmlPopupAbout" runat="server" DataFile="~/xmlVersion/versionDb.xml"> </asp:XmlDataSource>
+        <asp:SqlDataSource ID="sqlPopupAbout" runat="server" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' ProviderName='<%$ ConnectionStrings:ConnectionString.ProviderName %>' SelectCommand="select * from verversao order by 1 desc"></asp:SqlDataSource>
+        <dx:ASPxPopupControl ID="popupAbout" ClientInstanceName="popupAbout" Width="750px" ShowHeader="false" Height="400px" CloseAction="OuterMouseClick" Modal="true"
+            PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" CssClass="rounding" Theme="Moderno" AllowDragging="True"
+            PopupAnimationType="Fade" AutoUpdatePosition="True" runat="server">
+            <ContentCollection>
+                <dx:PopupControlContentControl>
+                    <div class="container p-0" style="background-color: transparent; background-image: url('img/fnd_about.png'); background-repeat: no-repeat; background-position: 70% center; background-size: 85%">
+                        <asp:Image ID="Image7" ImageUrl="~/img/lamp.png" runat="server" Style="width: 4%; opacity: 0.5; position: absolute; z-index: 10; top: 78%; right: 5%;" />
+                        <div class="row">
+                            <div class="col-8 p-0">
+                                <asp:Image ID="Image2" ImageUrl="~/img/fnd_about_nesta.png" runat="server" Width="55%" Style="padding-left: 20px; padding-top: 5px;" />
+                            </div>
+                            <div class="col-4 p-0 titulo2 text-right d-none">
+                                <asp:Image ID="Image3" ImageUrl="~/img/engrenagem.png" runat="server" Width="30%" Style="padding-right: 10px; margin-bottom: 5px;" /><asp:Label ID="Label18" runat="server" Text="<%$Resources:GlobalResource, header_nome_aplicacao %>"></asp:Label>
+                            </div>
+                        </div>
+                        <div class="row pt-1" style="height: 300px; padding-right: 15px;">
+
+                            <div class="col-4 p-0 card" style="background-color: transparent">
+                                <div class="card-header border-bottom-0" style="background-color: transparent">
+                                    <asp:Label ID="Label2" runat="server" Visible="false" Font-Names="Calibri" ForeColor="#4E01D4" Font-Size="14pt" CssClass="labels" Text="AVISO..."></asp:Label>
+                                </div>
+                                <div class="card-body" style="background-color: transparent">
+                                </div>
+                                <div class="card-footer bg-transparent border-top-0">
+                                    <asp:Image ID="Image6" ImageUrl="~/img/etc.png" runat="server" Width="30%" Style="padding-right: 10px" />
+                                </div>
+                            </div>
+                            <div class="col-8 pl-2 p-0" style="background-color: transparent; border: 2px solid #BA9BC9; border-radius: 5px">
+                                <dx:ASPxGridView ID="gridPopupAbout" ClientInstanceName="gridPopupAbout" runat="server" AutoGenerateColumns="False" DataSourceID="sqlPopupAbout" Theme="Material" Width="460px" Style="background-color: transparent;">
+                                    <SettingsPager Visible="False">
+                                    </SettingsPager>
+
+                                    <Settings VerticalScrollBarMode="Auto" VerticalScrollableHeight="220" VerticalScrollBarStyle="Standard" />
+                                    <Columns>
+                                        <dx:GridViewDataTextColumn Caption="# Code" FieldName="VERCDVER" Width="80px" MaxWidth="80" ShowInCustomizationForm="True" VisibleIndex="1" >
+                                            <CellStyle Wrap="True" Paddings-PaddingRight="5px">
+                                            </CellStyle>
+                                        </dx:GridViewDataTextColumn>
+                                        <dx:GridViewDataTextColumn Caption="Description" FieldName="VERDSVER"  ShowInCustomizationForm="True" VisibleIndex="2" >
+                                            <CellStyle Wrap="True">
+                                            </CellStyle>
+                                        </dx:GridViewDataTextColumn>
+                                        <dx:GridViewDataDateColumn FieldName="VERDTVER" Caption="Date" Width="70px" MaxWidth="70" VisibleIndex="0" PropertiesDateEdit-DisplayFormatString="dd/MM/yyyy"></dx:GridViewDataDateColumn>
+                                    </Columns>
+                                    <Border BorderStyle="None" />
+                                    <Styles>
+                                        <TitlePanel BackColor="Transparent" Font-Names="Calibri" Font-Size="14pt" CssClass="labels"></TitlePanel>
+                                        <Header BackColor="Transparent" Font-Size="8pt" Paddings-Padding="2px"></Header>
+                                        <Row BackColor="Transparent" Font-Size="8pt"></Row>
+                                        <Cell Paddings-Padding="5px" BackColor="Transparent" Border-BorderWidth="0px"></Cell>
+                                        <Table BackColor="Transparent" Paddings-Padding="2px"></Table>
+
+                                    </Styles>
+
+                                </dx:ASPxGridView>
+                            </div>
+                        </div>
+                        <div class="row pt-1" style="padding-right: 15px;">
+                            <div class="col-12 text-right">
+                                <dx:ASPxButton ID="ASPxButton1" runat="server" CssClass="btn btn-sm btn-cancelar text-uppercase" AutoPostBack="false" Text="<%$Resources:GlobalResource, btn_fechar %>">
+                                    <ClientSideEvents Click="function (s, e) {popupAbout.Hide(); }" />
+                                </dx:ASPxButton>
+                            </div>
+                        </div>
+                    </div>
+                </dx:PopupControlContentControl>
+            </ContentCollection>
+        </dx:ASPxPopupControl>
+        <dx:ASPxPopupControl ID="popupSaibaMais" ClientInstanceName="popupSaibaMais" Width="1100px" ShowHeader="true" HeaderText="<%$ Resources:GlobalResource, btn_readmore %>" Height="600px" CloseAction="OuterMouseClick" Modal="true"
+            PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" AllowResize="true" CssClass="rounding" Theme="Material" AllowDragging="True"
+            PopupAnimationType="Fade" AutoUpdatePosition="True" runat="server">
+        </dx:ASPxPopupControl>
+        <dx:ASPxPopupControl ID="popupTutorial" ClientInstanceName="popupTutorial" Width="1100px" ShowHeader="true" HeaderText="Tutorial" Height="600px" CloseAction="OuterMouseClick" Modal="true"
+            PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" AllowResize="true" CssClass="rounding" Theme="Material" AllowDragging="True"
+            PopupAnimationType="Fade" AutoUpdatePosition="True" runat="server">
+        </dx:ASPxPopupControl>
+        <dx:ASPxLoadingPanel ID="panel" ClientInstanceName="panel" Theme="Material" Modal="true" runat="server"></dx:ASPxLoadingPanel>
+    </form>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("mySidebar").style.display = "block";
+            //document.getElementById("main").style.marginLeft = "0px";
+            document.getElementById("btnNavi").setAttribute("onclick", "closeNav()");
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("mySidebar").style.display = "none";
+            //document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("btnNavi").setAttribute("onclick", "openNav()");
+        }
+    </script>
+</body>
+</html>

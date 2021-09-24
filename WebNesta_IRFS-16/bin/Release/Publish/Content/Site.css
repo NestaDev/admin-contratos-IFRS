@@ -1,0 +1,399 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+html,body {
+    /*/*padding-top: 50px;*/
+    /*padding-bottom: 20px;*/
+    margin:0;
+    height:100%;
+    width:99%;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    color:#404040;
+    max-width: 100%;
+    border:1px solid;
+    border-color:aquamarine;
+    background-color:transparent;
+}
+input:disabled,
+select:disabled,
+textarea:disabled
+{
+    background-color:lightgray;
+}
+span{
+    color:dimgray;
+}
+a#lnkRptBasesInsert{
+    color:dimgray;
+}
+a#lnkRptBasesEdit {
+    color: dimgray;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 15px;
+    }
+}
+.sidenav {
+    height: 100%;
+    width: 13%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#EEEEEE;
+    overflow-x: hidden;
+    padding-top: 2px;
+}
+ul.none {
+    list-style-type: none;
+}
+
+ul.disc {
+    list-style-type: disc;
+}
+.sidenav a {
+    padding: 1px 1px 1px 1px ;
+    text-decoration: none;
+    font-size: 15px;
+    color: #495057;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #c0c0c0;
+}
+.myCenteredGrid {
+    margin: 0 auto;
+    display:flex;
+    justify-content:center;
+}
+.card-body-center {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    display: flex;
+    justify-content: center;
+}
+.qrcode {
+    position: absolute;
+    text-align: center;
+    align-content:center;
+    bottom: 10px;
+    font-size: 10px;
+}
+.main {
+    margin-left: 13%; /* Same as the width of the sidenav */
+    /*font-size: 28px;  Increased text to enable scrolling */
+    padding: 0px 0px;
+}
+.tblRptControl {
+    display: block;
+    width: 100%;
+    
+    height:calc(1.5em + .5rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: lightgray;
+    background-clip: padding-box;
+    border: 1px solid green;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.modalBackground {
+    background-color: #999;
+    filter: alpha(opacity-]=70);
+    opacity: 0.7;
+}
+
+.modalPopUp {
+    background-color: #fff;
+    border-width: 3px;
+    border-style: solid;
+    border-color: gray;
+    padding: 3px;
+    width: 800px;
+    box-shadow: #000 2px 2px 1px;
+}
+
+.modalBackgroundException {
+    background-color: Gray;
+    filter: alpha(opacity=50);
+    opacity: 0.7;
+}
+
+.modalPopUpException {
+    position: fixed;
+    top: 10%;
+    left: 10px;
+    width: 300px;
+    height: 125px;
+    text-align: center;
+    background-color: White;
+    border: solid 3px black;
+}
+.btn-outline-lupa {
+    color: #6c757d;
+    border-color: aquamarine;
+}
+
+    .btn-outline-lupa:hover {
+        color: #fff;
+        background-color: #66FFFF;
+        border-color: aquamarine;
+    }
+
+    .btn-outline-lupa:focus, .btn-outline-lupa.focus {
+        box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+    }
+
+    .btn-outline-lupa.disabled, .btn-outline-lupa:disabled {
+        color: #6c757d;
+        background-color: transparent;
+    }
+
+    .btn-outline-lupa:not(:disabled):not(.disabled):active, .btn-outline-lupa:not(:disabled):not(.disabled).active,
+    .show > .btn-outline-lupa.dropdown-toggle {
+        color: #fff;
+        background-color: #66FFFF;
+        border-color: aquamarine;
+    }
+
+        .btn-outline-lupa:not(:disabled):not(.disabled):active:focus, .btn-outline-lupa:not(:disabled):not(.disabled).active:focus,
+        .show > .btn-outline-lupa.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+        }
+.btn-act {
+    color: white;
+    background-color: #99FFFF;
+    width: 90px;
+    height: 30px;
+    padding: 0.25rem 0.5rem;
+    font-size: 10pt;
+    font-weight: bold;
+    font-family: Arial;
+    border-radius: 0.3rem;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid #99FFFF;
+}
+
+    .btn-act:not(:disabled):hover {
+        color: white;
+        background-color: #66FFFF;
+        border-color: #66FFFF;
+    }
+
+.btn-act:focus, .btn-act.focus {
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+    .btn-act.disabled, .btn-act:disabled {
+        color: #fff;
+        background-color: #CCFFFF;
+        border-color: #CCFFFF;
+    }
+.btn-ok {
+    color: white;
+    background-color: #FFCE70;
+    width: 90px;
+    height: 30px;
+    padding: 0.25rem 0.5rem;
+    font-size: 10pt;
+    font-weight: bold;
+    font-family: Arial;
+    border-radius: 0.3rem;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid #FFCE70;
+}
+
+    .btn-ok:not(:disabled):hover {
+        color: white;
+        background-color: #FFBC40;
+        border-color: ##FFBC40;
+    }
+
+    .btn-ok:focus, .btn-ok.focus {
+        box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+    }
+
+    .btn-ok.disabled, .btn-ok:disabled {
+        color: #fff;
+        background-color: #FFD993;
+        border-color: #FFD993;
+    }
+.btn-cancelar {
+    color: white;
+    background-color: #CC7C80;
+    width: 90px;
+    height: 30px;
+    padding: 0.25rem 0.5rem;
+    font-size: 10pt;
+    font-weight: bold;
+    font-family: Arial;
+    border-radius: 0.3rem;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid #CC7C80;
+}
+
+    .btn-cancelar:not(:disabled):hover {
+        color: white;
+        background-color: #BC5459;
+        border-color: #BC5459;
+    }
+
+    .btn-cancelar:focus, .btn-cancelar.focus {
+        box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+    }
+
+    .btn-cancelar.disabled, .btn-cancelar:disabled {
+        color: #fff;
+        background-color: #DBA2A5;
+        border-color: #DBA2A5;
+    }
+.loading {
+    font-family: Arial;
+    font-size: 10pt;
+    border: 5px solid #67CFF5;
+    width: 200px;
+    height: 100px;
+    display: none;
+    position: fixed;
+    background-color: White;
+    z-index: 999;
+}
+.top_master{
+    border-bottom:2px solid lightgray;
+    border-top:0px;
+    border-right:0px;
+    border-left:0px;
+}
+.top_left {
+    border-right: 2px solid lightgray;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+}
+.top_bottom {
+    border-top: 2px solid lightgray;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+}
+.btn-app {
+    color: white;
+    background-color: cornflowerblue;
+    width: 80px;
+    height: 70px;
+    padding: 0.25rem 0.5rem;
+    font-size: Medium;
+    border-radius: 0.3rem;
+    vertical-align: middle;
+    border: 1px solid cornflowerblue;
+    white-space:normal;
+    word-wrap:normal;
+    text-align:center;
+    justify-content:center;
+}
+    .btn-app:not(:disabled):hover {
+        color: white;
+        background-color: cadetblue;
+    }
+
+.btn-app:focus, .btn-app.focus {
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+    .btn-app.disabled, .btn-app:disabled {
+        color: #fff;
+        background-color: cadetblue;
+    }
+#site {
+    /* Definimos a largura da página */
+    width:100%;
+    /* Definirmos a altura da página*/
+    height: 100%;
+    /* Aqui definiremos a posição que a página ocupará na tela, nesse caso estamos definindo que fique centralizado na tela*/
+    /*top : posição de cima */
+    margin-top: 0;
+    /* left: posição de esquerda*/
+    margin-left: 0;
+    /* bottom : posição de baixo */
+    margin-bottom: 0;
+    /* right : posição de direita */
+    margin-right: 0;
+}
+#header {
+    /*Novamente definimos a largura da div*/
+    width: 100%;
+    /* altura da div */
+    height: 100px;
+    /* Cor de fundo da div */
+    background-color: #FFF;
+    border-bottom:2px solid lightgray;
+    border-top:0;
+    border-left:0;
+    border-right:0;
+}
+.left_side {
+    border-right: 2px solid lightgray;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+.right_side {
+    border-left: 2px solid lightgray;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+#conteudo {
+    /*Novamente definimos a largura da div*/
+    width: 100%;
+    /* altura da div */
+    height: 600px;
+    /* Cor de fundo da div */
+    background-color:#FFF;
+}
+
+#footer {
+    /*Novamente definimos a largura da div*/
+    width: 100%;
+    /* altura da div */
+    height: 100%;
+    /* Cor de fundo da div */
+    background-color: #FFF;
+    border-top: 2px solid lightgray;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}

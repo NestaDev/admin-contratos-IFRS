@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="aquisicao_aditamento_aba1" xml:space="preserve">
+    <value>Events</value>
+  </data>
+  <data name="aquisicao_aditamento_aba2" xml:space="preserve">
+    <value>Dismemberments</value>
+  </data>
+  <data name="aquisicao_aditamento_lbl1" xml:space="preserve">
+    <value>Select amendment the event and date from</value>
+  </data>
+  <data name="aquisicao_aditamento_lbl2" xml:space="preserve">
+    <value>Insert the justification text for the contractual amendment</value>
+  </data>
+  <data name="aquisicao_aditamento_lbl3" xml:space="preserve">
+    <value>Characters: 255</value>
+  </data>
+  <data name="aquisicao_aditamento_lbl4" xml:space="preserve">
+    <value>Justification must contain between 20 and 255 characters.</value>
+  </data>
+  <data name="aquisicao_aditamento_lbl5" xml:space="preserve">
+    <value>Select amendment date from</value>
+  </data>
+  <data name="aquisicao_aditamento_titulo" xml:space="preserve">
+    <value>Amendment</value>
+  </data>
+  <data name="aquisicao_content_tutorial" xml:space="preserve">
+    <value>https://cloud3.webnesta.com/tutorial/ifrs/contrato/en-US</value>
+  </data>
+  <data name="aquisicao_delete_texto" xml:space="preserve">
+    <value>Text about the process of deleting a contract</value>
+    <comment>Página Aquisicao.aspx tela de exclusão de contrato</comment>
+  </data>
+  <data name="aquisicao_delete_titulo" xml:space="preserve">
+    <value>Exclusion Process</value>
+    <comment>Página Aquisicao.aspx tela de exclusão de contrato</comment>
+  </data>
+  <data name="aquisicao_erro_tipologia" xml:space="preserve">
+    <value>There is no Produt associated to this Entity</value>
+  </data>
+  <data name="aquisicao_historico_col1" xml:space="preserve">
+    <value>Justification</value>
+  </data>
+  <data name="aquisicao_historico_col2" xml:space="preserve">
+    <value>Contract basis</value>
+  </data>
+  <data name="aquisicao_historico_col3" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="aquisicao_historico_col4" xml:space="preserve">
+    <value>Amendment</value>
+  </data>
+  <data name="aquisicao_historico_col5" xml:space="preserve">
+    <value>Sequence</value>
+  </data>
+  <data name="aquisicao_historico_titulo" xml:space="preserve">
+    <value>Change History</value>
+  </data>
+  <data name="aquisição_btn_aditamento" xml:space="preserve">
+    <value>Amendment</value>
+  </data>
+  <data name="aquisição_btn_aditamento_guide" xml:space="preserve">
+    <value>When clicking on the AMENDMENT button, the system enters into a contractual amendment mode allowing the user, upon justification, to change the contract properties that impact the results of the calculations performed by the system.</value>
+  </data>
+  <data name="aquisição_btn_historico_guide" xml:space="preserve">
+    <value>By clicking on the HISTORY button, the system shows in chronological order the history of all the modifications suffered by the contract since its creation.</value>
+  </data>
+  <data name="aquisição_btn_replicar_guide" xml:space="preserve">
+    <value>By clicking on the DUPLICATE button, the system creates a copy (clone) with the main properties of the contract being edited. This feature is widely used in the creation of contracts that have similar characteristics.</value>
+  </data>
+  <data name="aquisição_delete_texto" xml:space="preserve">
+    <value>By clicking on the OK button the contract will be deleted from the system if and only if it fully meets the following conditions: &lt;br/&gt; &lt;br/&gt;. There is no End of Exercise note. &lt;/br&gt;. It does not have an Accounting Interface annotation. &lt;/br&gt;. There is no note on Financial Transactions (Cash Monitoring). &lt;/br&gt;. There is no commitment and / or payment authorization (APR) note committed or carried out. &lt;/br&gt; &lt;/br&gt; If all of the above conditions are met, the Real, Nominal, Inflated, Currency and USGaap scenarios will be excluded: &lt;/ br &gt; &lt;/br&gt;. All records in the accounting statement. &lt;/br&gt;. All financial statement records. &lt;/br&gt;. All cash flow records. &lt;/br&gt;. The contract and its properties (general information, classification, basis of negotiation, linked funds and attachments).</value>
+  </data>
+  <data name="aquisição_delete_titulo" xml:space="preserve">
+    <value>Exclusion Process</value>
+  </data>
+  <data name="aquisição_excluir_texto1" xml:space="preserve">
+    <value>Exclusion Process</value>
+  </data>
+  <data name="aquisição_excluir_texto2" xml:space="preserve">
+    <value>Text about the process of deleting a contract</value>
+  </data>
+  <data name="aquisição_grid_ate" xml:space="preserve">
+    <value>Until</value>
+  </data>
+  <data name="aquisição_grid_data" xml:space="preserve">
+    <value>Ref</value>
+  </data>
+  <data name="aquisição_grid_de" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="aquisição_grid_valor" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="aquisição_grp1_lbl1" xml:space="preserve">
+    <value>Corporative Structure</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl10" xml:space="preserve">
+    <value>Contract Value</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl10_guide" xml:space="preserve">
+    <value>Enter the total value of the contract. The value is always the total total contracted value noted in the contract.</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl11" xml:space="preserve">
+    <value>Payments Start</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl11_guide" xml:space="preserve">
+    <value>Contract payment flow start date</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl12" xml:space="preserve">
+    <value>Payments Finish</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl12_guide" xml:space="preserve">
+    <value>End date of contract payment flow</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl13" xml:space="preserve">
+    <value>Structure</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl13_guide" xml:space="preserve">
+    <value>Select the reason for the contract.</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl14" xml:space="preserve">
+    <value>Product Class</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl14_guide" xml:space="preserve">
+    <value>Text for PENDING Class</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl15" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="aquisição_grp1_lbl15_guide" xml:space="preserve">
+    <value>Choose the type of contract that can support the calculations and treatment of the contract you want to register.</value>
+  </data>
+  <data name="aquisição_grp1_lbl16" xml:space="preserve">
+    <value>Portfolio</value>
+  </data>
+  <data name="aquisição_grp1_lbl16_guide" xml:space="preserve">
+    <value>The portfolio is a classifier created previously to select contracts in different classifications. Choose the portfolio that will add the contract being registered.</value>
+  </data>
+  <data name="aquisição_grp1_lbl1_guide" xml:space="preserve">
+    <value>Choose the structure of the economic GROUP, the COMPANY or the branch you intend to subordinate to the contract you are going to register.</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl2" xml:space="preserve">
+    <value>Building</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl2_guide" xml:space="preserve">
+    <value>This field requires prior registration. Text for PENDING Property</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl3" xml:space="preserve">
+    <value>Internal Id</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl31" xml:space="preserve">
+    <value>Operator</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl31_guide" xml:space="preserve">
+    <value>Exclusive use of the system</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl3_guide" xml:space="preserve">
+    <value>Exclusive use of the system</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl4" xml:space="preserve">
+    <value>Process Number</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl4_guide" xml:space="preserve">
+    <value>Enter the contract number here. This number is just an identifier that will guide the user in searches. The numerical control of the contract is internal and the responsibility of the system.</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl5" xml:space="preserve">
+    <value>Description</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl5_guide" xml:space="preserve">
+    <value>Give the contract a reference name. Use a reference that tells you the purpose of the contract.</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl6" xml:space="preserve">
+    <value>Auxiliary Number</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl6_guide" xml:space="preserve">
+    <value>If you need to supplement the Process Number, please write down an Auxiliary Code.</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl7" xml:space="preserve">
+    <value>Release date</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl7_guide" xml:space="preserve">
+    <value>Enter the start date of the contract. Usually the date of signing the contract.</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl8" xml:space="preserve">
+    <value>Signature date</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl8_guide" xml:space="preserve">
+    <value>Contract signing date</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl9" xml:space="preserve">
+    <value>Closing Date</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_lbl9_guide" xml:space="preserve">
+    <value>Date on which the contract signed between the parties ends</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_subtitulo1" xml:space="preserve">
+    <value> | Internal Id:</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_titulo1" xml:space="preserve">
+    <value>General Information</value>
+    <comment>Página Aquisicao.aspx grupo de campos Informações Gerais</comment>
+  </data>
+  <data name="aquisição_grp1_titulo1_quickguide" xml:space="preserve">
+    <value>The General Information tab shows the characteristics of identification, topology, value and duration of the contract.</value>
+  </data>
+  <data name="aquisição_grp2_lbl1" xml:space="preserve">
+    <value>Favored</value>
+    <comment>Página Aquisicao.aspx grupo de campos Classificação Contrato</comment>
+  </data>
+  <data name="aquisição_grp2_lbl1_guide" xml:space="preserve">
+    <value>Choose the Favored of the contract. It must be previously registered. To find it, start typing words contained in your name or business name and the system will debug the search until you find the desired supplier.</value>
+    <comment>Página Aquisicao.aspx grupo de campos Classificação Contrato</comment>
+  </data>
+  <data name="aquisição_grp2_lbl2" xml:space="preserve">
+    <value>Beneficiary</value>
+    <comment>Página Aquisicao.aspx grupo de campos Classificação Contrato</comment>
+  </data>
+  <data name="aquisição_grp2_lbl2_guide" xml:space="preserve">
+    <value>Choose the BENEFICIARY of the contract. It must be previously registered. To find it, start typing words contained in your name or business name and the system will debug the search until you find the desired supplier.</value>
+    <comment>Página Aquisicao.aspx grupo de campos Classificação Contrato</comment>
+  </data>
+  <data name="aquisição_grp2_lbl3" xml:space="preserve">
+    <value>Status</value>
+    <comment>Página Aquisicao.aspx grupo de campos Classificação Contrato</comment>
+  </data>
+  <data name="aquisição_grp2_lbl3_guide" xml:space="preserve">
+    <value>Classification or status of the contract. Indicates whether it is ACTIVE or CLOSED. By default, in the inclusion, the system presents the field filled in as ACTIVE.</value>
+    <comment>Página Aquisicao.aspx grupo de campos Classificação Contrato</comment>
+  </data>
+  <data name="aquisição_grp2_lbl4" xml:space="preserve">
+    <value>Uniform Installment</value>
+    <comment>Página Aquisicao.aspx grupo de campos Classificação Contrato</comment>
+  </data>
+  <data name="aquisição_grp2_lbl4.1" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="aquisição_grp2_lbl4.2" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="aquisição_grp2_lbl4_guide" xml:space="preserve">
+    <value>Inform if the contract installments are uniform</value>
+    <comment>Página Aquisicao.aspx grupo de campos Classificação Contrato</comment>
+  </data>
+  <data name="aquisição_grp2_lbl5" xml:space="preserve">
+    <value>Grace Period</value>
+    <comment>Página Aquisicao.aspx grupo de campos Classificação Contrato</comment>
+  </data>
+  <data name="aquisição_grp2_lbl5.1" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="aquisição_grp2_lbl5.2" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="aquisição_grp2_lbl5_guide" xml:space="preserve">
+    <value>Inform if there is a grace period to start contract charges</value>
+    <comment>Página Aquisicao.aspx grupo de campos Classificação Contrato</comment>
+  </data>
+  <data name="aquisição_grp2_lbl6" xml:space="preserve">
+    <value>Deployed Balance</value>
+    <comment>Página Aquisicao.aspx grupo de campos Classificação Contrato</comment>
+  </data>
+  <data name="aquisição_grp2_lbl6.1" xml:space="preserve">
+    <value>Full</value>
+  </data>
+  <data name="aquisição_grp2_lbl6.2" xml:space="preserve">
+    <value>Partial</value>
+  </data>
+  <data name="aquisição_grp2_lbl6_guide" xml:space="preserve">
+    <value>Inform whether the balance applied to the contract will be total or partial</value>
+    <comment>Página Aquisicao.aspx grupo de campos Classificação Contrato</comment>
+  </data>
+  <data name="aquisição_grp2_titulo" xml:space="preserve">
+    <value>Contract Classification</value>
+    <comment>Página Aquisicao.aspx grupo de campos Classificação Contrato</comment>
+  </data>
+  <data name="aquisição_grp2_titulo1_quickguide" xml:space="preserve">
+    <value>The Contract Classification tab shows the parameters that determine the filling in of the properties contained in the Contract Basis tab.</value>
+  </data>
+  <data name="aquisição_grp3_titulo" xml:space="preserve">
+    <value>Contract basis</value>
+    <comment>Página Aquisicao.aspx grupo de campos Bases Negociação</comment>
+  </data>
+  <data name="aquisição_grp3_titulo1_quickguide" xml:space="preserve">
+    <value>The Contract Basis tab shows the properties and criteria that are essential for generating the cash flow calculations, financial statements and accounting statements of the contracts. These properties can be edited by adding the contract, as they change the results of the calculations performed by the system.</value>
+  </data>
+  <data name="aquisição_grp4_btn" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="aquisição_grp4_grid_col1" xml:space="preserve">
+    <value>#ID</value>
+  </data>
+  <data name="aquisição_grp4_grid_col2" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="aquisição_grp4_titulo" xml:space="preserve">
+    <value>Attachments</value>
+    <comment>Página Aquisição</comment>
+  </data>
+  <data name="aquisição_grp4_titulo1_quickguide" xml:space="preserve">
+    <value>Use the Funds tab to link contracted and accessory funds to the contract. Click on the ADD + icon to link the amount to the contract, choosing the amount, the basis negotiated and the form of payment. Click on the TRASH icon to delete unlink the money from the contract.</value>
+  </data>
+  <data name="aquisição_grp5_col1" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="aquisição_grp5_col2" xml:space="preserve">
+    <value>Contract Basis</value>
+  </data>
+  <data name="aquisição_grp5_col3" xml:space="preserve">
+    <value>Payment Type</value>
+  </data>
+  <data name="aquisição_grp5_col4" xml:space="preserve">
+    <value>Invoice Day</value>
+  </data>
+  <data name="aquisição_grp5_col5" xml:space="preserve">
+    <value>Credit Account</value>
+  </data>
+  <data name="aquisição_grp5_col6" xml:space="preserve">
+    <value>Debit Account</value>
+  </data>
+  <data name="aquisição_grp5_titulo" xml:space="preserve">
+    <value>Funds</value>
+  </data>
+  <data name="aquisição_grp5_titulo1_quickguide" xml:space="preserve">
+    <value>Use the ATTACHMENTS tab to store the document base of contracts in the system. Click on the SEARCH button to upload (upload) the document linked to the contract. Click the DOCUMENT icon  to open and read the document. Click on the TRASH icon  to delete the document from the database and unlink it from the contract.</value>
+  </data>
+  <data name="aquisição_lbl_FileManager" xml:space="preserve">
+    <value>Folder not found</value>
+  </data>
+  <data name="aquisição_right_grid_col1" xml:space="preserve">
+    <value>Process Number</value>
+    <comment>Página Aquisicao.aspx Grid de pesquisa localizado no combo box da coluna à direita</comment>
+  </data>
+  <data name="aquisição_right_grid_col2" xml:space="preserve">
+    <value>Corporative structure</value>
+    <comment>Página Aquisicao.aspx Grid de pesquisa localizado no combo box da coluna à direita</comment>
+  </data>
+  <data name="aquisição_right_grid_col3" xml:space="preserve">
+    <value>Product</value>
+    <comment>Página Aquisicao.aspx Grid de pesquisa localizado no combo box da coluna à direita</comment>
+  </data>
+  <data name="aquisição_right_grid_col4" xml:space="preserve">
+    <value>Value</value>
+    <comment>Página Aquisicao.aspx Grid de pesquisa localizado no combo box da coluna à direita</comment>
+  </data>
+  <data name="aquisição_right_grid_col5" xml:space="preserve">
+    <value>#Prod</value>
+    <comment>Página Aquisicao.aspx Grid de pesquisa localizado no combo box da coluna à direita</comment>
+  </data>
+  <data name="aquisição_right_grid_col6" xml:space="preserve">
+    <value>#ID</value>
+    <comment>Página Aquisicao.aspx Grid de pesquisa localizado no combo box da coluna à direita</comment>
+  </data>
+  <data name="aquisição_right_titulo" xml:space="preserve">
+    <value>Search</value>
+    <comment>Página Aquisicao.aspx Título localizado na coluna à direita</comment>
+  </data>
+  <data name="aquisição_right_titulo_guide" xml:space="preserve">
+    <value>Use the filters to manipulate the sample data. Click on the column title to sort the data in ascending ↑ or descending ↓ order. Double click on the grid line to load the form with all the properties of the selected contract.</value>
+  </data>
+  <data name="aquisição_tituloPag" xml:space="preserve">
+    <value>Contract Registration</value>
+    <comment>Página Aquisicao Título Geral da Página</comment>
+  </data>
+  <data name="umbrella_grp4_grid_btn1" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="umbrella_grp4_grid_col1" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="umbrella_grp4_grid_col2" xml:space="preserve">
+    <value>Process Number</value>
+  </data>
+  <data name="umbrella_grp4_grid_col3" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="umbrella_grp4_grid_col4" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="umbrella_grp4_grid_col5" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="umbrella_grp4_titulo1" xml:space="preserve">
+    <value>SubContracts</value>
+  </data>
+  <data name="umbrella_right_titulo" xml:space="preserve">
+    <value>Contracts Lump Sum </value>
+  </data>
+</root>

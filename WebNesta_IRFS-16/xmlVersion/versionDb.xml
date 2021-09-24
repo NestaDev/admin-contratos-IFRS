@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Version>
+      <version
+		date="2020-10-01"
+        code="10.2020.001"
+        describe="Criação do sistema Real Estate de administração de imóveis com implementação contábil para atendimento da norma IFRS.16"
+		source="Suporte Nesta"
+      ></version>
+	<version
+		date="2021-05-01"
+        code="05.2021.001"
+        describe="Liberar Grid da tela Plano de Contas para redimencionar as colunas"
+		source="Suporte Nesta"
+      ></version>
+	<version
+		date="2021-06-01"
+	  code="06.2021.001"
+	  describe="Relatório com pop-up para Parametros"
+	  source="Suporte Nesta"
+      ></version>
+</Version>
